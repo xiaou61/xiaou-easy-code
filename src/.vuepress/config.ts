@@ -13,7 +13,7 @@ export default defineUserConfig({
 
 
 
-  base: "/mynotes/",
+  base: "/mydocs/",
 
   // 多语言设置
   locales: {

@@ -1,0 +1,5 @@
+@use "vuepress-shared/styles/wrapper";
+
+.page .twikoo-wrapper {
+  @include wrapper.wrapper;
+}

@@ -1,0 +1,1079 @@
+commit 6347c2c3e9707ae34d004d72ede087e9eb23359d
+Merge: 4d218b10c 1acad3895
+Author: sushuang <sushuang0322@gmail.com>
+Date:   Tue Sep 13 18:26:39 2022 +0800
+
+    Merge pull request #17645 from apache/release-dev
+    
+    Release 5.4.0
+
+commit 1acad38954ca187adb294e879c7f80ae7a53d40f
+Author: 100pah <sushuang0322@gmail.com>
+Date:   Tue Sep 13 18:20:15 2022 +0800
+
+    release: 5.4.0
+
+commit 2e71525c482794e504452cc867de123560ef6e19
+Author: 100pah <sushuang0322@gmail.com>
+Date:   Tue Sep 13 18:14:56 2022 +0800
+
+    fix: upgrade typescript-eslint to enable ts check with the currently used ts version.
+
+commit 6037f16af0715a6a6696cc4e8fd2a7f815e8d0d2
+Author: 100pah <sushuang0322@gmail.com>
+Date:   Tue Sep 13 17:46:23 2022 +0800
+
+    chore: fix test case.
+
+commit 4d218b10c8df6b91c1eb2f9ec4eb3ac6785fe6a5
+Merge: b9f330b15 74cd6ad84
+Author: sushuang <sushuang0322@gmail.com>
+Date:   Mon Sep 5 10:38:11 2022 +0800
+
+    Merge pull request #17614 from apache/master
+    
+    Add #15291 #17598 #17587 #17551 to release for 5.4.0
+
+commit 74cd6ad844cecd680052bb8087061b1944099701
+Merge: 7f3b2ba4d 768ce8398
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Fri Sep 2 15:29:29 2022 +0800
+
+    Merge pull request #15291 from Map1en/export-type-elementevent
+    
+    Export type elementevent
+
+commit b9f330b15d7445d4eb6cf2594b0d6bf33acdcc32
+Merge: 3e068d7a4 8b66bf74b
+Author: Yi Shen <bm2736892@gmail.com>
+Date:   Thu Sep 1 11:16:17 2022 +0800
+
+    Merge pull request #17582 from AviVahl/fix-ts4.8-compatibility
+    
+    fix: ensure compatibility with typescript@4.8
+
+commit 7f3b2ba4d2f4f77c70b51a8e1bb0b227ca197df0
+Merge: b96b04ea2 5b465297f
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Aug 30 19:30:47 2022 +0800
+
+    Merge pull request #17598 from ChepteaCatalin/master
+    
+    fix a typo error in `log.ts`
+
+commit 5b465297f7802a4032f4554f65e1947be74d7ee4
+Author: ChepteaCatalin <71984989+ChepteaCatalin@users.noreply.github.com>
+Date:   Tue Aug 30 14:16:23 2022 +0300
+
+    fix a typo error in `log.ts`
+
+commit b96b04ea27fddfcaf17cbd526467313ef5d52d34
+Merge: 71e954886 d1462ff42
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Aug 29 18:17:18 2022 +0800
+
+    Merge pull request #17587 from gitforhlp/master
+    
+    fix the wrong code of  `deprecateReplaceLog` in  sunburstAction.ts
+
+commit d1462ff42b4f96c06f52431548c859f46d19d86c
+Author: gitforhlp <997960553@qq.com>
+Date:   Mon Aug 29 17:36:31 2022 +0800
+
+    fix the  deprecateReplaceLog  about downplay
+
+commit 3c1afa916554c718b94122e02bec51f879dddca9
+Author: gitforhlp <997960553@qq.com>
+Date:   Mon Aug 29 16:06:36 2022 +0800
+
+    change the  `deprecateReplaceLog` in  sunburstAction.ts
+
+commit 8b66bf74b76371572510789d7fbca2d077b256d7
+Author: Avi Vahl <avi.vahl@wix.com>
+Date:   Sat Aug 27 20:46:57 2022 +0300
+
+    fix: ensure compatibility with typescript@4.8
+    fixes #17581
+
+commit 71e9548864e74eb91c96d54e90809f69dbd0eca3
+Merge: db866d8e7 204f7a836
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Fri Aug 26 10:36:43 2022 +0800
+
+    Merge pull request #17551 from mousne/master
+    
+    fix(theme): fix tooltips text style of the theme macarons
+
+commit 3e068d7a47f0158efdf98a60606b8f72ac6174e4
+Merge: 86eba716f db866d8e7
+Author: sushuang <sushuang0322@gmail.com>
+Date:   Thu Aug 25 14:35:06 2022 +0800
+
+    Merge pull request #17570 from apache/master
+    
+    Create release for 5.4
+
+commit 204f7a83656c446ab85d59b81c65aec151846abc
+Author: mousne <mousne@sina.com>
+Date:   Tue Aug 23 10:20:53 2022 +0800
+
+    fix(theme): fix tooltips text style of the theme macarons
+
+commit db866d8e70098ac1d2349b9bc4c5bd0eee539dcc
+Merge: 3c27102b0 41676b32b
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Aug 22 18:30:41 2022 +0800
+
+    Merge pull request #17539 from apache/dependabot/npm_and_yarn/engine.io-and-socket.io-3.6.0
+    
+    chore(deps): bump engine.io and socket.io
+
+commit 41676b32b7a7106c22f9079dbf730dc82d94b588
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Aug 22 06:24:40 2022 +0000
+
+    chore(deps): bump engine.io and socket.io
+    
+    Bumps [engine.io](https://github.com/socketio/engine.io) and [socket.io](https://github.com/socketio/socket.io). These dependencies needed to be updated together.
+    
+    Updates `engine.io` from 3.3.2 to 3.6.0
+    - [Release notes](https://github.com/socketio/engine.io/releases)
+    - [Changelog](https://github.com/socketio/engine.io/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/socketio/engine.io/compare/3.3.2...3.6.0)
+    
+    Updates `socket.io` from 2.2.0 to 2.5.0
+    - [Release notes](https://github.com/socketio/socket.io/releases)
+    - [Changelog](https://github.com/socketio/socket.io/blob/2.5.0/CHANGELOG.md)
+    - [Commits](https://github.com/socketio/socket.io/compare/2.2.0...2.5.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: engine.io
+      dependency-type: indirect
+    - dependency-name: socket.io
+      dependency-type: direct:development
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit 3c27102b030eb26e5e6f31b5e3ff1f8089bcb181
+Merge: f2e8379c7 99335dacf
+Author: sushuang <sushuang0322@gmail.com>
+Date:   Mon Aug 22 14:23:45 2022 +0800
+
+    Merge pull request #17538 from apache/master-tmp
+    
+    Master next to master for v5.4
+
+commit 99335dacf66425c422467342b73757b26432d1cb
+Merge: f2e8379c7 d897fa2e5
+Author: 100pah <sushuang0322@gmail.com>
+Date:   Mon Aug 22 14:12:45 2022 +0800
+
+    Merge branch 'next'
+
+commit d897fa2e565a461471bff3469ee2057d1a613db6
+Merge: b73b3e504 d0b204597
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Aug 22 12:28:28 2022 +0800
+
+    Merge pull request #17102 from apache/feat-coarse-pointer
+    
+    Feature: coarse pointer tolerance
+
+commit d0b204597000a4b6140cfca8632d46c75cc50f34
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 22 12:05:02 2022 +0800
+
+    fix: merge conflict
+
+commit 71ba23e5b34f6f8159869e134837fffd1a7287fd
+Merge: 5c3025d4a b73b3e504
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 22 11:43:04 2022 +0800
+
+    chore: merge next
+
+commit 5c3025d4a36296424d81a875208521b2efa58c65
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 22 10:12:56 2022 +0800
+
+    feat(coarse-pointer): fix test
+
+commit acb54f829f10b3bc81de69c8bc17cef21080af86
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Sun Aug 21 16:16:32 2022 +0800
+
+    feat(coarse-pointer): fix test
+
+commit f2e8379c79341419a52cc6f43b669a8fb1d79dfb
+Merge: 9bcded12e 3e48e9f52
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Thu Aug 18 15:16:19 2022 +0800
+
+    Merge pull request #17426 from apache/fix-subpixel
+    
+    feat(bar-race): provide subPixelOptimize option to solve #14679
+
+commit 3e48e9f521e7c3fc835489394ad1abf09c8ab750
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Wed Aug 17 12:10:51 2022 +0800
+
+    fix(subpixel): remove an unexpected change
+
+commit c277d3927c171a59485b098ef163aa90de54df06
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Aug 16 18:40:48 2022 +0800
+
+    fix(subpixel): refactor subPixelOptimizeLine
+
+commit 118de18a4f98600c4625fdb860491f562c41378e
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Aug 16 17:50:00 2022 +0800
+
+    fix(subpixel): refactor
+
+commit 3c4179cd6a66684b36be0630f3258d3b527aa8ea
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Aug 16 09:59:00 2022 +0800
+
+    fix(subpixel): remove function
+
+commit f957036e83989f22d0676dffa01f684d11f93fe7
+Merge: 1a1575494 9bcded12e
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 15 18:34:14 2022 +0800
+
+    Merge branch 'master' into fix-subpixel
+
+commit 1a1575494e7526142de5f56022175d86e264dc09
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 15 18:33:40 2022 +0800
+
+    fix(subpixel): set animation with subpixel optimization
+
+commit 9bcded12e73eb4cc39029d332f46b682fc01ab0e
+Merge: 62ebcb915 a6307826c
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Sun Aug 14 16:54:05 2022 +0800
+
+    Merge pull request #17132 from apache/feat/pie-coordinate-system
+    
+    feat(pie): support specifying coordinate system for pie series.
+
+commit 62ebcb9151210b2c9c80a49ffb3ac1ff630c716c
+Merge: 63e05ae14 4bf7f4d56
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Aug 9 12:28:54 2022 +0800
+
+    Merge pull request #17322 from apache/fix-13154
+    
+    fix(log): fix log axis breaks a single data whose log value is negative
+
+commit 63e05ae1427c651abb29096f3513928736aac168
+Merge: a29d37c29 f21ec1d29
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Tue Aug 9 12:21:25 2022 +0800
+
+    Merge pull request #17237 from jiawulin001/issue#17228
+    
+    fix: sliderZoom in candlestick dataset error
+
+commit a29d37c29c34ba63c69eeba5220a0129920f2511
+Merge: abd40cc02 ef3e28fed
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Tue Aug 9 11:48:21 2022 +0800
+
+    Merge pull request #16985 from MeetzhDing/fix-15944
+    
+    feat(gauge): axisLabel support angle rotating. close 15944
+
+commit abd40cc026f5901b850f9ea299a8fdc19a30b876
+Merge: c076a0ce6 1e7f3b875
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Aug 9 11:07:50 2022 +0800
+
+    Merge pull request #17482 from Liangism/fix-17473
+    
+    fix(theme): fix the abandoned normal level in the theme file
+
+commit 1e7f3b8750fcb977c1dd2d7dc8d198a70deaadd8
+Author: liangism <liangism1995@163.com>
+Date:   Tue Aug 9 10:02:00 2022 +0800
+
+    fix(theme):  move the label block to the outside.
+
+commit c1c9faf2691ff94231e8019f375ac8c210b2b5e8
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 8 18:40:22 2022 +0800
+
+    fix(coarse-pointer): use retrieve
+
+commit 08eb9a87edf8ab3b05965ae81536cbf01e28f303
+Author: liangism <liangism1995@163.com>
+Date:   Mon Aug 8 10:56:40 2022 +0800
+
+    fix(theme): fix the abandoned normal level in the theme file. close #17473
+
+commit c076a0ce6678d87ac0f616d3595868908dd1f077
+Merge: 074aa815e d2746afba
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Thu Aug 4 16:28:39 2022 +0800
+
+    Merge pull request #17275 from wind108369/improve-pie-performance
+    
+    perf(pie): optimize performance of pie series
+
+commit d2746afbaadb7130e7f8fb863b3871f254e5df57
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Thu Aug 4 16:16:06 2022 +0800
+
+    test(pie): fix test case pie3.html
+
+commit 77ee2a1ccb1f2bf8de7f2f9cf71b4a22deb93a09
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Thu Aug 4 15:51:48 2022 +0800
+
+    test(pie): tweak pie-percent case - add time log, percentPrecision & label formatter.
+
+commit 466d08f41fd933bbe5f4aa652bb6bbdf38b91fb2
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Thu Aug 4 15:48:35 2022 +0800
+
+    fix(axis): when update for the first time, make sure done is called
+
+commit 3a6c0979b205334de85de07cd376f3ed4c896c50
+Author: 杨骥 <yangji@hengshi.com>
+Date:   Thu Jun 23 17:06:27 2022 +0800
+
+    优化饼图性能
+
+commit 979654c467bb96d50dc9566f09251aaac89a4448
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Thu Aug 4 14:43:28 2022 +0800
+
+    fix(axis): remove unnecessary files
+
+commit 074aa815e80d22acaa317d539279090d203d73e8
+Merge: 715e1daee e3c8e3cea
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Tue Aug 2 11:14:01 2022 +0800
+
+    Merge pull request #17452 from apache/fix-import
+    
+    chore: fix wrong imports from `echarts.all`
+
+commit e3c8e3ceaf04b70e72a23281c23ed53356666205
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Aug 1 16:31:16 2022 +0800
+
+    chore: fix wrong imports from `echarts.all`
+
+commit 59e180ec0791cf946ecdef330ed9445a22f6c5b9
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Aug 1 16:22:06 2022 +0800
+
+    chore: fix wrong imports from `echarts.all`
+
+commit 5470effe5db991f42c9c716e5d546d528528657e
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Aug 1 15:36:37 2022 +0800
+
+    feat(axis): set subPixelOptimize to be false during animation
+
+commit 715e1daee0b660dfeb37e104a1a57325f46fbf70
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Aug 1 14:32:54 2022 +0800
+
+    fix(custom): set ignore only if old child exists (#17450)
+
+commit 8e4b5f07511a8add2e1988074a224e1c5a0129f4
+Merge: c58437740 8294147a8
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Sat Jul 30 20:35:55 2022 +0800
+
+    Merge pull request #17442 from apache/fix/symbol-emphasis-scale
+    
+    fix(symbol): fix `emphasis.scale` can't be reset and specified values may not be respected
+
+commit c58437740899254aeb318595d4e5e324ad48961d
+Merge: 67afcbd2c d9d00b89b
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Fri Jul 29 11:40:08 2022 +0800
+
+    Merge pull request #17349 from apache/fix-17333
+    
+    fix(custom): fix elements may not be removed after updates #17333
+
+commit 8294147a83ee7dcbb520cc9ba58210822bed4c75
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Thu Jul 28 22:37:36 2022 +0800
+
+    fix(symbol): remove unused import.
+
+commit 4ed662984e006d889436dec4e6432e5a2355cdce
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Thu Jul 28 22:09:38 2022 +0800
+
+    test(vrt): fix changing value of select via js doesn't trigger `change` event.
+
+commit bffad00b26dacf53d4ab383a3d70aec14359eb11
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Thu Jul 28 22:08:05 2022 +0800
+
+    test(symbol): add test case for `emphasis.scale`
+
+commit c76c297e60829e9f46e8d72a07a778784a914bd7
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Thu Jul 28 22:01:27 2022 +0800
+
+    fix(symbol): fix `emphasis.scale` can't be reset and specified value may not be respect.
+    
+    - null / undefined / true means to use default strategy.
+    - 0 / false / negative number / NaN / Infinity means no scale.
+
+commit 52d89e7c8bd7167485f4a23979ce9c9038b8cfdf
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Jul 26 14:58:40 2022 +0800
+
+    test(bar-race): update test
+
+commit 749b64e94d53ecc5e4ac4fc217762cae86c2fc5b
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Jul 26 14:46:14 2022 +0800
+
+    fix(bar-race): provide subPixelOptimize option to solve #14679
+
+commit d9d00b89bba6170d194a448c1203eb3267054f51
+Merge: 09e0c801a 67afcbd2c
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Jul 25 16:09:27 2022 +0800
+
+    Merge branch 'master' into fix-17333
+
+commit 09e0c801a5d2e01b6301cec3a636015eec8bd7d4
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Jul 25 16:07:30 2022 +0800
+
+    test(custom): update test case for custom update
+
+commit 8fc48c727663b0514352ac8b3b70e4f1eeed3988
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Jul 25 15:58:52 2022 +0800
+
+    fix(custom): ignore element when renderItem returns a group with null elements
+
+commit 67afcbd2c8a7d110263fc3e90d5080251fa2ec93
+Merge: 800fccaae d5ee24d75
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Fri Jul 22 14:19:51 2022 +0800
+
+    Merge pull request #17412 from apache/fix-pie-labelLine
+    
+    fix(pie): fix `labelLine` may not be hidden when `minShowLabelRadian` is specified
+
+commit 800fccaaeaa0d3c0e93fb0bf7e245a38163d2c79
+Merge: 178ec6fbd 6a261fb79
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Fri Jul 22 13:54:00 2022 +0800
+
+    Merge pull request #17383 from ZXYT/style-spelling-mistakes
+    
+    style: spelling mistakes
+
+commit 178ec6fbdc7ec596b1d968490651ff47fa3c40be
+Merge: 8cdcc7daf 28baad87b
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Fri Jul 22 13:52:19 2022 +0800
+
+    Merge pull request #17407 from apache/dependabot/npm_and_yarn/terser-5.14.2
+    
+    chore(deps-dev): bump terser from 5.3.8 to 5.14.2
+
+commit 8cdcc7dafa6714181870f22f7519a08ead1e6657
+Merge: 65d867e2e a214eda00
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Fri Jul 22 10:41:17 2022 +0800
+
+    Merge pull request #17411 from wind108369/bugfix-single-inverse
+    
+    fix(axis): fix `inverse` option does not work for `singleAxis`
+
+commit a214eda00837c9823832cb7f29e6226d6562da28
+Author: 杨骥 <yangji@hengshi.com>
+Date:   Thu Jul 21 14:50:18 2022 +0800
+
+    单轴反向失效问题修复
+
+commit d5ee24d755d0fa1c7adf1cc4c484e862b2f4ffb2
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Thu Jul 21 16:29:24 2022 +0800
+
+    fix(pie): fix `labelLine` may not be hidden when `minShowLabelRadian` is specified, resolves #17013.
+
+commit b73b3e504f2f0a0a46387b3f568bfb5423027013
+Merge: 3f1ecf9e9 7d7150b28
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Wed Jul 20 17:21:42 2022 +0800
+
+    Merge pull request #17406 from apache/fix-import
+    
+    fix(svg): encode HTML special characters when generating SVG string
+
+commit 7d7150b28ecd5642be8ab96c41ea7494ce362d44
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Wed Jul 20 16:38:34 2022 +0800
+
+    chore: update zrender to the latest nightly version.
+
+commit 28baad87b02fb78eb50c270d49e569085571da00
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Jul 20 02:19:32 2022 +0000
+
+    chore(deps-dev): bump terser from 5.3.8 to 5.14.2
+    
+    Bumps [terser](https://github.com/terser/terser) from 5.3.8 to 5.14.2.
+    - [Release notes](https://github.com/terser/terser/releases)
+    - [Changelog](https://github.com/terser/terser/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/terser/terser/commits)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: terser
+      dependency-type: direct:development
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit 3f1ecf9e97d11e202784ef88c800715fb82707e6
+Merge: 0fa933dfc 65d867e2e
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Jul 19 17:21:38 2022 +0800
+
+    Merge pull request #17403 from apache/master
+    
+    Merge 'master' branch into 'next'
+
+commit 65d867e2eb06f07e32f394a1d1fd65cf9f25f21a
+Merge: add11459e 6e3efd8fb
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Jul 19 15:41:30 2022 +0800
+
+    Merge pull request #17390 from apache/fix/symbol-scale-types
+    
+    fix(type): add missing type `number` to `emphasis.scale` for scatter/line/graph series
+
+commit 690ad3df046d03e9c3e83fb4621d553bfc78bd7b
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Tue Jul 19 15:38:04 2022 +0800
+
+    refactor(util): import `encodeHTML` function from `zrender`.
+
+commit 6e3efd8fba0b0eeed878bca4954b470b5de31cab
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 18 12:37:32 2022 +0800
+
+    style: fix typo of `RoamPayload`.
+
+commit 1822053ea5bf2206023c7b17af42d6b1b5a4e6e8
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 18 12:33:54 2022 +0800
+
+    fix(type): add missing type `number` to `emphasis.scale` of scatter/line/graph series.
+
+commit 6a261fb79a648c3a3986488975fd2d4943332f97
+Author: ZT <2417407179@qq.com>
+Date:   Fri Jul 15 10:57:51 2022 +0800
+
+    style: spelling mistakes
+
+commit c7a8547bafaead6d81690a212434f7879abfc915
+Author: ZT <2417407179@qq.com>
+Date:   Fri Jul 15 10:41:39 2022 +0800
+
+    style: spelling mistakes
+
+commit d08a58f357b4a0cd30ddf7661f4ae1f40cae99b7
+Author: ZT <2417407179@qq.com>
+Date:   Fri Jul 15 10:24:27 2022 +0800
+
+    style: spelling mistakes
+
+commit 44e650e3b3647706d1749d84d24c21a96a410a49
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Thu Jul 14 15:17:13 2022 +0800
+
+    fix(custom): fix the case for element after the null child
+
+commit 343b13a498196dfb6c40face68293879bb072919
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Thu Jul 14 11:47:32 2022 +0800
+
+    test: add coarse-pointer in test env
+
+commit fc43e0ac14d7d4eddcc960826f5d463912ee801a
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Wed Jul 13 17:06:47 2022 +0800
+
+    test(custom): add a test case
+
+commit ee3b8357c812cb48b201633448a098255cf5b670
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Jul 12 16:45:15 2022 +0800
+
+    test(custom): add a test case with {} that should preserve child
+
+commit 22c82182347f3a450c50ed2b1e1c7679793cb299
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Jul 12 16:44:27 2022 +0800
+
+    fix(custom): apply leave transition and add more comments
+
+commit add11459ee43a56f7ff5b300c76b3f801f59f3c6
+Merge: 2f13981a7 2f29323e1
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Jul 12 11:11:49 2022 +0800
+
+    Merge pull request #17346 from apache/fix/visualMap-label-indicator
+    
+    fix(visualMap): fix the indicator doesn't show when hovering on map label
+
+commit bc4ee6c952ca25ab48a6b72545300d368535ed33
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Jul 11 17:29:40 2022 +0800
+
+    fix(custom): fix elements may not be removed after updates #17333
+
+commit 2f29323e10311aebf646eb5458271bd5cfbe088b
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 11 16:38:02 2022 +0800
+
+    fix(visualMap): fix wrong type of ecData.
+
+commit 71bdec63c10f8a6fa2253505b3957a24b39447aa
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 11 16:35:11 2022 +0800
+
+    chore: fix some typos
+
+commit 13177430235f99ca566741b35f06614f4332eec2
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 11 16:32:44 2022 +0800
+
+    fix(visualMap): fix the indicator doesn't show when hovering on map label.
+
+commit 2f13981a703cd41aefedc2739eda244008f0dd24
+Merge: 2d7d59c0a 11f488c07
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Sun Jul 10 22:17:21 2022 +0800
+
+    Merge pull request #17329 from apache/fix/axis-line-symbol
+    
+    fix(axis): fix axis symbol is not reversed when axis is reversed
+
+commit ef3e28feda8dea7b9901afbef10e61c1736f71b0
+Author: MeetzhDing <3303652975@qq.com>
+Date:   Thu May 5 19:51:52 2022 +0800
+
+    feat(gauge): axisLabel support rotate like sunburst. close 15944
+
+commit 11f488c074a08e8b2a631252d5106776e79d8727
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Thu Jul 7 11:24:43 2022 +0800
+
+    fix(axis): fix axis symbol is not reverted when axis is reverse.
+
+commit 4bf7f4d564410496406881610b34eab303020fbc
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Wed Jul 6 15:07:12 2022 +0800
+
+    fix(log): cache base variable
+
+commit c885e65033b45ced14536b61be8265d1a842f8a2
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue Jul 5 16:46:52 2022 +0800
+
+    fix(log): fix log axis breaks a single data whose log value is negative #13154
+
+commit 2d7d59c0a0d73402cb0951eed4b48c69665d2111
+Merge: 64a86ba3e 8951f4199
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Jul 5 13:33:40 2022 +0800
+
+    Merge pull request #17317 from apache/fix-stale-bot
+    
+    chore(workflow): upgrade stale action to v5
+
+commit 8951f4199994d47d3b77faf6345ea159f2c0814f
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Tue Jul 5 11:21:30 2022 +0800
+
+    chore: upgrade stale action to v5
+    
+    fix `close-issue-reason` option is not being recognized
+
+commit 64a86ba3e022fc27d286c7e4b938dcb3eac6efab
+Merge: 89d57f21b 70b10e198
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Jul 4 17:45:12 2022 +0800
+
+    Merge pull request #17308 from apache/fix-custom
+    
+    fix(custom): fix custom elements probably can't be removed due to NPE when applying leave transition
+
+commit 70b10e198704167ac10bf24a2be1bfa51c5c7f16
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 4 15:49:42 2022 +0800
+
+    fix(custom): fix potential NPE when applying leave transition.
+
+commit 89d57f21b7eabfcc6770447f6cf6a20a8f406585
+Merge: bafb0f9a8 731362be0
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Mon Jul 4 11:52:43 2022 +0800
+
+    Merge pull request #17304 from apache/stale-close-reason
+    
+    chore(workflow): close stale issues as not planned rather than completed
+
+commit 731362be0a1d7e0d0f996a40fe829cd90926fdae
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jul 4 10:10:51 2022 +0800
+
+    chore(workflow): close stale issues as not planned rather than completed. [ci skip]
+
+commit bafb0f9a8a0ef5d4b7916c1cf62fbd4080a5da52
+Author: susiwen8 <susiwen8@gmail.com>
+Date:   Tue Jun 21 15:14:29 2022 +0800
+
+    feat(treemap.breadcrumb): add `emphasis` state (#17242)
+    
+    * feat(treemap.breadcrumb): add `emphasis` state
+    
+    * feat(treemap.breadcrumb): enbale `emphasis` by default
+    
+    * feat(treemap.breadcrumb): more text style
+    
+    * chore: remove unnecessary code
+    
+    * chore: simplify code
+    
+    * chore: cache emphasis item style
+
+commit 26fbb75651b278345dd48597dbbc753e6a7cc7f5
+Merge: 0f9f16c7f 6212121e9
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Mon Jun 20 13:49:50 2022 +0800
+
+    Merge pull request #17247 from apache/fix/tmp-symbol-z
+    
+    fix(line): set default z/zlevel for temporary symbol to avoid warnings.
+
+commit 6212121e9723cea6f82af68c030ea9a12b3a3c26
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Mon Jun 20 11:42:23 2022 +0800
+
+    fix(line): set default z/zlevel for temporary symbol to avoid warnings.
+
+commit 0f9f16c7fbc60cfdbd0a69f29868b54a5d97a26f
+Merge: f4e786429 f950face5
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Mon Jun 20 09:29:23 2022 +0800
+
+    Merge pull request #17245 from apache/fix-publish-ci-on-fork
+    
+    chore: fix publish ci on fork
+
+commit f950face586b575e47e97134d126c7f9d3f53f2d
+Author: pissang <bm2736892@gmail.com>
+Date:   Mon Jun 20 00:55:21 2022 +0800
+
+    chore: check owner on specific workflows
+
+commit aeca584e79e44fa2a23dbfa2f4b081d403b6e7c3
+Author: pissang <bm2736892@gmail.com>
+Date:   Sun Jun 19 22:57:26 2022 +0800
+
+    chore: fix publish ci on fork
+
+commit f4e7864291aeba9abdc7192f5558dc7b3d8f8611
+Merge: 18c333706 ae66fe6de
+Author: Zhongxiang Wang <yhen@all-my-life.cn>
+Date:   Sun Jun 19 21:40:16 2022 +0800
+
+    Merge pull request #17244 from Amice13/fix-17243
+    
+    feat(i18n): add Ukrainian translation. close #17243
+
+commit ae66fe6de1ed1be1ba50890baf0033b24c64632d
+Author: Amice13 <kirillzakharov13@gmail.com>
+Date:   Sat Jun 18 13:27:43 2022 +0300
+
+    feat(i18n): add Ukrainian translation. close #17243
+
+commit f21ec1d297711b90f2be843c4f053c9c5c252af0
+Author: jiawulin001 <jiawulin001@163.com>
+Date:   Fri Jun 17 14:05:42 2022 +0800
+
+    fix: sliderZoom in candlestick dataset error
+
+commit 18c3337061932de458b025fdaafd1ef9418db0b6
+Merge: 11a9247e7 821b24ad6
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Thu Jun 16 11:12:39 2022 +0800
+
+    Merge pull request #17218 from dmzc/5.3.2
+    
+    fix(types): fix `SunburstSeriesOption` and `TreemapSeriesOption` types
+
+commit 821b24ad6b37deefda9fed0645aa6e42474cf6a6
+Author: zhangchuangm <zhangchuangm@succsoft.cn>
+Date:   Wed Jun 15 10:38:01 2022 +0800
+
+    fix:improve interface SunburstSeriesOption and TreemapSeriesOption
+
+commit 11a9247e7fab2e6ff9c60b545ba775e8c1b2412f
+Merge: 5d813ddcc 86eba716f
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Tue Jun 14 13:06:18 2022 +0800
+
+    Merge pull request #17213 from apache/release
+    
+    Release 5.3.3, merge release into master
+
+commit 5d813ddccb1fd962a7dd743d3117ff8411e838e9
+Merge: 1047e897b 905b32405
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Jun 13 15:41:05 2022 +0800
+
+    Merge pull request #17201 from apache/fix-pr
+    
+    chore: update pr template to improve doc control
+
+commit 905b32405f10c7e2b5fb522759120b4bcaba5ab8
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Mon Jun 13 12:28:30 2022 +0800
+
+    chore: update pr template to improve doc control
+
+commit 1047e897b90fe250f89a369e3646a7fbbfdc2b35
+Merge: 0c7291fb5 032e73835
+Author: Wenli Zhang <zwl.sjtu@gmail.com>
+Date:   Mon Jun 13 12:23:15 2022 +0800
+
+    Merge pull request #17193 from kxxoling/fix-typo
+    
+    fix(typo): Trasition -> Transition
+
+commit 032e73835f178e783285c122b5e052e82c86b787
+Author: Kane Blueriver <kxxoling@gmail.com>
+Date:   Thu Jun 9 23:44:11 2022 +0800
+
+    fix(typo): Trasition -> Transition
+
+commit a6307826cfc17862c9ef533283c80dc06de0969f
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Sat May 28 16:16:15 2022 +0800
+
+    feat(bmap): support `convertToPixel` & `convertFromPixel` API.
+
+commit c1b67759765e420e09412dc0193ce06d471d626a
+Author: plainheart <yhen@all-my-life.cn>
+Date:   Sat May 28 15:17:06 2022 +0800
+
+    feat(pie): support specifying coordinate system for pie series.
+
+commit c11463a85e165dd25cf64e6f0c7fcf1de0d1c277
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Thu May 26 16:25:14 2022 +0800
+
+    feat: rename variables
+
+commit 4b2bd9c16312b4ec6b2b5d3b1505288ccb228f4f
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue May 24 15:40:24 2022 +0800
+
+    feat: rename test file
+
+commit 02beb9a9ba2874ad2d07d8aff8b62790a399aa73
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue May 24 15:25:34 2022 +0800
+
+    feat: make target size an option
+
+commit 6de533a261d115342d49f333b12d5afabbae5c57
+Author: Ovilia <zwl.sjtu@gmail.com>
+Date:   Tue May 24 14:33:51 2022 +0800
+
+    feat: ignore target size for large charts
+
+commit 0fa933dfcef76983d4089b2c5c9665e0b85fe5d2
+Merge: 4493fceec 0478f51cd
+Author: Yi Shen <bm2736892@gmail.com>
+Date:   Wed Apr 27 09:59:48 2022 +0800
+
+    Merge pull request #16943 from wangguisong/feat-goback
+    
+    feat(LineDraw):series-lines support the effect animation go back
+
+commit 0478f51cdd2186291b4e98fb6bc73fa0fb950730
+Author: wangguisong@sinotrans.com <wangguisong@sinotrans.com>
+Date:   Tue Apr 26 15:41:21 2022 +0800
+
+    rename the option from goback to roundTrip
+
+commit 4493fceecdba392deb6be62cf6fcab360c9d6c2f
+Merge: a7ff84ae7 3961cefc0
+Author: Yi Shen <bm2736892@gmail.com>
+Date:   Tue Apr 26 15:22:45 2022 +0800
+
+    Merge pull request #16945 from apache/master
+    
+    Merge master to next
+
+commit a7ff84ae7ddeed85e11aa34d6091a18bf8913bf6
+Merge: 5dd49b4d9 38bcddc40
+Author: Yi Shen <bm2736892@gmail.com>
+Date:   Tue Apr 26 15:15:32 2022 +0800
+
+    Merge pull request #16944 from apache/merge-master-to-next
+    
+    Merge master to next
+
+commit 38bcddc4081672d30ff2c9897f9c1eeacf539916
+Merge: 5dd49b4d9 4a5219984
+Author: pissang <bm2736892@gmail.com>
+Date:   Tue Apr 26 15:12:57 2022 +0800
+
+    Merge branch 'master' into merge-master-to-next
+
+commit dd950c78ae65c95b9eebc82027cdadbccf779c82
+Author: wangguisong@sinotrans.com <wangguisong@sinotrans.com>
+Date:   Tue Apr 26 14:01:20 2022 +0800
+
+    feat(LineDraw):series-lines support the effect animation go back
+
+commit 5dd49b4d9c631b0440b988f262ac35b898733114
+Merge: ff68ceda0 1016d44d5
+Author: Yi Shen <bm2736892@gmail.com>
+Date:   Wed Mar 16 13:58:50 2022 +0800
+
+    Merge pull request #16683 from apache/master
+    
+    Merge master to next
+
+commit ff68ceda0fc8d8d6a5ef437e307ef216744e183d
+Merge: 08d010a22 155364a6b
+Author: sushuang <sushuang0322@gmail.com>
+Date:   Mon Feb 28 12:14:25 2022 +0800
+
+    Merge pull request #15428 from kongmoumou/feat-simple-graph-draggable
+    
+    feat(graph): simple graph draggable. close #14510
+
+commit 155364a6b5084e0f64e3d6fc05ab6ef02b48a58c
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Wed Sep 29 14:30:43 2021 +0800
+
+    fix: use mouse position calculate circular layout
+
+commit 45a1ebd5c007a586bacd8d79b46928aff3aec934
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Wed Sep 29 14:24:15 2021 +0800
+
+    fix: store fixed state in layout object
+
+commit aeb66aa7c35fcdc9c6650f6c75c42fe62e806880
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Wed Sep 29 13:26:37 2021 +0800
+
+    fix: remove useless code
+
+commit 657f379177b9348fa5a74f92f2f54bc8186500da
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Wed Sep 29 13:20:31 2021 +0800
+
+    fix: fix code
+
+commit 472e72b6fde58a2ff9f14f698e3c197cb03ec917
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Tue Sep 28 23:13:53 2021 +0800
+
+    fix: not trigger roam on el's child
+
+commit 78918158365bb9ceb5709fb8ea91657143bf6ead
+Merge: 2b1595dba d53439527
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Mon Sep 6 01:14:09 2021 +0800
+
+    Merge remote-tracking branch 'upstream/next' into feat-simple-graph-draggable
+
+commit 2b1595dba31c7da7c5346418356e6fed1d7d9422
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Fri Aug 6 15:42:33 2021 +0800
+
+    fix(graph): use zrender/vector calculate node layout
+
+commit db01e51282bf0402f33c25a924b0db3d33abe0b0
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Fri Aug 6 15:38:18 2021 +0800
+
+    fix(graph): remove GraphNode `_fixed` field
+
+commit 5f8f0c6d4d450b2b3578e7e18c6207fad818c467
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Fri Aug 6 01:15:30 2021 +0800
+
+    fix(graph): node el check for circular layout
+
+commit 8144dcc0b2ba3dd5467a13ea28d6d25fe40cbaa2
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Sun Aug 1 00:29:36 2021 +0800
+
+    Revert "test(graph): add simple graph draggable test case"
+    
+    This reverts commit 78b247521da4db3bfa4d42da0d7812e8a1d8fad1.
+
+commit ebae2649401ad7ef5dc5fcea398a929f725d3d28
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Sun Aug 1 00:28:40 2021 +0800
+
+    test(graph): add graph draggable test case
+
+commit ae38c73f1bab18bd72c259756fff3e3644ffe731
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Sun Aug 1 00:26:59 2021 +0800
+
+    feat(graph): support draggable for all graph layout ('none' | 'circular' | 'force')
+
+commit 1d962f663505cde896f1ec44eb591b87b13fef93
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Sun Aug 1 00:25:19 2021 +0800
+
+    feat(graph): update circular layout helper function
+
+commit 78b247521da4db3bfa4d42da0d7812e8a1d8fad1
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Thu Jul 29 14:46:41 2021 +0800
+
+    test(graph): add simple graph draggable test case
+
+commit 23ae97b9fce109d71ec5c8d16912ba81ea6e9ffb
+Author: kongmoumou <kongmoumou666@gmail.com>
+Date:   Thu Jul 29 14:41:38 2021 +0800
+
+    feat(graph): simple layout graph support dragging
+
+commit 768ce8398e354a6fa0c2c8ae14c6d81f6e36c093
+Author: Map1en_ <maplenagisa@gmail.com>
+Date:   Mon Jul 5 11:43:48 2021 +0800
+
+    rm newline
+
+commit 059ff6115510a7074f31f522564abd1c68fa98d7
+Author: Map1en_ <maplenagisa@gmail.com>
+Date:   Mon Jul 5 11:30:15 2021 +0800
+
+    chore(type): export type ElementEvent
+    
+    close #15284

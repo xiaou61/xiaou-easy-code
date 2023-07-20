@@ -10,7 +10,9 @@
     "docs:dev": "vuepress dev src"
   },
   "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.16",
     "@vuepress/client": "2.0.0-beta.53",
+    "@vuepress/plugin-nprogress": "^2.0.0-beta.66",
     "@vuepress/plugin-register-components": "^2.0.0-beta.51",
     "@vuepress/plugin-search": "^2.0.0-beta.53",
     "element-plus": "^2.2.25",

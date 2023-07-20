@@ -1,13 +1,19 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import {hopeTheme, readingTime} from "vuepress-theme-hope";
 //中文导航栏
 import { zhNavbar } from "./navbar/index.js";
 //中文侧边栏
 import { zhSidebar } from "./sidebar/index.js";
 
+import { nprogressPlugin } from "@vuepress/plugin-nprogress";
+
+
+
 // 主题设置
 export default hopeTheme({
+
+
   // 当前网站部署到的域名
-  hostname: "https://gitee.com/lizifan233",
+  hostname: "https://mydocs.guoyaxue.top/",
 
   // 文章显示的默认作者
   author: {
@@ -15,8 +21,10 @@ export default hopeTheme({
     url: "https://gitee.com/lizifan233",
   },
 
+
   // 使用官方提供的图标库-也可以构建自己的图标库
   iconAssets: "iconfont",
+
 
   // 网站图标
   logo: "/site_logo.png",
@@ -46,6 +54,7 @@ export default hopeTheme({
   // 路径导航的图标显示
   breadcrumbIcon: true,
 
+
   // 用户可以自定义的多主题色
   themeColor: {
     yellow: "#FEC201",
@@ -64,6 +73,9 @@ export default hopeTheme({
 
   // 文章的最后更新时间
   lastUpdated: true,
+
+
+
 
   // 显示页面的贡献者
   contributors: false,
@@ -120,6 +132,9 @@ export default hopeTheme({
     timeline: "小uの时光轴🍃",
   },
   plugins: {
+    // 进度条
+    nprogress:true,
+
     // 在MD文件中启用的组件
     components: [
       // 为站点提供了在MD文档中自定义颜色的徽章
@@ -188,7 +203,7 @@ export default hopeTheme({
       autoExcerpt: true,
     },
     // 开启git实现编辑此页面-最后更新时间-贡献者功能
-    git: false,
+    git: true,
     // 关闭sitemap插件
     sitemap: false,
   },

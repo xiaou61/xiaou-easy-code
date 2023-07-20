@@ -1,1 +1,0 @@
-{"version":3,"file":"Gradient.js","sourceRoot":"","sources":["../../src/graphic/Gradient.ts"],"names":[],"mappings":";;AAiBA;IAUI,kBAAY,UAA+B;QACvC,IAAI,CAAC,UAAU,GAAG,UAAU,IAAI,EAAE,CAAC;IACvC,CAAC;IAED,+BAAY,GAAZ,UAAa,MAAc,EAAE,KAAa;QACtC,IAAI,CAAC,UAAU,CAAC,IAAI,CAAC;YACjB,MAAM,QAAA;YACN,KAAK,OAAA;SACR,CAAC,CAAC;IACP,CAAC;IACL,eAAC;AAAD,CAAC,AApBD,IAoBC"}

@@ -110,7 +110,7 @@ export const zhSidebar = sidebar({
             icon: "computer",
             collapsible: true,
             prefix:"/projects/zatan/",
-            children:["1.md"],
+            children:["1.md","2.md"],
         }
     ]
 });

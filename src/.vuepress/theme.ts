@@ -132,6 +132,8 @@ export default hopeTheme({
     timeline: "小uの时光轴🍃",
   },
   plugins: {
+
+
     // 进度条
     nprogress:true,
 
@@ -155,6 +157,8 @@ export default hopeTheme({
       // 纯净模式
       pure: false,
     },
+    // seo
+    seo:true,
     // MarkDown文件增强
     mdEnhance: {
       align: true,

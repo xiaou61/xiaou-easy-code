@@ -32,5 +32,20 @@ features:
     icon: /othericon/github.svg
     details: 小uのgithub
     link: https://github.com/xiaou61
+  - title: 钢琴
+    icon: /othericon/piano.svg
+    details: 谈个钢琴放松放松
+    link: https://effect.guoyaxue.top/piano/index.html
+  - title: 答案之书
+    icon: /othericon/book.svg
+    details: 心里想着什么问题，去问一下答案之书吧
+    link: https://effect.guoyaxue.top/
+  - title: 关于我们
+    icon: /othericon/love.svg
+    details: 关于我和我的娇妻
+    link: https://www.guoyaxue.top/
+
+
+
 ---
 

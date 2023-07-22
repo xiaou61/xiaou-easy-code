@@ -14,7 +14,7 @@ actions:
   - text: 【博客主页】
     link: /blog/
   - text: 【技术杂谈】
-    link: /project/
+    link: /projects/
 features:
   - title: 抖音
     icon: /othericon/douyin.svg

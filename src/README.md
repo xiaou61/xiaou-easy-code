@@ -11,6 +11,10 @@ actions:
     type: primary
   - text: 【代码笔记】
     link: /codenotes/
+  - text: 【博客主页】
+    link: /blog/
+  - text: 【技术杂谈】
+    link: /project/
 features:
   - title: 抖音
     icon: /othericon/douyin.svg

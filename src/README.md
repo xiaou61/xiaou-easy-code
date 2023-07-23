@@ -45,8 +45,8 @@ features:
     details: 关于我和我的娇妻
     link: http://love.guoyaxue.top/
   - title: 免费外联云盘
-  - icon: /othericon/pan.svg
-  - details: 免费搭建的外联网盘
+    icon: /othericon/pan.svg
+    details: 免费搭建的外联网盘
 
 
 ---

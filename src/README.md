@@ -43,8 +43,10 @@ features:
   - title: 关于我们
     icon: /othericon/love.svg
     details: 关于我和我的娇妻
-    link: https://www.guoyaxue.top/
-
+    link: http://love.guoyaxue.top/
+  - title: 免费外联云盘
+  - icon: /othericon/pan.svg
+  - details: 免费搭建的外联网盘
 
 
 ---

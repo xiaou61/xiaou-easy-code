@@ -47,6 +47,7 @@ features:
   - title: 免费外联云盘
     icon: /othericon/pan.svg
     details: 免费搭建的外联网盘
+    link: http://love.guoyaxue.top/pan/
 
 
 ---

@@ -78,11 +78,6 @@ export const zhSidebar = sidebar({
                     icon: "write",
                     link: "heima.md",
                 },
-                {
-                    text: "Leetcode&拉钩刷题秘籍",
-                    icon: "write",
-                    link: "leetcode300.md",
-                },
             ],
         },
         {

@@ -6,7 +6,7 @@ import { zhSidebar } from "./sidebar/index.js";
 
 import { nprogressPlugin } from "@vuepress/plugin-nprogress";
 
-
+import { shikiPlugin } from "@vuepress/plugin-shiki";
 
 // 主题设置
 export default hopeTheme({

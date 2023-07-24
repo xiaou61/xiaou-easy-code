@@ -87,21 +87,7 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/codenotes/python/",
             children: [
-                {
-                    text: "爬虫实战2023",
-                    icon: "chrome",
-                    // collapsible: true,
-                    link: "2023.md"
-
-                },
-                {
-                    text: "办公自动化",
-                    icon: "workingDirectory",
-                    collapsible: true,
-                    link: "auto.md"
-
-                },
-
+                "2023.md","auto.md","python-50-up","python-50-down"
             ],
         },
         {

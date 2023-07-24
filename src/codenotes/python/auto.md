@@ -2,7 +2,7 @@
 # 当前页面内容标题
 title: 办公自动化
 # 当前页面图标
-icon: code
+icon: workingDirectory
 # 分类
 category:
 - python

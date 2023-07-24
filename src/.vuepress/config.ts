@@ -1,15 +1,17 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
-import { getDirname, path } from "@vuepress/utils";
+import {  path } from "@vuepress/utils";
 import theme from "./theme.js";
-import {hopeTheme, readingTime} from "vuepress-theme-hope";
 
 
 
 
 //自定义用户配置
 export default defineUserConfig({
+
+
+
 
   base: "/",
 
@@ -23,6 +25,7 @@ export default defineUserConfig({
       head: [["link", { rel: "icon", href: "/favicon.svg" }]],
     },
   },
+
 
 
 
@@ -59,5 +62,7 @@ export default defineUserConfig({
 
 
   shouldPrefetch: false,
+
+
 
 });

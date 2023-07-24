@@ -80,6 +80,7 @@ export const zhSidebar = sidebar({
                 },
             ],
         },
+
         {
             text: "python",
             icon: "python",
@@ -100,7 +101,15 @@ export const zhSidebar = sidebar({
                     link: "auto.md"
 
                 },
+
             ],
+        },
+        {
+            text: "其他工具",
+            icon: "workingDirectory",
+            collapsible: true,
+            prefix: "/codenotes/other/",
+            children:["Git.md","Nginx.md"]
         },
     ],
     // 开源项目的侧边栏
@@ -112,5 +121,6 @@ export const zhSidebar = sidebar({
             prefix:"/projects/zatan/",
             children:["1.md","2.md","3.md","4.md"]
         }
-    ]
+    ],
+
 });

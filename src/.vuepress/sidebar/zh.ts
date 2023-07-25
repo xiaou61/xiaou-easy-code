@@ -105,7 +105,7 @@ export const zhSidebar = sidebar({
             icon: "computer",
             collapsible: true,
             prefix:"/projects/zatan/",
-            children:["1.md","2.md","3.md","4.md","5.md"]
+            children:["1.md","2.md","3.md","4.md","5.md","6.md"]
         }
     ],
 

@@ -97,6 +97,13 @@ export const zhSidebar = sidebar({
             prefix: "/codenotes/other/",
             children:["Git.md","Nginx.md"]
         },
+        {
+            text: "面试",
+            icon: "workingDirectory",
+            collapsible: true,
+            prefix: "/codenotes/interview/",
+            children:["Java.md"]
+        },
     ],
     // 开源项目的侧边栏
     "/projects/": [

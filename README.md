@@ -3,5 +3,3 @@
 
 
 
-
-[![Star History Chart](https://api.star-history.com/svg?repos=xiaou61/mydocs&type=Date)](https://star-history.com/#xiaou61/mydocs&Date)

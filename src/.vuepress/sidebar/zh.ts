@@ -87,7 +87,22 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/codenotes/python/",
             children: [
-                "2023.md","auto.md","python-50-up","python-50-down"
+                "2023.md","auto.md",
+                {
+                    text: "python全栈(路飞学院)",
+                    icon: "network",
+                    prefix: "lf/",
+                    collapsible: true,
+                    children : ["1.md","2.md"]
+                },
+                {
+                    text: "python-50天(github)",
+                    icon: "network",
+                    collapsible: true,
+                    children: ["python-50-up.md", "python-50-down.md"],
+                },
+
+
             ],
         },
         {

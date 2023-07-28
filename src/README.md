@@ -48,6 +48,10 @@ features:
     icon: /othericon/pan.svg
     details: 免费搭建的外联网盘
     link: http://love.guoyaxue.top/pan/
+  - title: 情侣飞行棋
+    icon: /othericon/fxq.svg
+    details: 提升情侣幸福的小网站
+    link: https://effect.guoyaxue.top/fxq/index.html#/
 
 
 ---

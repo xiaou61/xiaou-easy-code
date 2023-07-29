@@ -1,10 +1,4 @@
 ---
-head:
-- - meta
-  - name: baidu-site-verification
-    content: codeva-So7Yc5zqF7
-  - name: msvalidate.01
-    content: 733D9E1779A03FE5B77FFF8EB2AA1486
 home: true
 icon: home
 title: 个人主页

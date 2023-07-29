@@ -1,4 +1,8 @@
 ---
+head:
+- - meta
+  - name: baidu-site-verification
+    content: codeva-So7Yc5zqF7
 home: true
 icon: home
 title: 个人主页

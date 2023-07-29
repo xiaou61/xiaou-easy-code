@@ -52,7 +52,5 @@ features:
     icon: /othericon/fxq.svg
     details: 提升情侣幸福的小网站
     link: https://effect.guoyaxue.top/fxq/index.html#/
-
-
 ---
 

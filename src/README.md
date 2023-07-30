@@ -2,7 +2,7 @@
 head:
 - - meta
   - name: keywords
-    content: Java,java,springboot,mysql,redis,教程,git,软件,编程,开发,互联网,Java 基础,Java 教程,Java程序员进阶之路,Java 入门,Vue,前端
+    content: Java,java,springboot,mysql,redis,教程,git,软件,编程,开发,互联网,Java 基础,Java 教程,Java程序员进阶之路,Java 入门,Vue,前端,算法
 
 home: true
 icon: home

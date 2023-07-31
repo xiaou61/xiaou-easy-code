@@ -119,11 +119,18 @@ export const zhSidebar = sidebar({
             prefix: "/codenotes/interview/",
             children:["Java.md"]
         },
+        {
+            text: "逆向",
+            icon: "linter",
+            collapsible: true,
+            prefix: "/codenotes/reverse/",
+            children:["4399.md"]
+        },
     ],
     // 开源项目的侧边栏
     "/projects/": [
         {
-            text: "技术杂谈",
+            text: "技术杂谈(7月)",
             icon: "computer",
             collapsible: true,
             prefix:"/projects/zatan/",

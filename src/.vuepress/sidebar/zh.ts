@@ -11,16 +11,10 @@ export const zhSidebar = sidebar({
             prefix: "/codenotes/Java/",
             children: [
                 {
-                    text: "Java基础",
+                    text: "JavaSE精修",
                     collapsible: true,
                     icon: "write",
-                    link: "java基础.md",
-                },
-                {
-                    text: "Java面向对象",
-                    collapsible: true,
-                    icon: "write",
-                    link: "java面向对象.md",
+                    children: ["java基础.md","java面向对象.md"]
                 },
                 {
                     text: "spring6",

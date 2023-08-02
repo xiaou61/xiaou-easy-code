@@ -133,9 +133,18 @@ export const zhSidebar = sidebar({
             text: "技术杂谈(7月)",
             icon: "computer",
             collapsible: true,
-            prefix:"/projects/zatan/",
+            prefix:"/projects/zatan/7",
             children:[
                 "1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"
+            ]
+        },
+        {
+            text: "技术杂谈(8月)",
+            icon: "computer",
+            collapsible: true,
+            prefix:"/projects/zatan/8",
+            children:[
+                "1.md"
             ]
         }
     ],

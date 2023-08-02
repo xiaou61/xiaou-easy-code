@@ -39,14 +39,6 @@ timeline: true
 
 <NavCard arr='[{"title":"百度","url":"https://www.baidu.com/","desc":"中文搜索引擎","icon":"/navicon/baidu.ico"},{"title":"必应","url":"https://cn.bing.com/","desc":"优秀的国内外搜索引擎","icon":"/navicon/bing.ico"},{"title":"谷歌","url":"https://www.google.com/","desc":"被墙的国内外搜索引擎","icon":"/navicon/google.ico"},{"title":"找代码","url":"https://www.programcreek.com/java-api-examples/index.php","desc":"搜一下某个类的使用方法","icon":"/navicon/java.ico"}]'></NavCard>
 
-
-
-
-
-
-
-
-
 ## 开源社区
 
 <NavCard arr='[{"title":"Dromara","url":"https://gitee.com/dromara","desc":"孵化HuTool的优秀开源社区","icon":"/navicon/dromara.ico"},{"title":"OSRC","url":"https://www.osrc.com/","desc":"开源运行时社区","icon":"/navicon/oscr.ico"},{"title":"Doocs","url":"https://doocs.gitee.io/#/README_CN","desc":"非常友好的技术社区","icon":"/navicon/doocs.ico"}]'></NavCard>

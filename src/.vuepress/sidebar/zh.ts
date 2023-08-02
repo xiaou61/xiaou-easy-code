@@ -131,7 +131,7 @@ export const zhSidebar = sidebar({
     "/projects/": [
         {
             text: "技术杂谈(7月)",
-            icon: "computer",
+            icon: "community",
             collapsible: true,
             prefix:"/projects/zatan/7",
             children:[
@@ -140,7 +140,7 @@ export const zhSidebar = sidebar({
         },
         {
             text: "技术杂谈(8月)",
-            icon: "computer",
+            icon: "community",
             collapsible: true,
             prefix:"/projects/zatan/8",
             children:[

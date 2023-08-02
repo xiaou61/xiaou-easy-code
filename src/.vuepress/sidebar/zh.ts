@@ -17,6 +17,13 @@ export const zhSidebar = sidebar({
                     children: ["java基础.md","java面向对象.md"]
                 },
                 {
+                    text: "JVM(尚硅谷)",
+                    collapsible: true,
+                    icon: "write",
+                    prefix: "jvm/",
+                    children : ["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md","10.md","11.md","12.md"]
+                },
+                {
                     text: "spring6",
                     collapsible: true,
                     icon: "write",

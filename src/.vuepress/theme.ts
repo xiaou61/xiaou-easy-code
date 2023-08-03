@@ -1,12 +1,8 @@
-import {hopeTheme, readingTime} from "vuepress-theme-hope";
+import {hopeTheme} from "vuepress-theme-hope";
 //中文导航栏
 import { zhNavbar } from "./navbar/index.js";
 //中文侧边栏
 import { zhSidebar } from "./sidebar/index.js";
-
-import { nprogressPlugin } from "@vuepress/plugin-nprogress";
-
-import { shikiPlugin } from "@vuepress/plugin-shiki";
 
 // 主题设置
 export default hopeTheme({

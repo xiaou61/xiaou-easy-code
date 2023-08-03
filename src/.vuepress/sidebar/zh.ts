@@ -17,6 +17,13 @@ export const zhSidebar = sidebar({
                     children: ["java基础.md","java面向对象.md"]
                 },
                 {
+                    text: "重学Java(千锋教育2023)",
+                    collapsible: true,
+                    icon: "write",
+                    prefix:"qf/",
+                    children: ["1.md"]
+                },
+                {
                     text: "JVM(尚硅谷)",
                     collapsible: true,
                     icon: "write",

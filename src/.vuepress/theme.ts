@@ -157,6 +157,10 @@ export default hopeTheme({
       // 纯净模式
       pure: false,
     },
+    // 图片懒加载
+    mdEnhance:{
+      imgLazyload:true
+    },
     // seo
     seo:true,
     // MarkDown文件增强
@@ -173,7 +177,6 @@ export default hopeTheme({
       imageSize: true,
       include: true,
       katex: true,
-      // lazyLoad: true,
       mark: true,
       mermaid: true,
       playground: {

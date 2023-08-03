@@ -18,7 +18,7 @@ export default hopeTheme({
   // 文章显示的默认作者
   author: {
     name: "Xiaou",
-    url: "https://gitee.com/lizifan233",
+    url: "https://gitee.com/lizifan233/mydocs",
   },
 
 
@@ -30,7 +30,7 @@ export default hopeTheme({
   logo: "/site_logo.png",
 
   // 导航栏上的个人仓库地址
-  repo: "https://gitee.com/lizifan233",
+  repo: "https://gitee.com/lizifan233/mydocs",
 
   // 自定义仓库链接文字-默认从repo中自动推断为"GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
   repoLabel: "Gitee",
@@ -81,7 +81,7 @@ export default hopeTheme({
   contributors: false,
 
   // 文章所在仓库
-  docsRepo: "https://gitee.com/lizifan233",
+  docsRepo: "https://gitee.com/lizifan233/mydocs",
 
   // 文章所在分支
   docsBranch: "master",

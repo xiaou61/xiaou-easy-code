@@ -63,7 +63,7 @@ export const zhSidebar = sidebar({
                     icon: "write",
                     prefix: "/codenotes/front_end/dy/",
                     children: [
-                        "HC.md","Git.md"
+                        "HC.md","HC2.md","Git.md"
                     ]
                 },
             ]

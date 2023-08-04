@@ -36,6 +36,13 @@ export const zhSidebar = sidebar({
                     icon: "write",
                     link: "spring6.md",
                 },
+                {
+                    text: "coder1v5笔记",
+                    collapsible: true,
+                    icon: "write",
+                    prefix: "coder/",
+                    children: ["1.md","2.md"]
+                },
             ]
         },
         // 前端

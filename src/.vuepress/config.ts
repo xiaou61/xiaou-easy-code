@@ -4,8 +4,7 @@ import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import {  path } from "@vuepress/utils";
 import theme from "./theme.js";
 import {hopeTheme} from "vuepress-theme-hope";
-
-
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 
 //自定义用户配置
@@ -41,15 +40,10 @@ export default defineUserConfig({
     }),
 
     //评论配置
-    hopeTheme({
-      plugins: {
-        comment: {
+    commentPlugin({
+      provider: "Waline",
+      serverURL: "https://repo.guoyaxue.top/",
 
-          provider: "Waline",
-          // waline 模式下
-          serverURL: "http://repo.guoyaxue.top/", // your serverURL
-        },
-      },
     }),
 
     // 搜索插件

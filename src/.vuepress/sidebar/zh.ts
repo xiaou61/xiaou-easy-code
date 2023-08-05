@@ -52,23 +52,12 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/codenotes/front_end/",
             children: [
-                {
-                    text: "Html",
-                    collapsible: true,
-                    icon: "write",
-                    link: "HTML.md"
-                },
-                {
-                    text: "WebApi",
-                    collapsible: true,
-                    icon: "write",
-                    link: "WebApi.md",
-                },
+                "HTML.md","WebApi.md","ts.md",
                 {
                     text: "渡一大师课笔记",
                     collapsible: true,
                     icon: "write",
-                    prefix: "/codenotes/front_end/dy/",
+                    prefix: "dy/",
                     children: [
                         "HC.md","HC2.md","Git.md"
                     ]

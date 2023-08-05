@@ -3,9 +3,8 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import {  path } from "@vuepress/utils";
 import theme from "./theme.js";
-import {hopeTheme} from "vuepress-theme-hope";
 import { commentPlugin } from "vuepress-plugin-comment2";
-
+import { componentsPlugin } from "vuepress-plugin-components";
 
 //自定义用户配置
 export default defineUserConfig({
@@ -31,9 +30,6 @@ export default defineUserConfig({
   // 主题设置
   theme,
   plugins: [
-
-
-
     // 注册全局组件的插件
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
@@ -45,6 +41,7 @@ export default defineUserConfig({
       serverURL: "https://repo.guoyaxue.top/",
 
     }),
+
 
     // 搜索插件
     searchPlugin({

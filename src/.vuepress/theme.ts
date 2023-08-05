@@ -145,6 +145,7 @@ export default hopeTheme({
       // 原因二：当PDF阅读器较多的时候，将MD文档渲染成HTML页面比较耗费性能，使页面加载速度变慢
       "PDF",
     ],
+
     // 代码复制功能-vuepress-plugin-copy-code2
     copyCode: {
       // 在移动端也可以实现复制代码

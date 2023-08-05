@@ -3,6 +3,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import {  path } from "@vuepress/utils";
 import theme from "./theme.js";
+import {hopeTheme} from "vuepress-theme-hope";
 
 
 
@@ -28,7 +29,6 @@ export default defineUserConfig({
 
 
 
-
   // 主题设置
   theme,
   plugins: [
@@ -40,8 +40,17 @@ export default defineUserConfig({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
 
+    //评论配置
+    hopeTheme({
+      plugins: {
+        comment: {
 
-
+          provider: "Waline",
+          // waline 模式下
+          serverURL: "http://repo.guoyaxue.top/", // your serverURL
+        },
+      },
+    }),
 
     // 搜索插件
     searchPlugin({

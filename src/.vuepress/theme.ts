@@ -41,8 +41,9 @@ export default hopeTheme({
     right: ["Language", "Repo", "Outlook", "Search"],
   },
 
+
   // 页面显示信息
-  pageInfo: ["Category", "Tag", "ReadingTime","Date","Word"],
+  pageInfo: ["Category", "Tag", "ReadingTime","Date","Word","Author","PageView"],
 
   // 路径导航
   breadcrumb: true,

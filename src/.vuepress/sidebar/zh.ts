@@ -43,6 +43,13 @@ export const zhSidebar = sidebar({
                     prefix: "coder/",
                     children: ["1.md", "2.md"]
                 },
+                {
+                    text: "设计模式(黑马)",
+                    collapsible: true,
+                    icon: "write",
+                    prefix: "hm/",
+                    children: ["1.md", "2.md","3.md","4.md","5.md","6.md"]
+                },
             ]
         },
         // 前端

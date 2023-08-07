@@ -57,5 +57,9 @@ features:
     icon: /othericon/fxq.svg
     details: 提升情侣幸福的小网站
     link: https://effect.guoyaxue.top/fxq/index.html#/
+  - title: sql练习平台
+    icon: /othericon/sql.svg
+    details: sql语句练习平台
+    link: https://sql.guoyaxue.top/#/learn
 ---
 

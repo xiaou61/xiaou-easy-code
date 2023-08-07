@@ -32,7 +32,7 @@ timeline: true
 
 
 
-![img](![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071420380.jpg))
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071420380.jpg)
 
 ```
 输入：l1 = [2,4,3], l2 = [5,6,4]

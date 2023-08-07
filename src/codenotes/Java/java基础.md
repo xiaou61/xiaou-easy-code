@@ -20,7 +20,8 @@ article: true
 timeline: true
 ---
 
-![黑白米白色文学作品中式文化宣传中文书籍封面 (1)](/images/Java/1.png)
+![黑白米白色文学作品中式文化宣传中文书籍封面 (images/Java/1.png)](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400224.png)
+
 ## Java
 
 ​    这个是书写的第一本小册，用来详细的去复习java的基础的内容，这里会记录一些我从其他书籍上看到的相关的介绍，简介等，以及自己对于这个的理解，以及一些详细的案例。综合考虑来制作这样的一本java基础书籍，会持续的去补充这里的东西。
@@ -157,11 +158,11 @@ Java ME就和Java SE不同，它是一个针对嵌入式设备的“瘦身版”
 
   简单来说我们可以来看这个图
 
-  ![img](https://www.runoob.com/wp-content/uploads/2013/12/662E827A-FA32-4464-B0BD-40087F429E98.jpg)
+  ![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400654.jpeg)
 
   之后我们在idea中点击运行就可以了。
 
-  ![image-20230614125030250](/images/Java/image-20230614125030250.png)
+  ![image-20230614125030250](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400204.png)
 
 这样，我们就书写完我们的第一个程序了。
 
@@ -1016,7 +1017,7 @@ public class Ieee754Demo {
 
 输出结果：
 
-![img](/images/Java/override-overload-20230408151129.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400209.png)
 
 我们可以看到 IEEE 754 标准中的浮点数表示和运算：
 
@@ -1548,7 +1549,7 @@ public class HelloWorld {
 
 下面我们来详细的说一下注释
 
-![image-20230614133117174](/images/Java/image-20230614133117174.png)
+![image-20230614133117174](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400211.png)
 
 01、单行注释
 
@@ -1564,7 +1565,7 @@ public void method() {
 
 **但如果写在行尾的话，其实是不符合阿里巴巴的开发规约的**。
 
-![img](/images/Java/fourteen-02.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400215.png)
 
 正确的单行注释如上图中所说，在被注释语句上方另起一行，使用 `//` 注释。
 
@@ -1640,7 +1641,7 @@ default 和 private 修饰的字段和方法的注释将会被忽略掉。因为
 
 如果类不是 public 的话，javadoc 会执行失败。
 
-![img](/images/Java/fourteen-08.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400688.png)
 
 2）文档注释中可以嵌入一些 HTML 标记，比如说段落标记 `<p>`，超链接标记 `<a></a>` 等等，但不要使用标题标记，比如说 `<h1>`，因为 javadoc 会插入自己的标题，容易发生冲突。
 
@@ -1652,7 +1653,7 @@ default 和 private 修饰的字段和方法的注释将会被忽略掉。因为
 
 比如说，在使用 String 类的时候，鼠标悬停在 String 上时可以得到以下提示。
 
-![img](/images/Java/fourteen-09.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400720.png)
 
 2）所有的抽象方法包括接口中的方法)必须要用 Javadoc 注释、除了返回值、参数、 异常说明外，还必须指出该方法做什么事情，实现什么功能。
 
@@ -1660,7 +1661,7 @@ default 和 private 修饰的字段和方法的注释将会被忽略掉。因为
 
 Intellij IDEA 中可以在「File and Code Templates」中设置。
 
-![img](/images/Java/fourteen-10.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400757.png)
 
 语法如下所示：
 
@@ -1714,7 +1715,7 @@ Java 中的数据类型可分为 2 种：
 
 来个思维导图，感受下。
 
-![img](/images/Java/nine-01.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400799.png)
 
 基本数据类型是CPU可以直接进行运算的类型。Java定义了以下几种基本数据类型：
 
@@ -1803,7 +1804,7 @@ double │   │   │   │   │   │   │   │   │
 
 在往上的单位就是 KB，并不是 1000 字节，因为计算机只认识二进制，因此是 2 的 10 次方，也就是 1024 个字节。
 
-![img](/images/Java/nine-03.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400153.png)
 
 #### 02.基本数据类型
 
@@ -1888,13 +1889,13 @@ public class Main {
 
 单精度是这样的格式，1 位符号，8 位指数，23 位小数。
 
-![img](/images/Java/nine-04.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400212.png)
 
 单精度浮点数通常占用 32 位（4 字节）存储空间。数值范围大约是 ±1.4E-45 到 ±3.4028235E38，精度大约为 6 到 9 位有效数字。
 
 双精度是这样的格式，1 位符号，11 位指数，52 为小数。
 
-![img](/images/Java/nine-05.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400275.png)
 
 双精度浮点数通常占用 64 位（8 字节）存储空间，数值范围大约是 ±4.9E-324 到 ±1.7976931348623157E308，精度大约为 15 到 17 位有效数字。
 
@@ -1925,7 +1926,6 @@ String是最典型的引用数据类型，所以我们就拿 String 类举例，
 
 
 ```java
-
 public class LocalRef {
     private String a;
     static String b;
@@ -1972,7 +1972,7 @@ arrays 是一个 int 类型的数组，对吧？打印结果如下所示：
 
 `[I` 表示数组是 int 类型的，@ 后面是十六进制的 hashCode——这样的打印结果太“人性化”了，一般人表示看不懂！为什么会这样显示呢？查看一下 `java.lang.Object` 类的 `toString()` 方法就明白了。
 
-![img](/images/Java/nine-06.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400371.png)
 
 数组虽然没有显式定义成一个类，但它的确是一个对象，继承了祖先类 Object 的所有方法。那为什么数组不单独定义一个类来表示呢？就像字符串 String 类那样呢？
 
@@ -2019,7 +2019,7 @@ public class ArrayList<E> extends AbstractList<E>
 
 对于接口类型的引用变量来说，你没法直接 new 一个：
 
-![img](/images/Java/nine-07.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400428.png)
 
 只能 new 一个实现它的类的对象——那自然接口也是引用数据类型了。
 
@@ -2055,7 +2055,7 @@ public class ArrayList<E> extends AbstractList<E>
 
 用图来表示一下，左侧是栈，右侧是堆。
 
-![img](/images/Java/basic-data-type-dc26645a-3ed8-4ad4-815d-52528ad12d6b.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400480.png)
 
 这里再补充一些额外的知识点，能看懂就继续吸收，看不懂可以先去学下一节，以后再来补，没关系的。学习就是这样，可以跳过，可以温故。
 
@@ -2084,7 +2084,7 @@ public void test()
 
 我来画个图表示下。
 
-![img](/images/Java/basic-data-type-3d5b3e40-1abb-4624-8282-b83e58388825.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400788.png)
 
 应该一目了然了吧？如果还不理解，以后我会再一些面试题中，更新这些的具体讲解的。
 
@@ -2326,7 +2326,7 @@ System.out.println(m == n); // true
 
 下面我们要学习的，大概就是下图
 
-![img](/images/Java/eleven-01.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400836.png)
 
 #### 01、算术运算符
 
@@ -2424,7 +2424,7 @@ System.out.println(y + " " + x);// 10 11
 
 关系运算符用来比较两个操作数，返回结果为 true 或者 false。
 
-![img](/images/Java/eleven-02.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400885.png)
 
 来看示例：
 
@@ -2455,7 +2455,7 @@ System.out.println(Integer.toBinaryString(13)); // 1101
 
 PS：现代的二进制记数系统由戈特弗里德·威廉·莱布尼茨于 1679 年设计。莱布尼茨是德意志哲学家、数学家，历史上少见的通才。
 
-![img](/images/Java/eleven-03.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400962.png)
 
 来看示例：
 
@@ -2581,7 +2581,7 @@ System.out.println(b);
 
 不过在进行数值的赋值时，需要小点心，比如说下面这种情况：
 
-![img](/images/Java/eleven-04.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400234.png)
 
 编译器之所以提示错误，是因为 = 右侧的算术表达式默认为 int 类型，左侧是 short 类型的时候需要进行强转。
 
@@ -2703,7 +2703,7 @@ public class 三元运算符练习2 {
 
 #### 01、if-else 相关
 
-![img](/images/Java/thirteen-01.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400466.png)
 
 ##### **1）if 语句**
 
@@ -2719,7 +2719,7 @@ if(布尔表达式){
 
 画个流程图表示一下：
 
-![img](/images/Java/thirteen-02.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400520.png)
 
 来写个示例：
 
@@ -2756,7 +2756,7 @@ if(布尔表达式){
 
 画个流程图表示一下：
 
-![img](/images/Java/thirteen-03.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400789.png)
 
 来写个示例：
 
@@ -2841,7 +2841,7 @@ else{
 
 画个流程图表示一下：
 
-![img](/images/Java/thirteen-04.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400852.png)
 
 来写个示例：
 
@@ -2885,7 +2885,7 @@ if(外侧条件){
 
 画个流程图表示一下：
 
-![img](/images/Java/thirteen-05.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400908.png)
 
 来写个示例：
 
@@ -2940,7 +2940,7 @@ default: // 该关键字是可选项
 
 画个流程图：
 
-![img](/images/Java/thirteen-06.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400011.png)
 
 来个示例：
 
@@ -3050,7 +3050,7 @@ public class SwitchEnumDemo {
 
 #### 03、for 循环
 
-![img](/images/Java/thirteen-07.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400123.png)
 
 ##### **1）普通 for 循环**
 
@@ -3076,7 +3076,7 @@ for(初始变量;条件;自增/自减){
 
 画个流程图：
 
-![img](/images/Java/thirteen-08.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400301.png)
 
 来个示例：
 
@@ -3195,7 +3195,7 @@ while(条件){
 
 画个流程图：
 
-![img](/images/Java/thirteen-09.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400482.png)
 
 来个示例：
 
@@ -3259,7 +3259,7 @@ do{
 
 画个流程图：
 
-![img](/images/Java/thirteen-10.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400547.png)
 
 来个示例：
 
@@ -3307,7 +3307,7 @@ do {
 
 把 do-while 的条件设置为 true，并且循环体中没有 break 关键字的话，程序一旦运行起来，就根本停不下来了，除非强制停止。
 
-![img](/images/Java/thirteen-11.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400635.png)
 
 #### 06、break
 
@@ -3317,7 +3317,7 @@ break 关键字通常用于中断循环或 switch 语句，它在指定条件下
 
 来画个流程图感受一下：
 
-![img](/images/Java/thirteen-12.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400683.png)
 
 用在 for 循环中的示例：
 
@@ -3542,7 +3542,6 @@ do{
 switch case 语句判断一个变量与一系列值中某个值是否相等，每个值称为一个分支。
 
 ```java
-
 switch(expression){
     case value :
        //语句
@@ -4523,7 +4522,7 @@ for (String s : cmowers) {
 
 `Arrays.toString()` 可以将任意类型的数组转成字符串，包括基本类型数组和引用类型数组。该方法有多种重载形式。
 
-![img](/images/Java/print-01.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400785.png)
 
 使用 `Arrays.toString()` 方法来打印数组再优雅不过了，
 
@@ -4569,7 +4568,7 @@ System.out.println(Arrays.deepToString(deepArray));
 
 阿里巴巴的 Java 开发手册上有这样一条规约：
 
-![img](/images/Java/print-03.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400058.png)
 
 “什么是 POJO 呢，就是 Plain Ordinary Java Object 的缩写，一般在 Web 应用程序中建立一个数据库的映射对象时，我们称它为 POJO，这类对象不继承或不实现任何其它 Java 框架的类或接口。”
 
@@ -4640,7 +4639,7 @@ String s4 = new String("Runoob");   // String 对象创建
 String s5 = new String("Runoob");   // String 对象创建
 ```
 
-![img](/images/Java/java-string-1-2020-12-01.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400094.png)
 
 
 
@@ -4870,7 +4869,7 @@ public final class String
 
 以我正在运行着的编程喵项目实例（基于 Java 8）来说，结果是这样的。
 
-![img](/images/Java/jdk9-char-byte-string-d826ce88-bbbe-47a3-a1a9-4dd86dd3632f.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400133.png)
 
 其中 String 对象有 17638 个，占用了 423312 个字节的内存，排在第三位。
 
@@ -5410,11 +5409,11 @@ public String concat(String str) {
 
 String 不可变性天生具备线程安全，可以在多个线程中安全地使用。
 
- **String Pool 的需要**
+**String Pool 的需要**
 
 如果一个 String 对象已经被创建过了，那么就会从 String Pool 中取得引用。只有 String 是不可变的，才可能使用 String Pool。
 
-![img](/images/Java/image-20191210004132894.png)
+![img](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400182.png)
 
 string pool也叫做字符串常量值，这个之后会介绍的。
 
@@ -5700,11 +5699,11 @@ StringJoiner其实和StringBuilder一样，也可以看成是一个容器。
 
 他的构造方法。
 
-![image-20230615151118413](/images/Java/image-20230615151118413.png)
+![image-20230615151118413](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400249.png)
 
 之后看他的成员方法
 
-![image-20230615151125636](/images/Java/image-20230615151125636.png)
+![image-20230615151125636](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400388.png)
 
 看他一个简单的应用
 
@@ -5999,7 +5998,7 @@ true
 
 说了这么多，我们来看几个实际的练习，来进行巩固
 
-![image-20230615152328622](/images/Java/image-20230615152328622.png)
+![image-20230615152328622](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400624.png)
 
 ```java
 package 字符串;
@@ -6076,7 +6075,7 @@ public class a15罗马数字的俩种写法 {
 
 整个程序实现简单，通过方法的封装和调用，使得代码的可读性和可维护性都得到了提高。
 
-![image-20230615152950182](/images/Java/image-20230615152950182.png)
+![image-20230615152950182](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071400667.png)
 
 ```java
 package 字符串;

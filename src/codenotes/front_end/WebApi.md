@@ -18,11 +18,15 @@ star: true
 article: true
 # 是否将该文章添加至时间线中
 timeline: true
+
+
+
 ---
 
 
 
 ## WebApi
+
 这个只作为一个了解就可以了
 
 ## Canvas API
@@ -1070,7 +1074,7 @@ const clipboardObj = navigator.clipboard;
 
 其次，调用时需要明确获得用户的许可。权限的具体实现使用了 Permissions API，跟剪贴板相关的有两个权限：`clipboard-write`（写权限）和`clipboard-read`（读权限）。“写权限”自动授予脚本，而“读权限”必须用户明确同意给予。也就是说，写入剪贴板，脚本可以自动完成，但是读取剪贴板时，浏览器会弹出一个对话框，询问用户是否同意读取。
 
-![](/images/front_end/bg2021012004.jpg)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071415498.jpg)
 
 另外，需要注意的是，脚本读取的总是当前页面的剪贴板。这带来的一个问题是，如果把相关的代码粘贴到开发者工具中直接运行，可能会报错，因为这时的当前页面是开发者工具的窗口，而不是网页页面。
 
@@ -1540,7 +1544,7 @@ const myImage = document.querySelector('img');
 myImage.src = objectURL;
 ```
 
- 上面示例读取图片文件`flower.jpg`，显示在网页上。
+上面示例读取图片文件`flower.jpg`，显示在网页上。
 
 **response.arrayBuffer()**
 
@@ -2106,7 +2110,7 @@ navigator.geolocation.getCurrentPosition( function (position) {
 
 网页开发时，常常需要了解某个元素是否进入了“视口”（viewport），即用户能不能看到它。
 
-![](/images/front_end/bg2016110201.gif)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071415512.gif)
 
 上图的绿色方块不断滚动，顶部会提示它的可见性。
 
@@ -2202,7 +2206,7 @@ var observer = new IntersectionObserver(
 > - `intersectionRect`：目标元素与视口（或容器元素）的交叉区域的信息
 > - `intersectionRatio`：目标元素的可见比例，即`intersectionRect`占`boundingClientRect`的比例，完全可见时为`1`，完全不可见时小于等于`0`
 
-![](/images/front_end/bg2016110202.png)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071415501.png)
 
 上图中，灰色的水平方框代表视口，深红色的区域代表四个被观察的目标元素。它们各自的`intersectionRatio`图中都已经注明。
 
@@ -2229,7 +2233,7 @@ new IntersectionObserver(
 
 用户可以自定义这个数组。比如，上例的`[0, 0.25, 0.5, 0.75, 1]`就表示当目标元素 0%、25%、50%、75%、100% 可见时，会触发回调函数。
 
-![](/images/front_end/bg2016110202.gif)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071415506.gif)
 
 **（2）root 属性，rootMargin 属性**
 
@@ -2571,7 +2575,7 @@ Android、iOS 和最新的 Windows 系统可以随时自主地停止后台进程
 
 网页的生命周期分成六个阶段，每个时刻只可能处于其中一个阶段。
 
-![](/images/front_end/bg2018110401.png)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071415532.png)
 
 **（1）Active 阶段**
 
@@ -2657,7 +2661,7 @@ Android、iOS 和最新的 Windows 系统可以随时自主地停止后台进程
 
 ```javascript
 function handleFreeze(e) {
-  // Handle transition to FROZEN
+    // Handle transition to FROZEN
 }
 document.addEventListener('freeze', handleFreeze);
 
@@ -2677,7 +2681,7 @@ document.onfreeze = function() { … }
 
 ```javascript
 function handleResume(e) {
-  // handle state transition FROZEN -> ACTIVE
+    // handle state transition FROZEN -> ACTIVE
 }
 document.addEventListener("resume", handleResume);
 
@@ -2711,13 +2715,13 @@ document.onresume = function() { … }
 
 ```javascript
 const getState = () => {
-  if (document.visibilityState === 'hidden') {
-    return 'hidden';
-  }
-  if (document.hasFocus()) {
-    return 'active';
-  }
-  return 'passive';
+    if (document.visibilityState === 'hidden') {
+        return 'hidden';
+    }
+    if (document.hasFocus()) {
+        return 'active';
+    }
+    return 'passive';
 };
 ```
 
@@ -2731,9 +2735,9 @@ const getState = () => {
 
 ```javascript
 if (document.wasDiscarded) {
-  // 该网页已经不是原来的状态了，曾经被浏览器丢弃过
-  // 恢复以前的状态
-  getPersistedState(self.discardedClientId);
+    // 该网页已经不是原来的状态了，曾经被浏览器丢弃过
+    // 恢复以前的状态
+    getPersistedState(self.discardedClientId);
 }
 ```
 
@@ -2809,15 +2813,15 @@ if (document.wasDiscarded) {
 
 ```javascript
 document.addEventListener('visibilitychange', function () {
-  // 用户离开了当前页面
-  if (document.visibilityState === 'hidden') {
-    document.title = '页面不可见';
-  }
+    // 用户离开了当前页面
+    if (document.visibilityState === 'hidden') {
+        document.title = '页面不可见';
+    }
 
-  // 用户打开或回到页面
-  if (document.visibilityState === 'visible') {
-    document.title = '页面可见';
-  }
+    // 用户打开或回到页面
+    if (document.visibilityState === 'visible') {
+        document.title = '页面可见';
+    }
 });
 ```
 
@@ -2830,11 +2834,11 @@ var vidElem = document.getElementById('video-demo');
 document.addEventListener('visibilitychange', startStopVideo);
 
 function startStopVideo() {
-  if (document.visibilityState === 'hidden') {
-    vidElem.pause();
-  } else if (document.visibilityState === 'visible') {
-    vidElem.play();
-  }
+    if (document.visibilityState === 'hidden') {
+        vidElem.pause();
+    } else if (document.visibilityState === 'visible') {
+        vidElem.play();
+    }
 }
 ```
 
@@ -2902,7 +2906,7 @@ SSE 的客户端 API 部署在`EventSource`对象上。下面的代码可以检�
 
 ```javascript
 if ('EventSource' in window) {
-  // ...
+    // ...
 }
 ```
 
@@ -2945,12 +2949,12 @@ console.log(source.readyState);
 
 ```javascript
 source.onopen = function (event) {
-  // ...
+    // ...
 };
 
 // 另一种写法
 source.addEventListener('open', function (event) {
-  // ...
+    // ...
 }, false);
 ```
 
@@ -2960,18 +2964,18 @@ source.addEventListener('open', function (event) {
 
 ```javascript
 source.onmessage = function (event) {
-  var data = event.data;
-  var origin = event.origin;
-  var lastEventId = event.lastEventId;
-  // handle message
+    var data = event.data;
+    var origin = event.origin;
+    var lastEventId = event.lastEventId;
+    // handle message
 };
 
 // 另一种写法
 source.addEventListener('message', function (event) {
-  var data = event.data;
-  var origin = event.origin;
-  var lastEventId = event.lastEventId;
-  // handle message
+    var data = event.data;
+    var origin = event.origin;
+    var lastEventId = event.lastEventId;
+    // handle message
 }, false);
 ```
 
@@ -2987,12 +2991,12 @@ source.addEventListener('message', function (event) {
 
 ```javascript
 source.onerror = function (event) {
-  // handle error event
+    // handle error event
 };
 
 // 另一种写法
 source.addEventListener('error', function (event) {
-  // handle error event
+    // handle error event
 }, false);
 ```
 
@@ -3002,10 +3006,10 @@ source.addEventListener('error', function (event) {
 
 ```javascript
 source.addEventListener('foo', function (event) {
-  var data = event.data;
-  var origin = event.origin;
-  var lastEventId = event.lastEventId;
-  // handle message
+    var data = event.data;
+    var origin = event.origin;
+    var lastEventId = event.lastEventId;
+    // handle message
 }, false);
 ```
 
@@ -3150,28 +3154,28 @@ SSE 要求服务器与浏览器保持连接。对于不同的服务器软件来�
 var http = require("http");
 
 http.createServer(function (req, res) {
-  var fileName = "." + req.url;
+    var fileName = "." + req.url;
 
-  if (fileName === "./stream") {
-    res.writeHead(200, {
-      "Content-Type":"text/event-stream",
-      "Cache-Control":"no-cache",
-      "Connection":"keep-alive",
-      "Access-Control-Allow-Origin": '*',
-    });
-    res.write("retry: 10000\n");
-    res.write("event: connecttime\n");
-    res.write("data: " + (new Date()) + "\n\n");
-    res.write("data: " + (new Date()) + "\n\n");
+    if (fileName === "./stream") {
+        res.writeHead(200, {
+            "Content-Type":"text/event-stream",
+            "Cache-Control":"no-cache",
+            "Connection":"keep-alive",
+            "Access-Control-Allow-Origin": '*',
+        });
+        res.write("retry: 10000\n");
+        res.write("event: connecttime\n");
+        res.write("data: " + (new Date()) + "\n\n");
+        res.write("data: " + (new Date()) + "\n\n");
 
-    interval = setInterval(function () {
-      res.write("data: " + (new Date()) + "\n\n");
-    }, 1000);
+        interval = setInterval(function () {
+            res.write("data: " + (new Date()) + "\n\n");
+        }, 1000);
 
-    req.connection.addListener("close", function () {
-      clearInterval(interval);
-    }, false);
-  }
+        req.connection.addListener("close", function () {
+            clearInterval(interval);
+        }, false);
+    }
 }).listen(8844, "127.0.0.1");
 ```
 
@@ -3193,9 +3197,9 @@ Service Worker 是一个后台运行的脚本，充当一个代理服务器，�
 
 ```javascript
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/service-worker.js');
-  });
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js');
+    });
 }
 ```
 
@@ -3209,16 +3213,16 @@ Service Worker 是事件驱动的。
 
 ```javascript
 self.addEventListener('fetch', (event) => {
-  event.waitUntil(
+    event.waitUntil(
     if (event.request.url.includes('/product') {
-      let productId = event.data.productId
-      let productCount = getProductData(productId)
-      indexedDB.open('store', 1, (db) => {
-        let productStore = db.createObjectStore('products', { keyPath: 'id' })
-        productStore.put({ id: productId, count: ++productCount })
-      })
+        let productId = event.data.productId
+        let productCount = getProductData(productId)
+        indexedDB.open('store', 1, (db) => {
+            let productStore = db.createObjectStore('products', { keyPath: 'id' })
+            productStore.put({ id: productId, count: ++productCount })
+        })
     })
-  )
+)
 })
 ```
 
@@ -3232,9 +3236,9 @@ Service Worker 不能直接操作 DOM。
 
 ```javascript
 navigator.serviceWorker.register('sw.js'.then(() => {
-  console.info('注册成功')
+    console.info('注册成功')
 }).catch((err) => {
-  console.error('注册失败')
+    console.error('注册失败')
 })
 ```
 
@@ -3244,8 +3248,8 @@ navigator.serviceWorker.register('sw.js'.then(() => {
 
 ```javascript
 navigator.serviceWorker.register(
-  '/service-worker.js',
-  { scope: '/products/fashion' }
+    '/service-worker.js',
+    { scope: '/products/fashion' }
 )
 ```
 
@@ -3258,7 +3262,7 @@ navigator.serviceWorker.register(
 ```javascript
 self.addEventListener('install', event => {
 
-  event.waitUntil(() => console.info('安装完成'))
+    event.waitUntil(() => console.info('安装完成'))
 })
 ```
 
@@ -3274,7 +3278,7 @@ self.addEventListener('install', (event) => {
     ]
     event.waitUntil(
         caches.open(CACHE_NAME)
-        .then (cache => cache.addAll(urlsToCache))
+            .then (cache => cache.addAll(urlsToCache))
     )
 })
 ```
@@ -3346,12 +3350,12 @@ SVG 文件可以直接插入网页，成为 DOM 的一部分，然后用 JavaScr
 <head></head>
 <body>
 <svg
-  id="mysvg"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 800 600"
-  preserveAspectRatio="xMidYMid meet"
+        id="mysvg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 600"
+        preserveAspectRatio="xMidYMid meet"
 >
-  <circle id="mycircle" cx="400" cy="300" r="50" />
+    <circle id="mycircle" cx="400" cy="300" r="50" />
 </svg>
 </body>
 </html>
@@ -3372,7 +3376,7 @@ CSS 也可以使用 SVG 文件。
 
 ```css
 .logo {
-  background: url(icon.svg);
+    background: url(icon.svg);
 }
 ```
 
@@ -3390,7 +3394,7 @@ SVG 代码都放在顶层标签`<svg>`之中。下面是一个例子。
 
 ```xml
 <svg width="100%" height="100%">
-  <circle id="mycircle" cx="50" cy="50" r="50" />
+    <circle id="mycircle" cx="50" cy="50" r="50" />
 </svg>
 ```
 
@@ -3400,7 +3404,7 @@ SVG 代码都放在顶层标签`<svg>`之中。下面是一个例子。
 
 ```xml
 <svg width="100" height="100" viewBox="50 50 50 50">
-  <circle id="mycircle" cx="50" cy="50" r="50" />
+    <circle id="mycircle" cx="50" cy="50" r="50" />
 </svg>
 ```
 
@@ -3416,9 +3420,9 @@ SVG 代码都放在顶层标签`<svg>`之中。下面是一个例子。
 
 ```xml
 <svg width="300" height="180">
-  <circle cx="30"  cy="50" r="25" />
-  <circle cx="90"  cy="50" r="25" class="red" />
-  <circle cx="150" cy="50" r="25" class="fancy" />
+    <circle cx="30"  cy="50" r="25" />
+    <circle cx="90"  cy="50" r="25" class="red" />
+    <circle cx="150" cy="50" r="25" class="fancy" />
 </svg>
 ```
 
@@ -3428,13 +3432,13 @@ SVG 代码都放在顶层标签`<svg>`之中。下面是一个例子。
 
 ```css
 .red {
-  fill: red;
+    fill: red;
 }
 
 .fancy {
-  fill: none;
-  stroke: black;
-  stroke-width: 3pt;
+    fill: none;
+    stroke: black;
+    stroke-width: 3pt;
 }
 ```
 
@@ -3450,7 +3454,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-  <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
+    <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
 </svg>
 ```
 
@@ -3462,7 +3466,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-  <polyline points="3,3 30,28 3,53" fill="none" stroke="black" />
+    <polyline points="3,3 30,28 3,53" fill="none" stroke="black" />
 </svg>
 ```
 
@@ -3474,7 +3478,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-  <rect x="0" y="0" height="100" width="200" style="stroke: ##70d5dd; fill: ##dd524b" />
+    <rect x="0" y="0" height="100" width="200" style="stroke: ##70d5dd; fill: ##dd524b" />
 </svg>
 ```
 
@@ -3486,7 +3490,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-  <ellipse cx="60" cy="60" ry="40" rx="20" stroke="black" stroke-width="5" fill="silver"/>
+    <ellipse cx="60" cy="60" ry="40" rx="20" stroke="black" stroke-width="5" fill="silver"/>
 </svg>
 ```
 
@@ -3498,7 +3502,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-  <polygon fill="green" stroke="orange" stroke-width="1" points="0,0 100,0 100,100 0,100 0,0"/>
+    <polygon fill="green" stroke="orange" stroke-width="1" points="0,0 100,0 100,100 0,100 0,0"/>
 </svg>
 ```
 
@@ -3510,7 +3514,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-<path d="
+    <path d="
   M 18,3
   L 46,3
   L 46,40
@@ -3535,7 +3539,7 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="180">
-  <text x="50" y="25">Hello World</text>
+    <text x="50" y="25">Hello World</text>
 </svg>
 ```
 
@@ -3547,10 +3551,10 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
-  <circle id="myCircle" cx="5" cy="5" r="4"/>
+    <circle id="myCircle" cx="5" cy="5" r="4"/>
 
-  <use href="##myCircle" x="10" y="0" fill="blue" />
-  <use href="##myCircle" x="20" y="0" fill="white" stroke="blue" />
+    <use href="##myCircle" x="10" y="0" fill="blue" />
+    <use href="##myCircle" x="20" y="0" fill="white" stroke="blue" />
 </svg>
 ```
 
@@ -3562,13 +3566,13 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="100">
-  <g id="myCircle">
-    <text x="25" y="20">圆形</text>
-    <circle cx="50" cy="50" r="20"/>
-  </g>
+    <g id="myCircle">
+        <text x="25" y="20">圆形</text>
+        <circle cx="50" cy="50" r="20"/>
+    </g>
 
-  <use href="##myCircle" x="100" y="0" fill="blue" />
-  <use href="##myCircle" x="200" y="0" fill="white" stroke="blue" />
+    <use href="##myCircle" x="100" y="0" fill="blue" />
+    <use href="##myCircle" x="200" y="0" fill="white" stroke="blue" />
 </svg>
 ```
 
@@ -3578,16 +3582,16 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="300" height="100">
-  <defs>
-    <g id="myCircle">
-      <text x="25" y="20">圆形</text>
-      <circle cx="50" cy="50" r="20"/>
-    </g>
-  </defs>
+    <defs>
+        <g id="myCircle">
+            <text x="25" y="20">圆形</text>
+            <circle cx="50" cy="50" r="20"/>
+        </g>
+    </defs>
 
-  <use href="##myCircle" x="0" y="0" />
-  <use href="##myCircle" x="100" y="0" fill="blue" />
-  <use href="##myCircle" x="200" y="0" fill="white" stroke="blue" />
+    <use href="##myCircle" x="0" y="0" />
+    <use href="##myCircle" x="100" y="0" fill="blue" />
+    <use href="##myCircle" x="200" y="0" fill="white" stroke="blue" />
 </svg>
 ```
 
@@ -3597,12 +3601,12 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="500" height="500">
-  <defs>
-    <pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-      <circle fill="##bee9e8" cx="50" cy="50" r="35" />
-    </pattern>
-  </defs>
-  <rect x="0" y="0" width="100%" height="100%" fill="url(##dots)" />
+    <defs>
+        <pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <circle fill="##bee9e8" cx="50" cy="50" r="35" />
+        </pattern>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(##dots)" />
 </svg>
 ```
 
@@ -3614,8 +3618,8 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg viewBox="0 0 100 100" width="100" height="100">
-  <image xlink:href="path/to/image.jpg"
-    width="50%" height="50%"/>
+    <image xlink:href="path/to/image.jpg"
+           width="50%" height="50%"/>
 </svg>
 ```
 
@@ -3627,9 +3631,9 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="500px" height="500px">
-  <rect x="0" y="0" width="100" height="100" fill="##feac5e">
-    <animate attributeName="x" from="0" to="500" dur="2s" repeatCount="indefinite" />
-  </rect>
+    <rect x="0" y="0" width="100" height="100" fill="##feac5e">
+        <animate attributeName="x" from="0" to="500" dur="2s" repeatCount="indefinite" />
+    </rect>
 </svg>
 ```
 
@@ -3656,9 +3660,9 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```xml
 <svg width="500px" height="500px">
-  <rect x="250" y="250" width="50" height="50" fill="##4bc0c8">
-    <animateTransform attributeName="transform" type="rotate" begin="0s" dur="10s" from="0 200 200" to="360 400 400" repeatCount="indefinite" />
-  </rect>
+    <rect x="250" y="250" width="50" height="50" fill="##4bc0c8">
+        <animateTransform attributeName="transform" type="rotate" begin="0s" dur="10s" from="0 200 200" to="360 400 400" repeatCount="indefinite" />
+    </rect>
 </svg>
 ```
 
@@ -3672,27 +3676,27 @@ SVG 的 CSS 属性与网页元素有所不同。
 
 ```html
 <svg
-  id="mysvg"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 800 600"
-  preserveAspectRatio="xMidYMid meet"
+        id="mysvg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 600"
+        preserveAspectRatio="xMidYMid meet"
 >
-  <circle id="mycircle" cx="400" cy="300" r="50" />
-<svg>
+    <circle id="mycircle" cx="400" cy="300" r="50" />
+    <svg>
 ```
 
 上面代码插入网页之后，就可以用 CSS 定制样式。
 
 ```css
 circle {
-  stroke-width: 5;
-  stroke: ##f00;
-  fill: ##ff0;
+    stroke-width: 5;
+    stroke: ##f00;
+    fill: ##ff0;
 }
 
 circle:hover {
-  stroke: ##090;
-  fill: ##fff;
+    stroke: ##090;
+    fill: ##fff;
 }
 ```
 
@@ -3702,8 +3706,8 @@ circle:hover {
 var mycircle = document.getElementById('mycircle');
 
 mycircle.addEventListener('click', function(e) {
-  console.log('circle clicked - enlarging');
-  mycircle.setAttribute('r', 60);
+    console.log('circle clicked - enlarging');
+    mycircle.setAttribute('r', 60);
 }, false);
 ```
 
@@ -3727,11 +3731,11 @@ var svgEmbed = document.getElementById('embed').getSVGDocument();
 
 ```html
 <div id="svg-container">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xml:space="preserve" width="500" height="440"
-  >
+    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve" width="500" height="440"
+    >
     <!-- svg code -->
   </svg>
 </div>
@@ -3741,7 +3745,7 @@ var svgEmbed = document.getElementById('embed').getSVGDocument();
 
 ```javascript
 var svgString = new XMLSerializer()
-  .serializeToString(document.querySelector('svg'));
+    .serializeToString(document.querySelector('svg'));
 ```
 
 #### SVG 图像转为 Canvas 图像
@@ -3762,9 +3766,9 @@ img.src = url;
 
 ```javascript
 img.onload = function () {
-  var canvas = document.getElementById('canvas');
-  var ctx = canvas.getContext('2d');
-  ctx.drawImage(img, 0, 0);
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0);
 };
 ```
 
@@ -3785,23 +3789,23 @@ Date |Amount
 
 ```xml
 <svg width="350" height="160">
-  <g class="layer" transform="translate(60,10)">
-    <circle r="5" cx="0"   cy="105" />
-    <circle r="5" cx="90"  cy="90"  />
-    <circle r="5" cx="180" cy="60"  />
-    <circle r="5" cx="270" cy="0"   />
+    <g class="layer" transform="translate(60,10)">
+        <circle r="5" cx="0"   cy="105" />
+        <circle r="5" cx="90"  cy="90"  />
+        <circle r="5" cx="180" cy="60"  />
+        <circle r="5" cx="270" cy="0"   />
 
-    <g class="y axis">
-      <line x1="0" y1="0" x2="0" y2="120" />
-      <text x="-40" y="105" dy="5">$10</text>
-      <text x="-40" y="0"   dy="5">$80</text>
+        <g class="y axis">
+            <line x1="0" y1="0" x2="0" y2="120" />
+            <text x="-40" y="105" dy="5">$10</text>
+            <text x="-40" y="0"   dy="5">$80</text>
+        </g>
+        <g class="x axis" transform="translate(0, 120)">
+            <line x1="0" y1="0" x2="270" y2="0" />
+            <text x="-30"   y="20">January 2014</text>
+            <text x="240" y="20">April</text>
+        </g>
     </g>
-    <g class="x axis" transform="translate(0, 120)">
-      <line x1="0" y1="0" x2="270" y2="0" />
-      <text x="-30"   y="20">January 2014</text>
-      <text x="240" y="20">April</text>
-    </g>
-  </g>
 </svg>
 ```
 
@@ -3832,9 +3836,9 @@ Date |Amount
 
 ```javascript
 if (navigator.share) {
-  // 支持
+    // 支持
 } else {
-  // 不支持
+    // 不支持
 }
 ```
 
@@ -3842,9 +3846,9 @@ if (navigator.share) {
 
 ```javascript
 navigator.share({
-  title: 'WebShare API Demo',
-  url: 'https://codepen.io/ayoisaiah/pen/YbNazJ',
-  text: '我正在看《Web Share API》'
+    title: 'WebShare API Demo',
+    url: 'https://codepen.io/ayoisaiah/pen/YbNazJ',
+    text: '我正在看《Web Share API》'
 })
 ```
 
@@ -3859,20 +3863,20 @@ navigator.share({
 ```javascript
 const title = document.title;
 const url = document.querySelector('link[rel=canonical]') ?
-  document.querySelector('link[rel=canonical]').href :
-  document.location.href;
+    document.querySelector('link[rel=canonical]').href :
+    document.location.href;
 ```
 
 `navigator.share`的返回值是一个 Promise 对象。这个方法调用之后，会立刻弹出系统的分享弹窗，用户操作完毕之后，Promise 对象就会变为`resolved`状态。
 
 ```javascript
 navigator.share({
-  title: 'WebShare API Demo',
-  url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+    title: 'WebShare API Demo',
+    url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
 }).then(() => {
-  console.log('Thanks for sharing!');
+    console.log('Thanks for sharing!');
 }).catch((error) => {
-  console.error('Sharing error', error);
+    console.error('Sharing error', error);
 });
 ```
 
@@ -3880,12 +3884,12 @@ navigator.share({
 
 ```javascript
 shareButton.addEventListener('click', async () => {
-  try {
-    await navigator.share({ title: 'Example Page', url: '' });
-    console.log('Data was shared successfully');
-  } catch (err) {
-    console.error('Share failed:', err.message);
-  }
+    try {
+        await navigator.share({ title: 'Example Page', url: '' });
+        console.log('Data was shared successfully');
+    } catch (err) {
+        console.error('Share failed:', err.message);
+    }
 });
 ```
 
@@ -3895,7 +3899,7 @@ shareButton.addEventListener('click', async () => {
 
 ```javascript
 if (navigator.canShare && navigator.canShare({ files: filesArray })) {
-  // ...
+    // ...
 }
 ```
 
@@ -3905,13 +3909,13 @@ if (navigator.canShare && navigator.canShare({ files: filesArray })) {
 
 ```javascript
 if (navigator.canShare && navigator.canShare({ files: filesArray })) {
-  navigator.share({
-    files: filesArray,
-    title: 'Vacation Pictures',
-    text: 'Photos from September 27 to October 14.',
-  })
-  .then(() => console.log('Share was successful.'))
-  .catch((error) => console.log('Sharing failed', error));
+    navigator.share({
+        files: filesArray,
+        title: 'Vacation Pictures',
+        text: 'Photos from September 27 to October 14.',
+    })
+        .then(() => console.log('Share was successful.'))
+        .catch((error) => console.log('Sharing failed', error));
 }
 ```
 
@@ -3942,15 +3946,15 @@ const audioContext = new AudioContext();
 const context = new AudioContext();
 
 fetch('sound.mp4')
-  .then(response => response.arrayBuffer())
-  .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
-  .then(audioBuffer => {
-    // 播放声音
-    const source = context.createBufferSource();
-    source.buffer = audioBuffer;
-    source.connect(context.destination);
-    source.start();
-  });
+    .then(response => response.arrayBuffer())
+    .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
+    .then(audioBuffer => {
+        // 播放声音
+        const source = context.createBufferSource();
+        source.buffer = audioBuffer;
+        source.connect(context.destination);
+        source.start();
+    });
 ```
 
 ### context.createBuffer()
@@ -3985,7 +3989,7 @@ const data = buffer.getChannelData(0)
 // singal 是一个声音数组
 // singalLengal 是该数组的长度
 for (let i = 0; i < signalLength; i += 1) {
-  data[i] = signal[i]
+    data[i] = signal[i]
 }
 ```
 
@@ -4092,32 +4096,32 @@ HTML 标准定义的网页元素，有时并不符合我们的需要，这时浏
 
 ```javascript
 class MyElement extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow( { mode: 'open' } );
-    this.shadowRoot.innerHTML = `
+    constructor() {
+        super();
+        this.attachShadow( { mode: 'open' } );
+        this.shadowRoot.innerHTML = `
       <style>
         /* scoped styles */
       </style>
       <slot></slot>
     `;
-  }
+    }
 
-  static get observedAttributes() {
-    // Return list of attributes to watch.
-  }
+    static get observedAttributes() {
+        // Return list of attributes to watch.
+    }
 
-  attributeChangedCallback( name, oldValue, newValue ) {
-    // Run functionality when one of these attributes is changed.
-  }
+    attributeChangedCallback( name, oldValue, newValue ) {
+        // Run functionality when one of these attributes is changed.
+    }
 
-  connectedCallback() {
-    // Run functionality when an instance of this element is inserted into the DOM.
-  }
+    connectedCallback() {
+        // Run functionality when an instance of this element is inserted into the DOM.
+    }
 
-  disconnectedCallback() {
-    // Run functionality when an instance of this element is removed from the DOM.
-  }
+    disconnectedCallback() {
+        // Run functionality when an instance of this element is removed from the DOM.
+    }
 }
 ```
 
@@ -4141,8 +4145,8 @@ window.customElements.define('my-element', MyElement);
 
 ```javascript
 window.customElements.define(
-  'my-element',
-  class extends HTMLElement {...}
+    'my-element',
+    class extends HTMLElement {...}
 );
 const el = window.customElements.get('my-element');
 const myElement = new el();
@@ -4173,13 +4177,13 @@ Custom Element 提供一些生命周期方法。
 
 ```javascript
 class MyElement extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    // here the element has been inserted into the DOM
-  }
+    connectedCallback() {
+        // here the element has been inserted into the DOM
+    }
 }
 ```
 
@@ -4194,22 +4198,22 @@ class MyElement extends HTMLElement {
 
 ```javascript
 class GreetingElement extends HTMLElement {
-  constructor() {
-    super();
-    this._name = 'Stranger';
-  }
-  connectedCallback() {
-    this.addEventListener('click', e => alert(`Hello, ${this._name}!`));
-  }
-  attributeChangedCallback(attrName, oldValue, newValue) {
-    if (attrName === 'name') {
-      if (newValue) {
-        this._name = newValue;
-      } else {
+    constructor() {
+        super();
         this._name = 'Stranger';
-      }
     }
-  }
+    connectedCallback() {
+        this.addEventListener('click', e => alert(`Hello, ${this._name}!`));
+    }
+    attributeChangedCallback(attrName, oldValue, newValue) {
+        if (attrName === 'name') {
+            if (newValue) {
+                this._name = newValue;
+            } else {
+                this._name = 'Stranger';
+            }
+        }
+    }
 }
 GreetingElement.observedAttributes = ['name'];
 customElements.define('hey-there', GreetingElement);
@@ -4232,18 +4236,18 @@ customElements.define('hey-there', GreetingElement);
 
 ```javascript
 class MyElement extends HTMLElement {
-  constructor() {
-    this.container = this.shadowRoot.querySelector('##container');
-  }
-  attributeChangedCallback(attr, oldVal, newVal) {
-    if(attr === 'disabled') {
-      if(this.hasAttribute('disabled') {
-        this.container.style.background = '##808080';
-      } else {
-        this.container.style.background = '##ffffff';
-      }
+    constructor() {
+        this.container = this.shadowRoot.querySelector('##container');
     }
-  }
+    attributeChangedCallback(attr, oldVal, newVal) {
+        if(attr === 'disabled') {
+            if(this.hasAttribute('disabled') {
+                this.container.style.background = '##808080';
+            } else {
+                this.container.style.background = '##ffffff';
+            }
+        }
+    }
 }
 ```
 
@@ -4253,11 +4257,11 @@ Custom Element 允许自定义属性或方法。
 
 ```javascript
 class MyElement extends HTMLElement {
-  ...
+...
 
-  doSomething() {
-    // do something in this method
-  }
+    doSomething() {
+        // do something in this method
+    }
 }
 ```
 
@@ -4272,20 +4276,20 @@ element.doSomething();
 
 ```javascript
 class MyElement extends HTMLElement {
-  ...
+...
 
-  set disabled(isDisabled) {
-    if(isDisabled) {
-      this.setAttribute('disabled', '');
+    set disabled(isDisabled) {
+        if(isDisabled) {
+            this.setAttribute('disabled', '');
+        }
+        else {
+            this.removeAttribute('disabled');
+        }
     }
-    else {
-      this.removeAttribute('disabled');
-    }
-  }
 
-  get disabled() {
-    return this.hasAttribute('disabled');
-  }
+    get disabled() {
+        return this.hasAttribute('disabled');
+    }
 }
 ```
 
@@ -4297,22 +4301,22 @@ class MyElement extends HTMLElement {
 
 ```javascript
 window.customElements.whenDefined('my-element')
-.then(() => {
-  // my-element is now defined
-})
+    .then(() => {
+        // my-element is now defined
+    })
 ```
 
 如果某个属性值发生变化时，需要做出反应，可以将它放入`observedAttributes`数组。
 
 ```javascript
 class MyElement extends HTMLElement {
-  static get observedAttributes() {
-    return ['disabled'];
-  }
+    static get observedAttributes() {
+        return ['disabled'];
+    }
 
-  constructor() {
-    const shadowRoot = this.attachShadow({mode: 'open'});
-    shadowRoot.innerHTML = `
+    constructor() {
+        const shadowRoot = this.attachShadow({mode: 'open'});
+        shadowRoot.innerHTML = `
       <style>
         .disabled {
           opacity: 0.4;
@@ -4322,19 +4326,19 @@ class MyElement extends HTMLElement {
       <div id="container"></div>
     `;
 
-    this.container = this.shadowRoot('##container');
-  }
-
-  attributeChangedCallback(attr, oldVal, newVal) {
-    if(attr === 'disabled') {
-      if(this.disabled) {
-        this.container.classList.add('disabled');
-      }
-      else {
-        this.container.classList.remove('disabled')
-      }
+        this.container = this.shadowRoot('##container');
     }
-  }
+
+    attributeChangedCallback(attr, oldVal, newVal) {
+        if(attr === 'disabled') {
+            if(this.disabled) {
+                this.container.classList.add('disabled');
+            }
+            else {
+                this.container.classList.remove('disabled')
+            }
+        }
+    }
 }
 ```
 
@@ -4353,12 +4357,12 @@ class MyElement extends HTMLElement {
 var proto = Object.create(HTMLElement.prototype);
 
 proto.createdCallback = function() {
-  console.log('created');
-  this.innerHTML = 'This is a my-demo element!';
+    console.log('created');
+    this.innerHTML = 'This is a my-demo element!';
 };
 
 proto.attachedCallback = function() {
-  console.log('attached');
+    console.log('attached');
 };
 
 var XFoo = document.registerElement('x-foo', {prototype: proto});
@@ -4370,11 +4374,11 @@ var XFoo = document.registerElement('x-foo', {prototype: proto});
 var XFooProto = Object.create(HTMLElement.prototype);
 
 XFooProto.createdCallback = function() {
-  this.innerHTML = "<b>I'm an x-foo-with-markup!</b>";
+    this.innerHTML = "<b>I'm an x-foo-with-markup!</b>";
 };
 
 var XFoo = document.registerElement('x-foo-with-markup',
-  {prototype: XFooProto});
+    {prototype: XFooProto});
 
 ```
 
@@ -4382,7 +4386,7 @@ var XFoo = document.registerElement('x-foo-with-markup',
 
 ```html
 <x-foo-with-markup>
-   <b>I'm an x-foo-with-markup!</b>
+    <b>I'm an x-foo-with-markup!</b>
 </x-foo-with-markup>
 ```
 
@@ -4394,8 +4398,8 @@ var XFoo = document.registerElement('x-foo-with-markup',
 
 ```html
 <image-gallery>
-  <img src="foo.jpg" slot="image">
-  <img src="bar.jpg" slot="image">
+    <img src="foo.jpg" slot="image">
+    <img src="bar.jpg" slot="image">
 </image-gallery>
 ```
 
@@ -4403,9 +4407,9 @@ var XFoo = document.registerElement('x-foo-with-markup',
 
 ```html
 <div id="container">
-  <div class="images">
-    <slot name="image"></slot>
-  </div>
+    <div class="images">
+        <slot name="image"></slot>
+    </div>
 </div>
 ```
 
@@ -4413,12 +4417,12 @@ var XFoo = document.registerElement('x-foo-with-markup',
 
 ```html
 <div id="container">
-  <div class="images">
-    <slot name="image">
-      <img src="foo.jpg" slot="image">
-      <img src="bar.jpg" slot="image">
-    </slot>
-  </div>
+    <div class="images">
+        <slot name="image">
+            <img src="foo.jpg" slot="image">
+            <img src="bar.jpg" slot="image">
+        </slot>
+    </div>
 </div>
 ```
 
@@ -4430,8 +4434,8 @@ var XFoo = document.registerElement('x-foo-with-markup',
 
 ```html
 <template>
-  <h1>This won't display!</h1>
-  <script>alert("this won't alert!");</script>
+    <h1>This won't display!</h1>
+    <script>alert("this won't alert!");</script>
 </template>
 ```
 
@@ -4458,14 +4462,14 @@ document.body.appendChild(template.content.cloneNode(true));
 
 ```html
 <template>
-<style>
-  :host {
-    background: ##f8f8f8;
-  }
-  :host(:hover) {
-    background: ##ccc;
-  }
-</style>
+    <style>
+        :host {
+            background: ##f8f8f8;
+        }
+        :host(:hover) {
+            background: ##ccc;
+        }
+    </style>
 </template>
 ```
 
@@ -4529,11 +4533,11 @@ Custom Element 的 CSS 样式内部，`:root`表示这个根元素。比如，Cu
 
 ```css
 :host {
-  display: block;
+    display: block;
 }
 
 :host([disabled]) {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 ```
 
@@ -4541,7 +4545,7 @@ Custom Element 的 CSS 样式内部，`:root`表示这个根元素。比如，Cu
 
 ```css
 my-element {
-  display: inline-block;
+    display: inline-block;
 }
 ```
 
@@ -4549,7 +4553,7 @@ my-element {
 
 ```css
 my-element {
-  --background-color: ##ff0000;
+    --background-color: ##ff0000;
 }
 ```
 
@@ -4557,12 +4561,12 @@ my-element {
 
 ```css
 :host {
-  --background-color: ##ffffff;
+    --background-color: ##ffffff;
 }
 
 ##container {
-  background-color: var(--background-color);
-}
+     background-color: var(--background-color);
+ }
 ```
 
 下面的例子是为 Shadow DOM 加上独立的模板。
@@ -4571,20 +4575,20 @@ my-element {
 <div id="nameTag">张三</div>
 
 <template id="nameTagTemplate">
-  <style>
-    .outer {
-      border: 2px solid brown;
-    }
-  </style>
+    <style>
+        .outer {
+            border: 2px solid brown;
+        }
+    </style>
 
-  <div class="outer">
-    <div class="boilerplate">
-      Hi! My name is
+    <div class="outer">
+        <div class="boilerplate">
+            Hi! My name is
+        </div>
+        <div class="name">
+            Bob
+        </div>
     </div>
-    <div class="name">
-      Bob
-    </div>
-  </div>
 </template>
 ```
 
@@ -4600,13 +4604,13 @@ my-element {
 
 ```javascript
 function supportsImports() {
-  return 'import' in document.createElement('link');
+    return 'import' in document.createElement('link');
 }
 
 if (supportsImports()) {
-  // 支持
+    // 支持
 } else {
-  // 不支持
+    // 不支持
 }
 
 ```
@@ -4646,12 +4650,12 @@ HTML Import加载成功时，会在link元素上触发load事件，加载失败�
 
 ```html
 <script async>
-  function handleLoad(e) {
-    console.log('Loaded import: ' + e.target.href);
-  }
-  function handleError(e) {
-    console.log('Error loading import: ' + e.target.href);
-  }
+    function handleLoad(e) {
+        console.log('Loaded import: ' + e.target.href);
+    }
+    function handleError(e) {
+        console.log('Error loading import: ' + e.target.href);
+    }
 </script>
 
 <link rel="import" href="file.html"
@@ -4725,43 +4729,43 @@ mainDoc.head.appendChild(styles.cloneNode(true));
 
 ```html
 <script>
-  // 定义并登记<say-hi>
-  var proto = Object.create(HTMLElement.prototype);
+    // 定义并登记<say-hi>
+    var proto = Object.create(HTMLElement.prototype);
 
-  proto.createdCallback = function() {
-    this.innerHTML = 'Hello, <b>' +
-                     (this.getAttribute('name') || '?') + '</b>';
-  };
+    proto.createdCallback = function() {
+        this.innerHTML = 'Hello, <b>' +
+                (this.getAttribute('name') || '?') + '</b>';
+    };
 
-  document.registerElement('say-hi', {prototype: proto});
+    document.registerElement('say-hi', {prototype: proto});
 </script>
 
 <template id="t">
-  <style>
-    ::content > * {
-      color: red;
-    }
-  </style>
-  <span>I'm a shadow-element using Shadow DOM!</span>
-  <content></content>
+    <style>
+        ::content > * {
+            color: red;
+        }
+    </style>
+    <span>I'm a shadow-element using Shadow DOM!</span>
+    <content></content>
 </template>
 
 <script>
-  (function() {
-    var importDoc = document.currentScript.ownerDocument; //指向被加载的网页
+    (function() {
+        var importDoc = document.currentScript.ownerDocument; //指向被加载的网页
 
-    // 定义并登记<shadow-element>
-    var proto2 = Object.create(HTMLElement.prototype);
+        // 定义并登记<shadow-element>
+        var proto2 = Object.create(HTMLElement.prototype);
 
-    proto2.createdCallback = function() {
-      var template = importDoc.querySelector('##t');
-      var clone = document.importNode(template.content, true);
-      var root = this.createShadowRoot();
-      root.appendChild(clone);
-    };
+        proto2.createdCallback = function() {
+            var template = importDoc.querySelector('##t');
+            var clone = document.importNode(template.content, true);
+            var root = this.createShadowRoot();
+            root.appendChild(clone);
+        };
 
-    document.registerElement('shadow-element', {prototype: proto2});
-  })();
+        document.registerElement('shadow-element', {prototype: proto2});
+    })();
 </script>
 
 ```
@@ -4770,13 +4774,13 @@ mainDoc.head.appendChild(styles.cloneNode(true));
 
 ```html
 <head>
-  <link rel="import" href="elements.html">
+    <link rel="import" href="elements.html">
 </head>
 <body>
-  <say-hi name="Eric"></say-hi>
-  <shadow-element>
+<say-hi name="Eric"></say-hi>
+<shadow-element>
     <div>( I'm in the light dom )</div>
-  </shadow-element>
+</shadow-element>
 </body>
 
 ```
@@ -4809,12 +4813,12 @@ Polymer.js提供的组件，可以直接插入网页，比如下面的google-map
 
 ```css
 polymer-ui-clock {
-  width: 320px;
-  height: 320px;
-  display: inline-block;
-  background: url("../assets/glass.png") no-repeat;
-  background-size: cover;
-  border: 4px solid rgba(32, 32, 32, 0.3);
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    background: url("../assets/glass.png") no-repeat;
+    background-size: cover;
+    border: 4px solid rgba(32, 32, 32, 0.3);
 }
 
 ```
@@ -4848,14 +4852,14 @@ bower install Polymer/polymer-ui-accordion
 
 ```javascript
 {
-  "name": "polymer-ui-accordion",
-  "private": true,
-  "dependencies": {
-    "polymer": "Polymer/polymer##0.2.0",
-    "polymer-selector": "Polymer/polymer-selector##0.2.0",
-    "polymer-ui-collapsible": "Polymer/polymer-ui-collapsible##0.2.0"
-  },
-  "version": "0.2.0"
+    "name": "polymer-ui-accordion",
+        "private": true,
+        "dependencies": {
+        "polymer": "Polymer/polymer##0.2.0",
+            "polymer-selector": "Polymer/polymer-selector##0.2.0",
+            "polymer-ui-collapsible": "Polymer/polymer-ui-collapsible##0.2.0"
+    },
+    "version": "0.2.0"
 }
 
 ```
@@ -4866,11 +4870,11 @@ bower install Polymer/polymer-ui-accordion
 
 ```html
 <link rel="import" href="../bower_components/polymer/polymer.html">
- 
+
 <polymer-element name="lorem-element">
-  <template>
-    <p>Lorem ipsum</p>
-  </template>
+    <template>
+        <p>Lorem ipsum</p>
+    </template>
 </polymer-element>
 
 ```
@@ -5010,17 +5014,17 @@ WebSocket 的用法相当简单。
 var ws = new WebSocket('wss://echo.websocket.org');
 
 ws.onopen = function(evt) {
-  console.log('Connection open ...');
-  ws.send('Hello WebSockets!');
+    console.log('Connection open ...');
+    ws.send('Hello WebSockets!');
 };
 
 ws.onmessage = function(evt) {
-  console.log('Received Message: ' + evt.data);
-  ws.close();
+    console.log('Received Message: ' + evt.data);
+    ws.close();
 };
 
 ws.onclose = function(evt) {
-  console.log('Connection closed.');
+    console.log('Connection closed.');
 };
 ```
 
@@ -5055,21 +5059,21 @@ var ws = new WebSocket('ws://localhost:8080');
 
 ```javascript
 switch (ws.readyState) {
-  case WebSocket.CONNECTING:
-    // do something
-    break;
-  case WebSocket.OPEN:
-    // do something
-    break;
-  case WebSocket.CLOSING:
-    // do something
-    break;
-  case WebSocket.CLOSED:
-    // do something
-    break;
-  default:
-    // this never happens
-    break;
+    case WebSocket.CONNECTING:
+        // do something
+        break;
+    case WebSocket.OPEN:
+        // do something
+        break;
+    case WebSocket.CLOSING:
+        // do something
+        break;
+    case WebSocket.CLOSED:
+        // do something
+        break;
+    default:
+        // this never happens
+        break;
 }
 ```
 
@@ -5079,7 +5083,7 @@ switch (ws.readyState) {
 
 ```javascript
 ws.onopen = function () {
-  ws.send('Hello Server!');
+    ws.send('Hello Server!');
 }
 ```
 
@@ -5087,7 +5091,7 @@ ws.onopen = function () {
 
 ```javascript
 ws.addEventListener('open', function (event) {
-  ws.send('Hello Server!');
+    ws.send('Hello Server!');
 });
 ```
 
@@ -5097,17 +5101,17 @@ ws.addEventListener('open', function (event) {
 
 ```javascript
 ws.onclose = function(event) {
-  var code = event.code;
-  var reason = event.reason;
-  var wasClean = event.wasClean;
-  // handle close event
+    var code = event.code;
+    var reason = event.reason;
+    var wasClean = event.wasClean;
+    // handle close event
 };
 
 ws.addEventListener("close", function(event) {
-  var code = event.code;
-  var reason = event.reason;
-  var wasClean = event.wasClean;
-  // handle close event
+    var code = event.code;
+    var reason = event.reason;
+    var wasClean = event.wasClean;
+    // handle close event
 });
 ```
 
@@ -5117,13 +5121,13 @@ ws.addEventListener("close", function(event) {
 
 ```javascript
 ws.onmessage = function(event) {
-  var data = event.data;
-  // 处理数据
+    var data = event.data;
+    // 处理数据
 };
 
 ws.addEventListener("message", function(event) {
-  var data = event.data;
-  // 处理数据
+    var data = event.data;
+    // 处理数据
 });
 ```
 
@@ -5131,14 +5135,14 @@ ws.addEventListener("message", function(event) {
 
 ```javascript
 ws.onmessage = function(event){
-  if(typeOf event.data === String) {
-    console.log("Received data string");
-  }
+    if(typeOf event.data === String) {
+        console.log("Received data string");
+    }
 
-  if(event.data instanceof ArrayBuffer){
-    var buffer = event.data;
-    console.log("Received arraybuffer");
-  }
+    if(event.data instanceof ArrayBuffer){
+        var buffer = event.data;
+        console.log("Received arraybuffer");
+    }
 }
 ```
 
@@ -5148,13 +5152,13 @@ ws.onmessage = function(event){
 // 收到的是 blob 数据
 ws.binaryType = "blob";
 ws.onmessage = function(e) {
-  console.log(e.data.size);
+    console.log(e.data.size);
 };
 
 // 收到的是 ArrayBuffer 数据
 ws.binaryType = "arraybuffer";
 ws.onmessage = function(e) {
-  console.log(e.data.byteLength);
+    console.log(e.data.byteLength);
 };
 ```
 
@@ -5172,8 +5176,8 @@ ws.send('your message');
 
 ```javascript
 var file = document
-  .querySelector('input[type="file"]')
-  .files[0];
+    .querySelector('input[type="file"]')
+    .files[0];
 ws.send(file);
 ```
 
@@ -5184,7 +5188,7 @@ ws.send(file);
 var img = canvas_context.getImageData(0, 0, 400, 320);
 var binary = new Uint8Array(img.data.length);
 for (var i = 0; i < img.data.length; i++) {
-  binary[i] = img.data[i];
+    binary[i] = img.data[i];
 }
 ws.send(binary.buffer);
 ```
@@ -5198,9 +5202,9 @@ var data = new ArrayBuffer(10000000);
 socket.send(data);
 
 if (socket.bufferedAmount === 0) {
-  // 发送完毕
+    // 发送完毕
 } else {
-  // 发送还没结束
+    // 发送还没结束
 }
 ```
 
@@ -5210,11 +5214,11 @@ if (socket.bufferedAmount === 0) {
 
 ```javascript
 socket.onerror = function(event) {
-  // handle error event
+    // handle error event
 };
 
 socket.addEventListener("error", function(event) {
-  // handle error event
+    // handle error event
 });
 ```
 

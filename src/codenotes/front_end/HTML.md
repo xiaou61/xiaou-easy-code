@@ -18,6 +18,9 @@ star: true
 article: true
 # 是否将该文章添加至时间线中
 timeline: true
+
+
+
 ---
 
 ## HTML 语言简介
@@ -2006,9 +2009,9 @@ Hard Disk
 
 桌面显示器的面积较大，图像可以容纳更多细节。手机的屏幕较小，许多细节是看不清的，需要突出重点。
 
-![](/images/front_end/bg2019061002.jpg)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071413231.jpg)
 
-![](/images/front_end/bg2019061003.jpg)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071413235.jpg)
 
 上面两张图片，下方的手机图片经过裁剪以后，更突出图像重点，明显效果更好。
 
@@ -3210,6 +3213,7 @@ HTML 标准没有规定浏览器需要支持哪些视频格式，完全由浏览
   </tbody>
 </table>
 
+
 ## 表单标签
 
 表单（form）是用户输入信息与网页互动的一种形式。大多数情况下，用户提交的信息会发给服务器，比如网站的搜索栏就是表单。
@@ -3224,7 +3228,7 @@ HTML 标准没有规定浏览器需要支持哪些视频格式，完全由浏览
 
 ```html
 <form>
-  <!-- 各种表单控件-->
+    <!-- 各种表单控件-->
 </form>
 ```
 
@@ -3234,9 +3238,9 @@ HTML 标准没有规定浏览器需要支持哪些视频格式，完全由浏览
 
 ```html
 <form action="https://example.com/api" method="post">
-  <label for="POST-name">用户名：</label>
-  <input id="POST-name" type="text" name="user">
-  <input type="submit" value="提交">
+    <label for="POST-name">用户名：</label>
+    <input id="POST-name" type="text" name="user">
+    <input type="submit" value="提交">
 </form>
 ```
 
@@ -3277,9 +3281,9 @@ Content-Disposition: form-data; name="mycontrol"
 <form action="https://example.com/api"
       enctype="multipart/form-data"
       method="post">
-  用户名：<input type="text" name="submit-name"><br>
-  文件：<input type="file" name="files"><br>
-  <input type="submit" value="上传"> <input type="reset" value="清除">
+    用户名：<input type="text" name="submit-name"><br>
+    文件：<input type="file" name="files"><br>
+    <input type="submit" value="上传"> <input type="reset" value="清除">
 </form>
 ```
 
@@ -3308,10 +3312,10 @@ Content-Type: text/plain
 
 ```html
 <form>
-  <fieldset>
-    <p>年龄：<input type="text" name="age"></p>
-    <p>性别：<input type="text" name="gender"></p>
-  </fieldset>
+    <fieldset>
+        <p>年龄：<input type="text" name="age"></p>
+        <p>性别：<input type="text" name="gender"></p>
+    </fieldset>
 </form>
 ```
 
@@ -3327,9 +3331,9 @@ Content-Type: text/plain
 
 ```html
 <fieldset>
-  <legend>学生情况登记</legend>
-  <p>年龄：<input type="text" name="age"></p>
-  <p>性别：<input type="text" name="gender"></p>
+    <legend>学生情况登记</legend>
+    <p>年龄：<input type="text" name="age"></p>
+    <p>性别：<input type="text" name="gender"></p>
 </fieldset>
 ```
 
@@ -3354,7 +3358,7 @@ Content-Type: text/plain
 
 ```html
 <label>用户名：
-  <input type="text" name="user">
+    <input type="text" name="user">
 </label>
 ```
 
@@ -3432,9 +3436,9 @@ Content-Type: text/plain
 
 ```html
 <form>
-  <input type="search" id="mySearch" name="q"
-    placeholder="输入搜索词……" required>
-  <input type="submit" value="搜索">
+    <input type="search" id="mySearch" name="q"
+           placeholder="输入搜索词……" required>
+    <input type="submit" value="搜索">
 </form>
 ```
 
@@ -3519,15 +3523,15 @@ Content-Type: text/plain
 
 ```html
 <fieldset>
-  <legend>你的兴趣</legend>
-  <div>
-    <input type="checkbox" id="coding" name="interest" value="coding">
-    <label for="coding">编码</label>
-  </div>
-  <div>
-    <input type="checkbox" id="music" name="interest" value="music">
-    <label for="music">音乐</label>
-  </div>
+    <legend>你的兴趣</legend>
+    <div>
+        <input type="checkbox" id="coding" name="interest" value="coding">
+        <label for="coding">编码</label>
+    </div>
+    <div>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">音乐</label>
+    </div>
 </fieldset>
 ```
 
@@ -3539,15 +3543,15 @@ Content-Type: text/plain
 
 ```html
 <fieldset>
-  <legend>性别</legend>
-  <div>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">男</label>
-  </div>
-  <div>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">女</label>
-  </div>
+    <legend>性别</legend>
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">男</label>
+    </div>
+    <div>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label>
+    </div>
 </fieldset>
 ```
 
@@ -3595,11 +3599,11 @@ Content-Type: text/plain
 <input type="email" size="40" list="defaultEmails">
 
 <datalist id="defaultEmails">
-  <option value="jbond007@mi6.defence.gov.uk">
-  <option value="jbourne@unknown.net">
-  <option value="nfury@shield.org">
-  <option value="tony@starkindustries.com">
-  <option value="hulk@grrrrrrrr.arg">
+    <option value="jbond007@mi6.defence.gov.uk">
+    <option value="jbourne@unknown.net">
+    <option value="nfury@shield.org">
+    <option value="tony@starkindustries.com">
+    <option value="hulk@grrrrrrrr.arg">
 </datalist>
 ```
 
@@ -3611,7 +3615,7 @@ Content-Type: text/plain
 
 ```html
 <input type="password" id="pass" name="password"
-           minlength="8" required>
+       minlength="8" required>
 ```
 
 浏览器对该类型输入框的显示，会有所差异。一种常见的处理方法是，用户每输入一个字符，先在输入框里面显示一秒钟，然后再遮挡该字符。
@@ -3682,7 +3686,7 @@ Content-Type: text/plain
 
 ```html
 <input type="range" id="start" name="volume"
-         min="0" max="11">
+       min="0" max="11">
 ```
 
 上面代码会产生一个最小值为`0`、最大值为`11`的滑块区域。用户拖动滑块，选择想要的音量。
@@ -3701,17 +3705,17 @@ Content-Type: text/plain
 <input type="range" list="tickmarks">
 
 <datalist id="tickmarks">
-  <option value="0" label="0%">
-  <option value="10">
-  <option value="20">
-  <option value="30">
-  <option value="40">
-  <option value="50" label="50%">
-  <option value="60">
-  <option value="70">
-  <option value="80">
-  <option value="90">
-  <option value="100" label="100%">
+    <option value="0" label="0%">
+    <option value="10">
+    <option value="20">
+    <option value="30">
+    <option value="40">
+    <option value="50" label="50%">
+    <option value="60">
+    <option value="70">
+    <option value="80">
+    <option value="90">
+    <option value="100" label="100%">
 </datalist>
 ```
 
@@ -3751,11 +3755,11 @@ Content-Type: text/plain
        list="defaultURLs">
 
 <datalist id="defaultURLs">
-  <option value="https://developer.mozilla.org/" label="MDN Web Docs">
-  <option value="http://www.google.com/" label="Google">
-  <option value="http://www.microsoft.com/" label="Microsoft">
-  <option value="https://www.mozilla.org/" label="Mozilla">
-  <option value="http://w3.org/" label="W3C">
+    <option value="https://developer.mozilla.org/" label="MDN Web Docs">
+    <option value="http://www.google.com/" label="Google">
+    <option value="http://www.microsoft.com/" label="Microsoft">
+    <option value="https://www.mozilla.org/" label="Mozilla">
+    <option value="http://w3.org/" label="W3C">
 </datalist>
 ```
 
@@ -3790,7 +3794,7 @@ Content-Type: text/plain
 
 ```html
 <input type="color" id="background" name="background"
-           value="##e66465">
+       value="##e66465">
 ```
 
 上面代码在 Chrome 浏览器中，会显示一个`##e66465`的色块。点击色块，就会出现一个拾色器，供用户选择颜色。
@@ -3901,7 +3905,7 @@ Content-Type: text/plain
 
 ```html
 <button name="search" type="submit">
-  <img src="search.gif">搜索
+    <img src="search.gif">搜索
 </button>
 ```
 
@@ -3927,10 +3931,10 @@ Content-Type: text/plain
 <label for="pet-select">宠物：</label>
 
 <select id="pet-select" name="pet-select">
-  <option value="">--请选择一项--</option>
-  <option value="dog">狗</option>
-  <option value="cat">猫</option>
-  <option value="others">其他</option>
+    <option value="">--请选择一项--</option>
+    <option value="dog">狗</option>
+    <option value="cat">猫</option>
+    <option value="others">其他</option>
 </select>
 ```
 
@@ -3942,9 +3946,9 @@ Content-Type: text/plain
 
 ```html
 <select name="choice">
-  <option value="first">First Value</option>
-  <option value="second" selected>Second Value</option>
-  <option value="third">Third Value</option>
+    <option value="first">First Value</option>
+    <option value="second" selected>Second Value</option>
+    <option value="third">Third Value</option>
 </select>
 ```
 
@@ -3975,16 +3979,16 @@ Content-Type: text/plain
 
 ```html
 <label>宠物：
-  <select name="pets" multiple size="4">
-    <optgroup label="四条腿的宠物">
-      <option value="dog">狗</option>
-      <option value="cat">猫</option>
-    </optgroup>
-    <optgroup label="鸟类">
-      <option value="parrot">鹦鹉</option>
-      <option value="thrush">画眉</option>
-    </optgroup>
-  </select>
+    <select name="pets" multiple size="4">
+        <optgroup label="四条腿的宠物">
+            <option value="dog">狗</option>
+            <option value="cat">猫</option>
+        </optgroup>
+        <optgroup label="鸟类">
+            <option value="parrot">鹦鹉</option>
+            <option value="thrush">画眉</option>
+        </optgroup>
+    </select>
 </label>
 ```
 
@@ -4004,11 +4008,11 @@ Content-Type: text/plain
 <input type="text" list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
 
 <datalist id="ice-cream-flavors">
-  <option value="巧克力">
-  <option value="椰子">
-  <option value="薄荷">
-  <option value="草莓">
-  <option value="香草">
+    <option value="巧克力">
+    <option value="椰子">
+    <option value="薄荷">
+    <option value="草莓">
+    <option value="香草">
 </datalist>
 ```
 
@@ -4020,8 +4024,8 @@ Content-Type: text/plain
 
 ```html
 <datalist id="ide">
-  <option value="Brackets" label="by Adobe">
-  <option value="Coda" label="by Panic">
+    <option value="Brackets" label="by Adobe">
+    <option value="Coda" label="by Panic">
 </datalist>
 ```
 
@@ -4091,7 +4095,7 @@ Content-Type: text/plain
 
 ```html
 <p>烤箱的当前温度是<meter min="200" max="500"
-  value="350"> 350 度</meter>。</p>
+                          value="350"> 350 度</meter>。</p>
 ```
 
 上面代码会显示一个指示条，左侧表示`200`，右侧表示`500`，当前位置停留在`350`。
@@ -4137,7 +4141,7 @@ Chrome 浏览器使用三种颜色，表示指示条所处的位置。较好情�
 
 ```html
 <dialog>
-  Hello world
+    Hello world
 </dialog>
 ```
 
@@ -4147,7 +4151,7 @@ Chrome 浏览器使用三种颜色，表示指示条所处的位置。较好情�
 
 ```html
 <dialog open>
-  Hello world
+    Hello world
 </dialog>
 ```
 
@@ -4157,10 +4161,10 @@ Chrome 浏览器使用三种颜色，表示指示条所处的位置。较好情�
 
 ```html
 <dialog open>
-  <form method="dialog">
-    <input type="text">
-    <button type="submit" value="foo">提交</button>
-  </form>
+    <form method="dialog">
+        <input type="text">
+        <button type="submit" value="foo">提交</button>
+    </form>
 </dialog>
 ```
 
@@ -4195,15 +4199,15 @@ modal.returnValue // "Accepted"
 
 ```css
 dialog {
-  padding: 0;
-  border: 0;
-  border-radius: 0.6rem;
-  box-shadow: 0 0 1em black;
+    padding: 0;
+    border: 0;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1em black;
 }
 
 dialog::backdrop {
-  /* make the backdrop a semi-transparent black */
-  background-color: rgba(0, 0, 0, 0.4);
+    /* make the backdrop a semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 ```
 
@@ -4222,9 +4226,9 @@ dialog::backdrop {
 
 ```javascript
 modal.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.close('cancelled');
-  }
+    if (event.target === modal) {
+        modal.close('cancelled');
+    }
 });
 ```
 
@@ -4236,7 +4240,7 @@ modal.addEventListener('click', (event) => {
 
 ```html
 <details>
-这是一段解释文本。
+    这是一段解释文本。
 </details>
 ```
 
@@ -4259,7 +4263,7 @@ modal.addEventListener('click', (event) => {
 
 ```html
 <details open>
-这是一段解释文本。
+    这是一段解释文本。
 </details>
 ```
 
@@ -4269,8 +4273,8 @@ modal.addEventListener('click', (event) => {
 
 ```html
 <details>
-  <summary>这是标题</summary>
-  这是一段解释文本。
+    <summary>这是标题</summary>
+    这是一段解释文本。
 </details>
 ```
 
@@ -4291,8 +4295,8 @@ modal.addEventListener('click', (event) => {
 
 ```css
 summary::-webkit-details-marker {
-  background: url(https://example.com/foo.svg);
-  color: transparent;
+    background: url(https://example.com/foo.svg);
+    color: transparent;
 }
 ```
 
@@ -4300,12 +4304,12 @@ summary::-webkit-details-marker {
 
 ```css
 summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 summary:before {
-  content: "\2714";
-  color: ##696f7c;
-  margin-right: 5px;
+    content: "\2714";
+    color: ##696f7c;
+    margin-right: 5px;
 }
 ```
 
@@ -4318,9 +4322,9 @@ summary:before {
 const details = document.querySelector('details');
 
 if (detail.open === true) {
-  // 展开状态
+    // 展开状态
 } else {
-  // 折叠状态
+    // 折叠状态
 }
 ```
 
@@ -4328,11 +4332,11 @@ if (detail.open === true) {
 
 ```javascript
 details.addEventListener('toggle', event => {
-  if (details.open) {
-    /* 展开状况 */
-  } else {
-    /* 折叠状态 */
-  }
+    if (details.open) {
+        /* 展开状况 */
+    } else {
+        /* 折叠状态 */
+    }
 });
 ```
 

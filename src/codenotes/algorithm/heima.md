@@ -16,6 +16,10 @@ star: true
 article: true
 # 是否将该文章添加至时间线中
 timeline: true
+
+
+
+
 ---
 
 ## 一. 初识算法
@@ -165,7 +169,7 @@ public static int search(int[] a, int k) {
 粗略认为每行代码执行时间是 $t$，假设 $n=4$ 那么
 
 * 总执行时间是 $(1+4+1+4+4+1)*t = 15t$
-* 可以推导出更一般地公式为，$T = (3*n+3)t$ 
+* 可以推导出更一般地公式为，$T = (3*n+3)t$
 
 
 
@@ -211,11 +215,11 @@ public static int binarySearch(int[] a, int target) {
 
 两个算法比较，可以看到 $n$ 在较小的时候，二者花费的次数差不多
 
-<img src="/images/algorithm/image-20221108095747933.png" alt="image-20221108095747933" style="zoom:50%;" />
+<img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410807.png" alt="image-20221108095747933" style="zoom:50%;" />
 
 但随着 $n$ 越来越大，比如说 $n=1000$ 时，用二分查找算法（红色）也就是 $54t$，而蓝色算法则需要 $3003t$
 
-<img src="/images/algorithm/image-20221108100014451.png" alt="image-20221108100014451" style="zoom:50%;" />
+<img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410757.png" alt="image-20221108100014451" style="zoom:50%;" />
 
 
 
@@ -243,7 +247,7 @@ public static int binarySearch(int[] a, int target) {
 
 **大 $O$ 表示法[^4]**
 
-![image-20221108103846566](/images/algorithm/image-20221108103846566.png)
+![image-20221108103846566](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410981.png)
 
 其中
 
@@ -261,7 +265,7 @@ public static int binarySearch(int[] a, int target) {
 
 例1
 
-* $f(n) = 3*n+3$ 
+* $f(n) = 3*n+3$
 * $g(n) = n$
 * 取 $c=4$，在$n_0=3$ 之后，$g(n)$ 可以作为 $f(n)$ 的渐进上界，因此表示法写作 $O(n)$
 
@@ -285,15 +289,15 @@ public static int binarySearch(int[] a, int target) {
 * 不同底数的对数，渐进上界可以用一个对数函数 $\log n$ 表示
   * 例如：$log_2(n)$ 可以替换为 $log_{10}(n)$，因为 $log_2(n) = \frac{log_{10}(n)}{log_{10}(2)}$，相乘的常量 $\frac{1}{log_{10}(2)}$ 可以省略
 * 类似的，对数的常数次幂可省略
-  * 如：$log(n^c) = c * log(n)$ 
+  * 如：$log(n^c) = c * log(n)$
 
 
 
 **常见大 $O$ 表示法**
 
-![image-20221108114915524](/images/algorithm/image-20221108114915524.png)
+![image-20221108114915524](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410839.png)
 
- 按时间复杂度从低到高
+按时间复杂度从低到高
 
 * 黑色横线 $O(1)$，常量时间，意味着算法时间并不随数据规模而变化
 * 绿色 $O(log(n))$，对数时间
@@ -351,7 +355,7 @@ public static int binarySearchBasic(int[] a, int target) {
 
 空间复杂度
 
-* 需要常数个指针 $i,j,m$，因此额外占用的空间是 $O(1)$ 
+* 需要常数个指针 $i,j,m$，因此额外占用的空间是 $O(1)$
 
 
 
@@ -376,7 +380,7 @@ public static int binarySearchBalance(int[] a, int target) {
 
 1. 左闭右开的区间，$i$ 指向的可能是目标，而 $j$ 指向的不是目标
 2. 不奢望循环内通过 $m$ 找出目标, 缩小区间直至剩 1 个, 剩下的这个可能就是要找的（通过 $i$）
-   * $j - i > 1$ 的含义是，在范围内待比较的元素个数 > 1
+  * $j - i > 1$ 的含义是，在范围内待比较的元素个数 > 1
 3. 改变 $i$ 边界时，它指向的可能是目标，因此不能 $m+1$
 4. 循环内的平均比较次数减少了
 5. 时间复杂度 $\Theta(log(n))$
@@ -508,7 +512,7 @@ public static int binarySearchRightmost(int[] a, int target) {
 
 几个名词
 
-![image-20221125174155058](/images/algorithm/image-20221125174155058.png)
+![image-20221125174155058](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410726.png)
 
 **范围查询**：
 
@@ -763,7 +767,7 @@ int[][] array = {
 
 内存图如下
 
-<img src="/images/algorithm/image-20221104114132056.png" alt="image-20221104114132056" style="zoom:67%;" />
+<img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410746.png" alt="image-20221104114132056" style="zoom:67%;" />
 
 * 二维数组占 32 个字节，其中 array[0]，array[1]，array[2] 三个元素分别保存了指向三个一维数组的引用
 
@@ -881,15 +885,15 @@ ns         %     Task name
 
 以 ji 执行为例，第一次内循环要读入 $[0,0]$ 这条数据，由于局部性原理，读入 $[0,0]$ 的同时也读入了 $[0,1] ... [0,13]$，如图所示
 
-![image-20221104164329026](/images/algorithm/image-20221104164329026.png)
+![image-20221104164329026](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410381.png)
 
 但很遗憾，第二次内循环要的是 $[1,0]$ 这条数据，缓存中没有，于是再读入了下图的数据
 
-![image-20221104164716282](/images/algorithm/image-20221104164716282.png)
+![image-20221104164716282](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410415.png)
 
 这显然是一种浪费，因为 $[0,1] ... [0,13]$ 包括 $[1,1] ... [1,13]$ 这些数据虽然读入了缓存，却没有及时用上，而缓存的大小是有限的，等执行到第九次内循环时
 
-![image-20221104164947154](/images/algorithm/image-20221104164947154.png)
+![image-20221104164947154](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410573.png)
 
 缓存的第一行数据已经被新的数据 $[8,0] ... [8,13]$ 覆盖掉了，以后如果再想读，比如 $[0,1]$，又得到内存去读了
 
@@ -930,7 +934,7 @@ bool is_within_bounds(int index) const
 
 在计算机科学中，链表是数据元素的线性集合，其每个元素都指向下一个元素，元素存储上并不连续
 
-> In computer science, a **linked list** is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. 
+> In computer science, a **linked list** is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next.
 
 
 
@@ -938,21 +942,21 @@ bool is_within_bounds(int index) const
 
 * 单向链表，每个元素只知道其下一个元素是谁
 
-![image-20221110083407176](/images/algorithm/image-20221110083407176.png)
+![image-20221110083407176](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410570.png)
 
 * 双向链表，每个元素知道其上一个元素和下一个元素
 
-![image-20221110083427372](/images/algorithm/image-20221110083427372.png)
+![image-20221110083427372](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410572.png)
 
 * 循环链表，通常的链表尾节点 tail 指向的都是 null，而循环链表的 tail 指向的是头节点 head
 
-![image-20221110083538273](/images/algorithm/image-20221110083538273.png)
+![image-20221110083538273](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410717.png)
 
 
 
 链表内还有一种特殊的节点称为哨兵（Sentinel）节点，也叫做哑元（ Dummy）节点，它不存储数据，通常用作头尾，用来简化边界判断，如下图所示
 
-![image-20221110084611550](/images/algorithm/image-20221110084611550.png)
+![image-20221110084611550](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410015.png)
 
 
 
@@ -1129,7 +1133,7 @@ public class SinglyLinkedList {
 }
 ```
 
-* 注意，找最后一个节点，终止条件是 curr.next == null 
+* 注意，找最后一个节点，终止条件是 curr.next == null
 * 分成两个方法是为了代码清晰，而且 findLast() 之后还能复用
 
 
@@ -1489,13 +1493,13 @@ public class DoublyLinkedListSentinel implements Iterable<Integer> {
 
 双向环形链表带哨兵，这时哨兵**既作为头，也作为尾**
 
-![image-20221229144232651](/images/algorithm/image-20221229144232651.png)
+![image-20221229144232651](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410137.png)
 
-![image-20221229143756065](/images/algorithm/image-20221229143756065.png)
+![image-20221229143756065](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410080.png)
 
-![image-20221229153338425](/images/algorithm/image-20221229153338425.png)
+![image-20221229153338425](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410141.png)
 
-![image-20221229154248800](/images/algorithm/image-20221229154248800.png)
+![image-20221229154248800](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410187.png)
 
 参考实现
 
@@ -1691,7 +1695,7 @@ void f(Node node = 1) {
 
 例如之前遍历链表的递推关系为
 $$
-f(n) = 
+f(n) =
 \begin{cases}
 停止& n = null \\
 f(n.next) & n \neq null
@@ -1710,7 +1714,7 @@ $$
 
 **E01. 阶乘**
 
-用递归方法求阶乘 
+用递归方法求阶乘
 
 * 阶乘的定义 $n!= 1⋅2⋅3⋯(n-2)⋅(n-1)⋅n$，其中 $n$ 为自然数，当然 $0! = 1$
 
@@ -1718,7 +1722,7 @@ $$
 
 
 $$
-f(n) = 
+f(n) =
 \begin{cases}
 1 & n = 1\\
 n * f(n-1) & n > 1
@@ -1761,7 +1765,7 @@ f(int n = 3) { // 解决不了,递
 
 递推关系
 $$
-f(n) = 
+f(n) =
 \begin{cases}
 停止 & n = str.length() \\
 f(n+1) & 0 \leq n \leq str.length() - 1
@@ -1809,7 +1813,7 @@ void reversePrint(String str, int index = 0) {
 
 **递推关系**
 $$
-f(n) = 
+f(n) =
 \begin{cases}
 0 & n=0 \\
 1 & n=1 \\
@@ -1841,7 +1845,7 @@ public static int f(int n) {
 
 **执行流程**
 
-![](/images/algorithm/2.gif)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410524.gif)
 
 * 绿色代表正在执行（对应递），灰色代表执行结束（对应归）
 * 递不到头，不能归，对应着深度优先搜索
@@ -1863,7 +1867,7 @@ public static int f(int n) {
 
 **变体1 - 兔子问题[^8]**
 
-![image-20221110155655827](/images/algorithm/image-20221110155655827.png)
+![image-20221110155655827](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410594.png)
 
 * 第一个月，有一对未成熟的兔子（黑色，注意图中个头较小）
 * 第二个月，它们成熟
@@ -1910,7 +1914,7 @@ public static int f(int n) {
 
 上述代码存在很多重复的计算，例如求 $f(5)$ 递归分解过程
 
-![image-20221207092417933](/images/algorithm/image-20221207092417933.png)
+![image-20221207092417933](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410662.png)
 
 可以看到（颜色相同的是重复的）：
 
@@ -1947,7 +1951,7 @@ public static int f(int[] cache, int n) {
 
 优化后的图示，只要结果被缓存，就**不会执行其子问题**
 
-![image-20221213173225807](/images/algorithm/image-20221213173225807.png)
+![image-20221213173225807](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410727.png)
 
 * 改进后的时间复杂度为 $O(n)$
 * 请自行验证改进后的效果
@@ -1992,7 +1996,7 @@ Exception in thread "main" java.lang.StackOverflowError
 * 每次方法调用是需要消耗一定的栈内存的，这些内存用来存储方法参数、方法内局部变量、返回地址等等
 * 方法调用占用的内存需要等到**方法结束时**才会释放
 * 而递归调用我们之前讲过，不到最深不会回头，最内层方法没完成之前，外层方法都结束不了
-  * 例如，$sum(3)$ 这个方法内有个需要执行 $3 + sum(2)$，$sum(2)$ 没返回前，加号前面的 $3$ 不能释放 
+  * 例如，$sum(3)$ 这个方法内有个需要执行 $3 + sum(2)$，$sum(2)$ 没返回前，加号前面的 $3$ 不能释放
   * 看下面伪码
 
 ```java
@@ -2114,7 +2118,7 @@ c()
 
 安装 Scala
 
-![image-20221111122709227](/images/algorithm/image-20221111122709227.png)
+![image-20221111122709227](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410023.png)
 
 Scala 入门
 
@@ -2256,7 +2260,7 @@ public static void main(String[] args) {
 $$
 T(n) = aT(\frac{n}{b}) + f(n)
 $$
-其中 
+其中
 
 * $T(n)$ 是问题的运行时间，$n$ 是数据规模
 * $a$ 是子问题个数
@@ -2267,7 +2271,7 @@ $$
 
 那么
 $$
-T(n) = 
+T(n) =
 \begin{cases}
 \Theta(n^x) & f(n) = O(n^c) 并且 c \lt x\\
 \Theta(n^x\log{n}) & f(n) = \Theta(n^x)\\
@@ -2277,7 +2281,7 @@ $$
 
 **例1**
 
-$T(n) = 2T(\frac{n}{2}) + n^4$ 
+$T(n) = 2T(\frac{n}{2}) + n^4$
 
 * 此时 $x = 1 < 4$，由后者决定整个时间复杂度 $\Theta(n^4)$
 * 如果觉得对数不好算，可以换为求【$b$ 的几次方能等于 $a$】
@@ -2449,7 +2453,7 @@ $T(n) = T(n-3) + c + c + c$
 
 ...
 
-$T(n) = T(n-(n-1)) + (n-1)c$ 
+$T(n) = T(n-(n-1)) + (n-1)c$
 
 * 其中 $T(n-(n-1))$ 即 $T(1)$
 * 带入求得 $T(n) = c + (n-1)c = nc$
@@ -2490,7 +2494,7 @@ $T(n) = T(1) + 2 + ... + n = T(1) + (n-1)\frac{2+n}{2} = c + \frac{n^2}{2} + \fr
 
 > 注：
 >
-> * 等差数列求和为 $个数*\frac{\vert首项-末项\vert}{2}$ 
+> * 等差数列求和为 $个数*\frac{\vert首项-末项\vert}{2}$
 
 
 
@@ -2576,11 +2580,11 @@ public interface Queue<E> {
 
 下面以**单向环形带哨兵**链表方式来实现队列
 
-![image-20221230150105089](/images/algorithm/image-20221230150105089.png)
+![image-20221230150105089](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410093.png)
 
-![image-20221230150141318](/images/algorithm/image-20221230150141318.png)
+![image-20221230150141318](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410158.png)
 
-![image-20221230150153271](/images/algorithm/image-20221230150153271.png)
+![image-20221230150153271](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410227.png)
 
 代码
 
@@ -2688,13 +2692,13 @@ public class LinkedListQueue<E>
 3. 数组性能更佳
 4. 环形数组比较适合实现有界队列、RingBuffer 等
 
-![image-20221228175413998](/images/algorithm/image-20221228175413998.png)
+![image-20221228175413998](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410491.png)
 
 **下标计算**
 
 例如，数组长度是 5，当前位置是 3 ，向前走 2 步，此时下标为 $(3 + 2)\%5 = 0$
 
-![image-20221228180357257](/images/algorithm/image-20221228180357257.png)
+![image-20221228180357257](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410545.png)
 
 $$
 (cur + step) \% length
@@ -2712,11 +2716,11 @@ $$
 
 **判断空**
 
-![image-20221231081009018](/images/algorithm/image-20221231081009018.png)
+![image-20221231081009018](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410611.png)
 
 **判断满**
 
-![image-20221231080909475](/images/algorithm/image-20221231080909475.png)
+![image-20221231080909475](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410722.png)
 
 满之后的策略可以根据业务需求决定
 
@@ -2800,7 +2804,7 @@ public class ArrayQueue<E> implements Queue<E>, Iterable<E>{
 
 **判断空、满方法2**
 
-引入 size 
+引入 size
 
 ```java
 public class ArrayQueue2<E> implements Queue<E>, Iterable<E> {
@@ -3277,15 +3281,15 @@ public class CPU {
 > 注2：
 >
 > * 不同语言，操作双端队列的方法命名有所不同，参见下表
->
->   | 操作     | Java       | JavaScript | C++        | leetCode 641 |
->   | -------- | ---------- | ---------- | ---------- | ------------ |
->   | 尾部插入 | offerLast  | push       | push_back  | insertLast   |
->   | 头部插入 | offerFirst | unshift    | push_front | insertFront  |
->   | 尾部移除 | pollLast   | pop        | pop_back   | deleteLast   |
->   | 头部移除 | pollFirst  | shift      | pop_front  | deleteFront  |
->   | 尾部获取 | peekLast   | at(-1)     | back       | getRear      |
->   | 头部获取 | peekFirst  | at(0)      | front      | getFront     |
+    >
+    >   | 操作     | Java       | JavaScript | C++        | leetCode 641 |
+    >   | -------- | ---------- | ---------- | ---------- | ------------ |
+    >   | 尾部插入 | offerLast  | push       | push_back  | insertLast   |
+    >   | 头部插入 | offerFirst | unshift    | push_front | insertFront  |
+    >   | 尾部移除 | pollLast   | pop        | pop_back   | deleteLast   |
+    >   | 头部移除 | pollFirst  | shift      | pop_front  | deleteFront  |
+    >   | 尾部获取 | peekLast   | at(-1)     | back       | getRear      |
+    >   | 头部获取 | peekFirst  | at(0)      | front      | getFront     |
 >
 > * 吐槽一下 leetCode 命名比较 low
 >
@@ -3590,11 +3594,11 @@ public class ArrayDeque1<E> implements Deque<E>, Iterable<E> {
 
 数组实现中，如果存储的是基本类型，那么无需考虑内存释放，例如
 
-![image-20230110084245095](/images/algorithm/image-20230110084245095.png)
+![image-20230110084245095](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410963.png)
 
 但如果存储的是引用类型，应当设置该位置的引用为 null，以便内存及时释放
 
-![image-20230110084632543](/images/algorithm/image-20230110084632543.png)
+![image-20230110084632543](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410034.png)
 
 
 
@@ -3766,25 +3770,25 @@ public class PriorityQueue2<E extends Priority> implements Queue<E> {
 
 例1 - 满二叉树（Full Binary Tree）特点：每一层都是填满的
 
-![image-20230112171444699](/images/algorithm/image-20230112171444699.png)
+![image-20230112171444699](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410103.png)
 
 例2 - 完全二叉树（Complete Binary Tree）特点：最后一层可能未填满，靠左对齐
 
-![image-20230112171917135](/images/algorithm/image-20230112171917135.png)
+![image-20230112171917135](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410285.png)
 
 例3 - 大顶堆
 
-![image-20230112170242265](/images/algorithm/image-20230112170242265.png)
+![image-20230112170242265](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410388.png)
 
 例4 - 小顶堆
 
-![image-20230112171236067](/images/algorithm/image-20230112171236067.png)
+![image-20230112171236067](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410455.png)
 
 
 
 完全二叉树可以使用数组来表示
 
-![image-20230112174351649](/images/algorithm/image-20230112174351649.png)
+![image-20230112174351649](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410633.png)
 
 
 
@@ -4152,7 +4156,7 @@ public class BlockingQueue1<E> implements BlockingQueue<E> {
 > **注意**
 >
 > * JDK 中 BlockingQueue 接口的方法命名与我的示例有些差异
->   * 方法 offer(E e) 是非阻塞的实现，阻塞实现方法为 put(E e)
+    >   * 方法 offer(E e) 是非阻塞的实现，阻塞实现方法为 put(E e)
 >   * 方法 poll() 是非阻塞的实现，阻塞实现方法为 take()
 
 
@@ -4310,21 +4314,21 @@ java.lang.IllegalMonitorStateException
 
 那有同学说，加上锁不就行了吗，于是写出了下面的代码
 
-![image-20230208160343493](/images/algorithm/image-20230208160343493.png)
+![image-20230208160343493](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410769.png)
 
 发现什么问题了？两把锁这么嵌套使用，非常容易出现死锁，如下所示
 
-![image-20230208160143386](/images/algorithm/image-20230208160143386.png)
+![image-20230208160143386](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410883.png)
 
 因此得避免嵌套，两段加锁的代码变成了下面平级的样子
 
-![image-20230208162857435](/images/algorithm/image-20230208162857435.png)
+![image-20230208162857435](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410951.png)
 
 性能还可以进一步提升
 
 1. 代码调整后 offer 并没有同时获取 tailLock 和 headLock 两把锁，因此两次加锁之间会有**空隙**，这个空隙内可能有其它的 offer 线程添加了更多的元素，那么这些线程都要执行 signal()，通知 poll 线程队列非空吗？
-   * 每次调用 signal() 都需要这些 offer 线程先获得 headLock 锁，成本较高，要想法减少 offer 线程获得 headLock 锁的次数
-   * 可以加一个条件：当 offer 增加前队列为空，即从 0 变化到不空，才由此 offer 线程来通知 headWaits，其它情况不归它管
+  * 每次调用 signal() 都需要这些 offer 线程先获得 headLock 锁，成本较高，要想法减少 offer 线程获得 headLock 锁的次数
+  * 可以加一个条件：当 offer 增加前队列为空，即从 0 变化到不空，才由此 offer 线程来通知 headWaits，其它情况不归它管
 
 2. 队列从 0 变化到不空，会唤醒一个等待的 poll 线程，这个线程被唤醒后，肯定能拿到 headLock 锁，因此它具备了唤醒 headWaits 上其它 poll 线程的先决条件。如果检查出此时有其它 offer 线程新增了元素（不空，但不是从0变化而来），那么不妨由此 poll 线程来唤醒其它 poll 线程
 
@@ -4570,7 +4574,7 @@ public class MaxHeap {
 
 Floyd 建堆算法作者（也是之前龟兔赛跑判环作者）：
 
-![image-20230213095110902](/images/algorithm/image-20230213095110902.png)
+![image-20230213095110902](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410163.png)
 
 1. 找到最后一个非叶子节点
 2. 从后向前，对每个节点执行下潜
@@ -4584,7 +4588,7 @@ Floyd 建堆算法作者（也是之前龟兔赛跑判环作者）：
 
 算法时间复杂度分析
 
-![image-20230213114024607](/images/algorithm/image-20230213114024607.png)
+![image-20230213114024607](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410292.png)
 
 下面看交换次数的推导：设节点高度为 3
 
@@ -4615,7 +4619,7 @@ $$
 Sum[\(40)Divide[Power[2,x],Power[2,i]]*\(40)i-1\(41)\(41),{i,1,x}]
 ```
 
-推导出 
+推导出
 $$
 2^h -h -1
 $$
@@ -4640,9 +4644,9 @@ $$
 
 1. 定义树节点与左、右孩子引用（TreeNode）
 2. 使用数组，前面讲堆时用过，若以 0 作为树的根，索引可以通过如下方式计算
-   * 父 = floor((子 - 1) / 2)
-   * 左孩子 = 父 * 2 + 1
-   * 右孩子 = 父 * 2 + 2
+  * 父 = floor((子 - 1) / 2)
+  * 左孩子 = 父 * 2 + 1
+  * 右孩子 = 父 * 2 + 2
 
 
 
@@ -4652,15 +4656,15 @@ $$
 
 1. 广度优先遍历（Breadth-first order）：尽可能先访问距离根最近的节点，也称为层序遍历
 2. 深度优先遍历（Depth-first order）：对于二叉树，可以进一步分成三种（要深入到叶子节点）
-   1. pre-order 前序遍历，对于每一棵子树，先访问该节点，然后是左子树，最后是右子树
-   2. in-order 中序遍历，对于每一棵子树，先访问左子树，然后是该节点，最后是右子树
-   3. post-order 后序遍历，对于每一棵子树，先访问左子树，然后是右子树，最后是该节点
+  1. pre-order 前序遍历，对于每一棵子树，先访问该节点，然后是左子树，最后是右子树
+  2. in-order 中序遍历，对于每一棵子树，先访问左子树，然后是该节点，最后是右子树
+  3. post-order 后序遍历，对于每一棵子树，先访问左子树，然后是右子树，最后是该节点
 
 
 
 ##### 广度优先
 
-![image-20230216153607396](/images/algorithm/image-20230216153607396.png)
+![image-20230216153607396](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410357.png)
 
 | 本轮开始时队列 | 本轮访问节点 |
 | -------------- | ------------ |
@@ -4688,7 +4692,7 @@ $$
 
 ##### 深度优先
 
-![image-20230221110443230](/images/algorithm/image-20230221110443230.png)
+![image-20230221110443230](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410404.png)
 
 | 栈暂存    | 已处理                                     | 前序遍历 | 中序遍历 |
 | --------- | ------------------------------------------ | -------- | -------- |
@@ -4866,7 +4870,7 @@ public static void colorPrintln(String origin, int color) {
 
 一张图演示三种遍历
 
-![Sorted_binary_tree_ALL_RGB.svg](/images/algorithm/Sorted_binary_tree_ALL_RGB.svg.png)
+![Sorted_binary_tree_ALL_RGB.svg](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410646.png)
 
 * 红色：前序遍历顺序
 * 绿色：中序遍历顺序
@@ -4889,8 +4893,8 @@ public static void colorPrintln(String origin, int color) {
 1. 1秒 $\sqrt{10^6} = 1000$ 次，1 天 $\sqrt{10^6 * 3600 * 24} \approx 293938$ 次
 2. 1秒 $2^{1,000,000} $ 次，一天 $2^{86,400,000,000}$
 3. 推算如下
-   * $10! = 3,628,800$ 1秒能解决 $1,000,000$ 次，因此次数为 9 次
-   * $14!=87,178,291,200$，一天能解决 $86,400,000,000$ 次，因此次数为 13 次
+  * $10! = 3,628,800$ 1秒能解决 $1,000,000$ 次，因此次数为 9 次
+  * $14!=87,178,291,200$，一天能解决 $86,400,000,000$ 次，因此次数为 13 次
 
 
 
@@ -5240,7 +5244,7 @@ $$
 $$
 映射函数为
 $$
-mapping(x) = 
+mapping(x) =
 \begin{cases}
 x-k & x=[k..n-1] \\
 x+n-k & x=[0..k-2]
@@ -5298,7 +5302,7 @@ f(n,m) = \ & g(n-1,m) \\
 $$
 最后一步化简是利用了模运算法则
 
-$(a+b)\%n = (a\%n + b\%n) \%n$  例如 
+$(a+b)\%n = (a\%n + b\%n) \%n$  例如
 
 * $(6+6)\%5 = 2 = (6+6\%5)\%5$
 * $(6+5)\%5 = 1 = (6+5\%5)\%5$
@@ -5306,7 +5310,7 @@ $(a+b)\%n = (a\%n + b\%n) \%n$  例如
 
 最终递推式
 $$
-f(n,m) = 
+f(n,m) =
 \begin{cases}
 (f(n-1,m) + m) \% n & n>1\\
 0 & n = 1
@@ -5328,7 +5332,7 @@ Tower of Hanoi，是一个源于印度古老传说：大梵天创建世界时做
 
 下面的动图演示了4片圆盘的移动方法
 
-![](/images/algorithm/Tower_of_Hanoi_4.gif)
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410775.gif)
 
 使用程序代码模拟圆盘的移动过程，并估算出时间复杂度
 
@@ -5340,17 +5344,17 @@ Tower of Hanoi，是一个源于印度古老传说：大梵天创建世界时做
 
 * 如果只有一个圆盘，此时是最小问题，可以直接求解
 
-  * 移动圆盘1 $a \mapsto c$  
+  * 移动圆盘1 $a \mapsto c$
 
-  <img src="/images/algorithm/image-20221219090741078.png" alt="image-20221219090741078" style="zoom:50%;" />
+  <img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410854.png" alt="image-20221219090741078" style="zoom:50%;" />
 
 * 如果有两个圆盘，那么
 
-  * 圆盘1 $a \mapsto b$ 
+  * 圆盘1 $a \mapsto b$
   * 圆盘2 $a \mapsto c$
   * 圆盘1 $b \mapsto c$
 
-  <img src="/images/algorithm/image-20221219091316225.png" alt="image-20221219091316225" style="zoom:50%;" />
+  <img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410970.png" alt="image-20221219091316225" style="zoom:50%;" />
 
 * 如果有三个圆盘，那么
 
@@ -5358,7 +5362,7 @@ Tower of Hanoi，是一个源于印度古老传说：大梵天创建世界时做
   * 圆盘3 $a \mapsto c$
   * 圆盘12 $b \mapsto c$
 
-  <img src="/images/algorithm/image-20221219091930614.png" alt="image-20221219091930614" style="zoom:50%;" />
+  <img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410122.png" alt="image-20221219091930614" style="zoom:50%;" />
 
 * 如果有四个圆盘，那么
 
@@ -5366,7 +5370,7 @@ Tower of Hanoi，是一个源于印度古老传说：大梵天创建世界时做
   * 圆盘4 $a \mapsto c$
   * 圆盘 123 $b \mapsto c$
 
-<img src="/images/algorithm/image-20221219092537323.png" alt="image-20221219092537323" style="zoom:50%;" />
+<img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410267.png" alt="image-20221219092537323" style="zoom:50%;" />
 
 
 
@@ -5423,7 +5427,7 @@ public class E02HanoiTower {
 
 #### E03. 杨辉三角[^6]
 
-![image-20221219172514410](/images/algorithm/image-20221219172514410.png)
+![image-20221219172514410](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410409.png)
 
 **分析**
 
@@ -5473,7 +5477,7 @@ public static int element(int i, int j) {
 是 multiple recursion，因此很多递归调用是重复的，例如
 
 * recursion(3, 1) 分解为
-  * recursion(2, 0) + recursion(2, 1) 
+  * recursion(2, 0) + recursion(2, 1)
 * 而 recursion(3, 2) 分解为
   * recursion(2, 1) + recursion(2, 2)
 
@@ -6630,7 +6634,7 @@ public boolean isPalindrome(ListNode h1) {
 
 > 除了 Floyd 判环算法外，还有其它的判环算法，详见 https://en.wikipedia.org/wiki/Cycle_detection
 
-<img src="/images/algorithm/image-20221229190646563.png" alt="image-20221229190646563" style="zoom: 50%;" />
+<img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410538.png" alt="image-20221229190646563" style="zoom: 50%;" />
 
 如果链表上存在环，那么在环上以不同速度前进的两个指针必定会在某个时刻相遇。算法分为两个阶段
 
@@ -6765,11 +6769,11 @@ public class Ex1Leetcode237 {
 
 例如，下图的两个链表 [1, 2, 4, 5] 与 [3, 4, 5] 它们中 [4, 5] 是相同的，此时应返回节点 4
 
-![image-20221228081715799](/images/algorithm/image-20221228081715799.png)
+![image-20221228081715799](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410663.png)
 
 非共尾的情况，如下图所示，此时返回 null
 
-![image-20221228082002730](/images/algorithm/image-20221228082002730.png)
+![image-20221228082002730](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410777.png)
 
 思路，称两个链表为 a=[1, 2, 4, 5]，b=[3, 4, 5]，图中用 N 代表 null
 
@@ -7784,7 +7788,7 @@ System.out.println(Arrays.toString(maxHeap.array));
 
 
 
-#### E02. 数组中第K大元素-力扣 215 题 
+#### E02. 数组中第K大元素-力扣 215 题
 
 小顶堆（可删去用不到代码）
 
@@ -7895,7 +7899,7 @@ public int findKthLargest(int[] numbers, int k) {
 
 
 
-#### E03. 数据流中第K大元素-力扣 703 题 
+#### E03. 数据流中第K大元素-力扣 703 题
 
 上题的小顶堆加一个方法
 
@@ -8503,7 +8507,7 @@ public class E09Leetcode105 {
 
 
 
-#### E10. 根据中序与后序遍历结果构造二叉树-力扣 106 题  
+#### E10. 根据中序与后序遍历结果构造二叉树-力扣 106 题
 
 * 先通过后序遍历结果定位根节点
 * 再结合中序遍历结果切分左右子树
@@ -8759,7 +8763,7 @@ public static void swap(char[] array, int i, int j) {
 1. 树节点增加 key 属性，用来比较谁大谁小，key 不可以重复
 2. 对于任意一个树节点，它的 key 比左子树的 key 都大，同时也比右子树的 key 都小，例如下图所示
 
-![image-20230228090412983](/images/algorithm/image-20230228090412983.png)
+![image-20230228090412983](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410908.png)
 
 轻易看出要查找 7 （从根开始）自然就可应用二分查找算法，只需三次比较
 
@@ -8772,7 +8776,7 @@ public static void swap(char[] array, int i, int j) {
 * 如果这棵树长得还不赖（左右平衡）上图，那么时间复杂度均是 $O(\log{N})$
 * 当然，这棵树如果长得丑（左右高度相差过大）下图，那么这时是最糟的情况，时间复杂度是 $O(N)$
 
-![image-20230228091405293](/images/algorithm/image-20230228091405293.png)
+![image-20230228091405293](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410007.png)
 
 > 注：
 >
@@ -9055,7 +9059,7 @@ public void put(int key, Object value) {
 
 ##### 前驱后继
 
-![image-20230228144422128](/images/algorithm/image-20230228144422128.png)
+![image-20230228144422128](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410077.png)
 
 一个节点的前驱（前任）节点是指比它小的节点中，最大的那个
 
@@ -9072,35 +9076,35 @@ public void put(int key, Object value) {
 
 要效率更高，需要研究一下规律，**找前驱**分成 2 种情况：
 
-![image-20230228144422128](/images/algorithm/image-20230228144422128.png)
+![image-20230228144422128](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410077.png)
 
 1. 节点有左子树，此时前驱节点就是左子树的最大值，图中属于这种情况的有
-   * 2 的前驱是1
-   * 4 的前驱是 3
-   * 6 的前驱是 5
-   * 7 的前驱是 6
+  * 2 的前驱是1
+  * 4 的前驱是 3
+  * 6 的前驱是 5
+  * 7 的前驱是 6
 2. 节点没有左子树，若离它最近的祖先自从左而来，此祖先即为前驱，如
-   * 3 的祖先 2 自左而来，前驱 2
-   * 5 的祖先 4 自左而来，前驱 4
-   * 8 的祖先 7 自左而来，前驱 7
-   * 1 没有这样的祖先，前驱 null
+  * 3 的祖先 2 自左而来，前驱 2
+  * 5 的祖先 4 自左而来，前驱 4
+  * 8 的祖先 7 自左而来，前驱 7
+  * 1 没有这样的祖先，前驱 null
 
 
 
 **找后继**也分成 2 种情况
 
-![image-20230228152715296](/images/algorithm/image-20230228152715296.png)
+![image-20230228152715296](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410141.png)
 
 1. 节点有右子树，此时后继节点即为右子树的最小值，如
-   * 2 的后继 3
-   * 3 的后继 4
-   * 5 的后继 6
-   * 7 的后继 8
+  * 2 的后继 3
+  * 3 的后继 4
+  * 5 的后继 6
+  * 7 的后继 8
 2. 节点没有右子树，若离它最近的祖先自从右而来，此祖先即为后继，如
-   * 1 的祖先 2 自右而来，后继 2
-   * 4 的祖先 5 自右而来，后继 5
-   * 6 的祖先 7 自右而来，后继 7
-   * 8 没有这样的祖先，后继 null
+  * 1 的祖先 2 自右而来，后继 2
+  * 4 的祖先 5 自右而来，后继 5
+  * 6 的祖先 7 自右而来，后继 7
+  * 8 没有这样的祖先，后继 null
 
 
 
@@ -9167,8 +9171,8 @@ public Object successor(int key) {
 2. 删除节点没有右孩子，将左孩子托孤给 Parent
 3. 删除节点左右孩子都没有，已经被涵盖在情况1、情况2 当中，把 null 托孤给 Parent
 4. 删除节点左右孩子都有，可以将它的后继节点（称为 S）托孤给 Parent，设 S 的父亲为 SP，又分两种情况
-   1. SP 就是被删除节点，此时 D 与 S 紧邻，只需将 S 托孤给 Parent
-   2. SP 不是被删除节点，此时 D 与 S 不相邻，此时需要将 S 的后代托孤给 SP，再将 S 托孤给 Parent
+  1. SP 就是被删除节点，此时 D 与 S 紧邻，只需将 S 托孤给 Parent
+  2. SP 不是被删除节点，此时 D 与 S 不相邻，此时需要将 S 的后代托孤给 SP，再将 S 托孤给 Parent
 
 **非递归实现**
 
@@ -9429,11 +9433,11 @@ public List<Object> between(int key1, int key2) {
 
 前面介绍过，如果一棵二叉搜索树长的不平衡，那么查询的效率会受到影响，如下图
 
-![image-20230313090500760](/images/algorithm/image-20230313090500760.png)
+![image-20230313090500760](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410310.png)
 
 通过旋转可以让树重新变得平衡，并且不会改变二叉搜索树的性质（即左边仍然小，右边仍然大）
 
-![image-20230313090817485](/images/algorithm/image-20230313090817485.png)
+![image-20230313090817485](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410541.png)
 
 ##### 如何判断失衡？
 
@@ -9500,19 +9504,19 @@ private int bf(AVLNode node) {
 
 当插入新节点，或删除节点时，引起高度变化时，例如
 
-![image-20230310153645397](/images/algorithm/image-20230310153645397.png)
+![image-20230310153645397](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410604.png)
 
 目前此树平衡，当再插入一个 4 时，节点们的高度都产生了相应的变化，8 节点失衡了
 
-![image-20230310153803661](/images/algorithm/image-20230310153803661.png)
+![image-20230310153803661](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410855.png)
 
 在比如说，下面这棵树一开始也是平衡的
 
-![image-20230310154155728](/images/algorithm/image-20230310154155728.png)
+![image-20230310154155728](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410928.png)
 
 当删除节点 8 时，节点们的高度都产生了相应的变化，6 节点失衡了
 
-![image-20230310154232729](/images/algorithm/image-20230310154232729.png)
+![image-20230310154232729](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410064.png)
 
 
 
@@ -9520,14 +9524,14 @@ private int bf(AVLNode node) {
 
 **LL**
 
-![image-20230310154459709](/images/algorithm/image-20230310154459709.png)
+![image-20230310154459709](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410171.png)
 
 * 失衡节点（图中 8 红色）的 bf > 1，即左边更高
 * 失衡节点的左孩子（图中 6）的 bf >= 0 即左孩子这边也是左边更高或等高
 
 **LR**
 
-![image-20230310154858754](/images/algorithm/image-20230310154858754.png)
+![image-20230310154858754](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410298.png)
 
 * 失衡节点（图中 8）的 bf > 1，即左边更高
 * 失衡节点的左孩子（图中 6 红色）的 bf < 0 即左孩子这边是右边更高
@@ -9536,14 +9540,14 @@ private int bf(AVLNode node) {
 
 **RL**
 
-![image-20230310155048187](/images/algorithm/image-20230310155048187.png)
+![image-20230310155048187](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410354.png)
 
 * 失衡节点（图中 3）的 bf <-1，即右边更高
 * 失衡节点的右孩子（图中 6 红色）的 bf > 0，即右孩子这边左边更高
 
 **RR**
 
-![image-20230310155347349](/images/algorithm/image-20230310155347349.png)
+![image-20230310155347349](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410553.png)
 
 * 失衡节点（图中 3）的 bf <-1，即右边更高
 * 失衡节点的右孩子（图中 6 红色）的 bf <= 0，即右孩子这边右边更高或等高
@@ -9570,7 +9574,7 @@ private int bf(AVLNode node) {
 
 旋转前
 
-![image-20230310162158692](/images/algorithm/image-20230310162158692.png)
+![image-20230310162158692](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410667.png)
 
 * 红色节点，旧根（失衡节点）
 * 黄色节点，旧根的左孩子，将来作为新根，旧根是它右孩子
@@ -9578,7 +9582,7 @@ private int bf(AVLNode node) {
 
 旋转后
 
-![image-20230310162442932](/images/algorithm/image-20230310162442932.png)
+![image-20230310162442932](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410738.png)
 
 代码
 
@@ -9598,7 +9602,7 @@ private AVLNode rightRotate(AVLNode red) {
 
 旋转前
 
-![image-20230310162945078](/images/algorithm/image-20230310162945078.png)
+![image-20230310162945078](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410898.png)
 
 * 红色节点，旧根（失衡节点）
 * 黄色节点，旧根的右孩子，将来作为新根，旧根是它左孩子
@@ -9606,7 +9610,7 @@ private AVLNode rightRotate(AVLNode red) {
 
 旋转后
 
-![image-20230310163019508](/images/algorithm/image-20230310163019508.png)
+![image-20230310163019508](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410029.png)
 
 代码
 
@@ -9626,19 +9630,19 @@ private AVLNode leftRotate(AVLNode red) {
 
 指先左旋左子树，再右旋根节点（失衡），这时一次旋转并不能解决失衡
 
-![image-20230310171424362](/images/algorithm/image-20230310171424362.png)
+![image-20230310171424362](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410104.png)
 
 左子树旋转后
 
-![image-20230310171636904](/images/algorithm/image-20230310171636904.png)
+![image-20230310171636904](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410348.png)
 
 根右旋前
 
-![image-20230310171821578](/images/algorithm/image-20230310171821578.png)
+![image-20230310171821578](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410412.png)
 
 根右旋后
 
-![image-20230310171903417](/images/algorithm/image-20230310171903417.png)
+![image-20230310171903417](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410481.png)
 
 代码
 
@@ -9655,19 +9659,19 @@ private AVLNode leftRightRotate(AVLNode root) {
 
 指先右旋右子树，再左旋根节点（失衡）
 
-![image-20230310172212302](/images/algorithm/image-20230310172212302.png)
+![image-20230310172212302](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410729.png)
 
 右子树右旋后
 
-![image-20230310172234154](/images/algorithm/image-20230310172234154.png)
+![image-20230310172234154](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410816.png)
 
 根左旋前
 
-![image-20230310172303012](/images/algorithm/image-20230310172303012.png)
+![image-20230310172303012](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410936.png)
 
 根左旋后
 
-![image-20230310172317379](/images/algorithm/image-20230310172317379.png)
+![image-20230310172317379](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410045.png)
 
 代码
 
@@ -9984,15 +9988,15 @@ case 3：叔叔为红色:red_circle:
 case 4：叔叔为黑色:black_circle:
 
 1. 父亲为左孩子，插入节点也是左孩子，此时即 LL 不平衡
-   * 让父亲变黑:black_circle:，为了保证这颗子树黑色不变，将祖父变成红:red_circle:，但叔叔子树少了一个黑色
-   * 祖父右旋，补齐一个黑色给叔叔，父亲旋转上去取代祖父，由于它是黑色，不会再次触发红红相邻
+  * 让父亲变黑:black_circle:，为了保证这颗子树黑色不变，将祖父变成红:red_circle:，但叔叔子树少了一个黑色
+  * 祖父右旋，补齐一个黑色给叔叔，父亲旋转上去取代祖父，由于它是黑色，不会再次触发红红相邻
 2. 父亲为左孩子，插入节点是右孩子，此时即 LR 不平衡
-   * 父亲左旋，变成 LL 情况，按 1. 来后续处理
+  * 父亲左旋，变成 LL 情况，按 1. 来后续处理
 3. 父亲为右孩子，插入节点也是右孩子，此时即 RR 不平衡
-   * 让父亲变黑:black_circle:，为了保证这颗子树黑色不变，将祖父变成红:red_circle:，但叔叔子树少了一个黑色
-   * 祖父左旋，补齐一个黑色给叔叔，父亲旋转上去取代祖父，由于它是黑色，不会再次触发红红相邻
+  * 让父亲变黑:black_circle:，为了保证这颗子树黑色不变，将祖父变成红:red_circle:，但叔叔子树少了一个黑色
+  * 祖父左旋，补齐一个黑色给叔叔，父亲旋转上去取代祖父，由于它是黑色，不会再次触发红红相邻
 4. 父亲为右孩子，插入节点是左孩子，此时即 RL 不平衡
-   * 父亲右旋，变成 RR 情况，按 3. 来后续处理
+  * 父亲右旋，变成 RR 情况，按 3. 来后续处理
 
 
 
@@ -11210,11 +11214,11 @@ public class HashTable {
 
 ##### 生成 hashCode
 
-![image-20230424083655435](/images/algorithm/image-20230424083655435.png)
+![image-20230424083655435](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410198.png)
 
 hash 算法是将任意对象，分配一个**编号**的过程，其中编号是一个有限范围内的数字（如 int 范围内）
 
-![image-20230424090603325](/images/algorithm/image-20230424090603325.png)
+![image-20230424090603325](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410338.png)
 
 
 
@@ -11302,7 +11306,7 @@ public static void main(String[] args) throws IOException {
 
 **MurmurHash**
 
-![image-20230425084247888](/images/algorithm/image-20230425084247888.png)
+![image-20230425084247888](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410404.png)
 
 
 
@@ -11331,7 +11335,7 @@ public static void main(String[] args) throws IOException {
 
 #### 稳定 vs 不稳定
 
-![stability_playing_cards.svg](/images/algorithm/stability_playing_cards.svg.png)
+![stability_playing_cards.svg](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410470.png)
 
 #### 1) 冒泡排序
 
@@ -11342,21 +11346,21 @@ public static void main(String[] args) throws IOException {
 
 以数组 3、2、1 的冒泡排序为例，第一轮冒泡
 
-![image-20230504153631958](/images/algorithm/image-20230504153631958.png)
+![image-20230504153631958](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410538.png)
 
 第二轮冒泡
 
-![image-20230504154044402](/images/algorithm/image-20230504154044402.png)
+![image-20230504154044402](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410867.png)
 
 未排序区域内就剩一个元素，结束
 
-![image-20230504154213239](/images/algorithm/image-20230504154213239.png)
+![image-20230504154213239](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410987.png)
 
 优化手段：每次循环时，若能确定**更合适的**右边界，则可以减少冒泡轮数
 
 以数组 3、2、1、4、5 为例，第一轮结束后记录的 x，即为右边界
 
-![image-20230504161136854](/images/algorithm/image-20230504161136854.png)
+![image-20230504161136854](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071410050.png)
 
 非递归版代码
 
@@ -11717,7 +11721,7 @@ private TreeNode insert(int[] preorder, int max) {
 
 1. 如果超过上限, 返回 null
 2. 如果没超过上限, 创建节点, 并将其左右孩子设置完整后返回
-   * i++ 需要放在设置左右孩子之前，意思是从剩下的元素中挑选左右孩子
+  * i++ 需要放在设置左右孩子之前，意思是从剩下的元素中挑选左右孩子
 
 
 

@@ -192,7 +192,7 @@ opacity有什么区别呢，
 ```
 
 这里没什么好说的。margin 0 auto就代表着页面居中
-![](![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071416765.png))
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071416765.png)
 接下来是h1元素
 
 ```css
@@ -234,7 +234,7 @@ opacity有什么区别呢，
 }
 ```
 
-![](![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071417872.png))
+![](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308071417872.png)
 之后我们来看点击后，也就是聚焦的情况下。
 
 ```css

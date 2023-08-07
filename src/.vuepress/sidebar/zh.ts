@@ -14,13 +14,13 @@ export const zhSidebar = sidebar({
                     text: "JavaSE精修",
                     collapsible: true,
                     icon: "write",
-                    children: ["java基础.md","java面向对象.md"]
+                    children: ["java基础.md", "java面向对象.md"]
                 },
                 {
                     text: "重学Java(千锋教育2023)",
                     collapsible: true,
                     icon: "write",
-                    prefix:"qf/",
+                    prefix: "qf/",
                     children: ["1.md"]
                 },
                 {
@@ -28,7 +28,7 @@ export const zhSidebar = sidebar({
                     collapsible: true,
                     icon: "write",
                     prefix: "jvm/",
-                    children : ["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md","10.md","11.md","12.md"]
+                    children: ["1.md", "2.md", "3.md", "4.md", "5.md", "6.md", "7.md", "8.md", "9.md", "10.md", "11.md", "12.md"]
                 },
                 {
                     text: "spring6",
@@ -41,7 +41,7 @@ export const zhSidebar = sidebar({
                     collapsible: true,
                     icon: "write",
                     prefix: "coder/",
-                    children: ["1.md","2.md"]
+                    children: ["1.md", "2.md"]
                 },
             ]
         },
@@ -52,14 +52,14 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/codenotes/front_end/",
             children: [
-                "HTML.md","WebApi.md","ts.md",
+                "HTML.md", "WebApi.md", "ts.md",
                 {
                     text: "渡一大师课笔记",
                     collapsible: true,
                     icon: "write",
                     prefix: "dy/",
                     children: [
-                        "HC.md","HC2.md","Git.md"
+                        "HC.md", "HC2.md", "Git.md"
                     ]
                 },
             ]
@@ -91,13 +91,13 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/codenotes/python/",
             children: [
-                "2023.md","auto.md",
+                "2023.md", "auto.md",
                 {
                     text: "python全栈(路飞学院)",
                     icon: "network",
                     prefix: "lf/",
                     collapsible: true,
-                    children : ["1.md","2.md"]
+                    children: ["1.md", "2.md"]
                 },
                 {
                     text: "python-50天(github)",
@@ -114,41 +114,57 @@ export const zhSidebar = sidebar({
             icon: "workingDirectory",
             collapsible: true,
             prefix: "/codenotes/other/",
-            children:["Git.md","Nginx.md"]
-        },
-        {
-            text: "面试",
-            icon: "workingDirectory",
-            collapsible: true,
-            prefix: "/codenotes/interview/",
-            children:["Java.md"]
+            children: ["Git.md", "Nginx.md"]
         },
         {
             text: "逆向",
             icon: "linter",
             collapsible: true,
             prefix: "/codenotes/reverse/",
-            children:["4399.md"]
+            children: ["4399.md"]
         },
     ],
+    //面试
+    "/interview/": [
+        {
+            text: "每日一面",
+            icon: "blog",
+            collapsible: true,
+            prefix: "day/",
+            children: [
+                {
+                    text: "7月",
+                    icon: "blog",
+                    collapsible: true,
+                    prefix: "7/",
+                    children: [
+                        "1.md"
+                    ]
+                }
+            ],
+        },
+        "Java.md"
+    ],
+
+
     // 开源项目的侧边栏
     "/projects/": [
         {
             text: "技术杂谈(7月)",
             icon: "community",
             collapsible: true,
-            prefix:"/projects/zatan/7",
-            children:[
-                "1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"
+            prefix: "/projects/zatan/7",
+            children: [
+                "1.md", "2.md", "3.md", "4.md", "5.md", "6.md", "7.md", "8.md", "9.md"
             ]
         },
         {
             text: "技术杂谈(8月)",
             icon: "community",
             collapsible: true,
-            prefix:"/projects/zatan/8",
-            children:[
-                "1.md","2.md","3.md","4.md","5.md"
+            prefix: "/projects/zatan/8",
+            children: [
+                "1.md", "2.md", "3.md", "4.md", "5.md", "6.md"
             ]
         }
     ],

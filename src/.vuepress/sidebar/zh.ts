@@ -140,12 +140,12 @@ export const zhSidebar = sidebar({
             prefix: "day/",
             children: [
                 {
-                    text: "7月",
+                    text: "8月",
                     icon: "blog",
                     collapsible: true,
-                    prefix: "7/",
+                    prefix: "8/",
                     children: [
-                        "1.md"
+                        "1.md","2.md"
                     ]
                 }
             ],

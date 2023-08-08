@@ -157,6 +157,13 @@ export const zhSidebar = sidebar({
             prefix: "selected/",
             children : ["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md","10.md","11.md","12.md","13.md","14.md",]
         },
+        {
+            text: "就业城市详细解读(大白)",
+            icon: "blog",
+            collapsible: true,
+            prefix: "city/",
+            children : ["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md","10.md","11.md","12.md","13.md","14.md","15.md","16.md"]
+        },
         "Java.md",
 
     ],

@@ -61,5 +61,9 @@ features:
     icon: /othericon/sql.svg
     details: sql语句练习平台
     link: https://sql.guoyaxue.top/#/learn
+  - title: Linux命令查询
+    icon: /othericon/linux.svg
+    details: Linux常用命令查询
+    link: https://linux.guoyaxue.top/
 ---
 

@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
                     collapsible: true,
                     icon: "write",
                     prefix: "qf/",
-                    children: ["1.md"]
+                    children: ["1.md","2.md"]
                 },
                 {
                     text: "JVM(尚硅谷)",
@@ -145,7 +145,7 @@ export const zhSidebar = sidebar({
                     collapsible: true,
                     prefix: "8/",
                     children: [
-                        "1.md","2.md"
+                        "1.md","2.md","3.md"
                     ]
                 }
             ],

@@ -169,7 +169,7 @@ export const zhSidebar = sidebar({
     ],
 
 
-    // 开源项目的侧边栏
+    // 技术杂谈
     "/projects/": [
         {
             text: "技术杂谈(7月)",
@@ -190,6 +190,10 @@ export const zhSidebar = sidebar({
                 "1.md", "2.md", "3.md", "4.md", "5.md", "6.md","7.md","8.md","9.md","10.md"
             ]
         }
+    ],
+    //开源项目
+    "/practice/":[
+        "1.md"
     ],
 
 });

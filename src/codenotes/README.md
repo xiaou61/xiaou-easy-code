@@ -33,6 +33,7 @@ timeline: true
 赞助我有什么好处呢？一个最大的好处就是你可以通过赞助我的截图，赞助金额30，你就可以加上我的私人微信，获得以下的课程,5TB课程，内涵各大培训机构vip课程,包括免费加入我的知识星球社区：
 [点我查看目录](https://docs.qq.com/doc/DZGhUd1RCSktFWVJU)
 
-> 本站由vercel免费搭建，本站励志与一起共创开源环境，文章很多并非原创，只是觉得不错所以拉取下来，均标明原作者，如有侵权请联系微信。
+> 本站由vercel免费搭建，图床由腾讯云cos提供支持，网站域名已备案，如有盗刷流量的定会追查到底。本站励志与一起共创开源环境，文章很多并非原创，只是觉得不错所以拉取下来，均标明原作者，如有侵权请联系微信。
 >
+> Programming is like sex: one mistake and you’re providing support for a lifetime. --Michael Sinz
 

@@ -128,7 +128,7 @@ export const zhSidebar = sidebar({
             icon: "workingDirectory",
             collapsible: true,
             prefix: "/codenotes/other/",
-            children: ["Git.md", "Nginx.md"]
+            children: ["Git.md","how-to-use-git-efficiently.md", "Nginx.md","effective-coding.md","clean-code.md"]
         },
         {
             text: "逆向",

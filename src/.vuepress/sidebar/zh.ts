@@ -137,6 +137,14 @@ export const zhSidebar = sidebar({
             prefix: "/codenotes/reverse/",
             children: ["4399.md"]
         },
+        //推荐书籍
+        {
+            text: "推荐书籍",
+            icon: "article",
+            collapsible: true,
+            prefix: "/codenotes/book/",
+            children: ["front_end.md"]
+        },
     ],
     //面试
     "/interview/": [
@@ -202,5 +210,6 @@ export const zhSidebar = sidebar({
     "/practice/":[
         "1.md"
     ],
+
 
 });

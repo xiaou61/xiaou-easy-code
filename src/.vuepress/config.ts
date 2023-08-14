@@ -4,7 +4,6 @@ import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 import {path} from "@vuepress/utils";
 import theme from "./theme.js";
 import {commentPlugin} from "vuepress-plugin-comment2";
-import {componentsPlugin} from "vuepress-plugin-components";
 
 //自定义用户配置
 export default defineUserConfig({
@@ -51,6 +50,7 @@ var _hmt = _hmt || [];
             serverURL: "https://repo.guoyaxue.top/",
 
         }),
+
 
 
         // 搜索插件

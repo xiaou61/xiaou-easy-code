@@ -137,6 +137,13 @@ export const zhSidebar = sidebar({
             prefix: "/codenotes/reverse/",
             children: ["4399.md"]
         },
+        {
+            text: "推荐书籍",
+            icon: "linter",
+            collapsible: true,
+            prefix: "/codenotes/book/",
+            children: ["front.md"]
+        },
     ],
     //面试
     "/interview/": [

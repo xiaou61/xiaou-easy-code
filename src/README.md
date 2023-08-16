@@ -65,5 +65,9 @@ features:
     icon: /othericon/linux.svg
     details: Linux常用命令查询
     link: https://linux.guoyaxue.top/
+  - title: 音乐播放器
+    icon: /othericon/music.svg
+    details: 一个基于网易云的音乐播放器
+    link: http://music.guoyaxue.top/
 ---
 

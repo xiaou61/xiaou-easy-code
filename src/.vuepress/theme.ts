@@ -120,7 +120,9 @@ export default hopeTheme({
     // 社交媒体
     medias: {
       Gitee: "https://gitee.com/lizifan233",
-      Github: "https://github.com/xiaou61"
+      Github: "https://github.com/xiaou61",
+      BiliBili:"https://space.bilibili.com/395111712",
+
     },
     // 博客的侧边栏设置
     sidebarDisplay: "mobile",

@@ -142,7 +142,7 @@ export const zhSidebar = sidebar({
             icon: "linter",
             collapsible: true,
             prefix: "/codenotes/book/",
-            children: ["front.md"]
+            children: ["front.md","end.md"]
         },
     ],
     //面试

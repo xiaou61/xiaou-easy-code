@@ -71,5 +71,9 @@ features:
     icon: /othericon/music.svg
     details: 一个基于网易云的音乐播放器
     link: http://music.guoyaxue.top/
+  - title: 速查表
+    icon: /othericon/reference.svg
+    details: 为开发人员分享快速参考备忘清单【速查表】
+    link: https://reference.guoyaxue.top/
 ---
 

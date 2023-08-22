@@ -75,5 +75,9 @@ features:
     icon: /othericon/reference.svg
     details: 为开发人员分享快速参考备忘清单【速查表】
     link: https://reference.guoyaxue.top/
+  - title: 网页特效汇总
+    icon: /othericon/effect.svg
+    details: 类似于codepen,未适配手机
+    link: https://effect.guoyaxue.top/nav/index.html
 ---
 

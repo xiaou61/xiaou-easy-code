@@ -1,12 +1,15 @@
 <p align="center">
     <a href="https://mydocs.guoyaxue.top"><img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308281313950.png" ></a> 
 </p>
-
-![image-20230828133631871](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308281336947.png)
+<p align="center">
+    <a href="https://mydocs.guoyaxue.top"><img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308281336947.png" ></a> 
+</p>
 
 <p align="center">
     <a href="https://mydocs.guoyaxue.top"><img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308281419342.png" ></a> 
 </p>
+
+
 ## :sparkles: **description**
 
 ![image-20230828135123510](https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308281351670.png)

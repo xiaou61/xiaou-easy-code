@@ -168,7 +168,7 @@ export const zhSidebar = sidebar({
                     collapsible: true,
                     prefix: "9/",
                     children: [
-                        "1.md"
+                        "1.md","2.md"
                     ]
                 }
             ],

@@ -219,7 +219,7 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/projects/zatan/9",
             children: [
-                "1.md","2.md","3.md","4.md","5.md"
+                "1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md"
             ]
         }
     ],

@@ -114,6 +114,13 @@ export const zhSidebar = sidebar({
                     children: ["1.md", "2.md"]
                 },
                 {
+                    text: "爬虫(路飞学院)",
+                    icon: "network",
+                    prefix: "lf/",
+                    collapsible: true,
+                    children: ["oc.md"]
+                },
+                {
                     text: "python-50天(github)",
                     icon: "network",
                     collapsible: true,

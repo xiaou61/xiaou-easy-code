@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as t,a as c}from"./app.c5b3201b.js";const s={},a=c("p",null,"HashMap 内部实现是通过 key 的 hashcode 来确定 value 的存储位置，因为字符串是不可变的，所以当创建字符串时，它的 hashcode 被缓存下来，不需要再次计算，所以相比于其他对象更快。",-1),_=[a];function n(r,l){return o(),t("div",null,_)}const f=e(s,[["render",n],["__file","4.html.vue"]]);export{f as default};

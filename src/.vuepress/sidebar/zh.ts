@@ -66,7 +66,7 @@ export const zhSidebar = sidebar({
             collapsible: true,
             prefix: "/codenotes/front_end/",
             children: [
-                "HTML.md", "WebApi.md", "ts.md",
+                "HTML.md", "WebApi.md", "ts.md","2023ts.md",
                 {
                     text: "渡一大师课笔记",
                     collapsible: true,
@@ -116,9 +116,8 @@ export const zhSidebar = sidebar({
                 {
                     text: "爬虫(路飞学院)",
                     icon: "network",
-                    prefix: "lf/",
                     collapsible: true,
-                    children: ["oc.md"]
+                    link: "lf/oc.md"
                 },
                 {
                     text: "python-50天(github)",

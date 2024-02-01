@@ -1,3 +1,7 @@
+注：此博客现在已经不再更新。新版地址http://blog.dyqufx.com/
+
+
+
 <p align="center">
     <a href="https://mydocs.guoyaxue.top"><img src="https://xiaou-1305448902.cos.ap-nanjing.myqcloud.com/img/202308281313950.png" ></a> 
 </p>

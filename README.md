@@ -1,4 +1,4 @@
-注：此博客现在已经不再更新。新版地址[http://blog.dyqufx.com/](http://blogs.xiaou61.top/)
+注：此博客现在已经不再更新。新版地址http://blogs.xiaou61.top/
 
 
 

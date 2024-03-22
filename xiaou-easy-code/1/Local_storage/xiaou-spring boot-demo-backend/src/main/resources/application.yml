@@ -1,0 +1,11 @@
+server:
+  port: 8081
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC&&allowPublicKeyRetrieval=true #url
+#    username: root
+#    password: 1234
+
+upload:
+  path: D:\onenodes\project\xiaou-easy-code\1\Local_storage\xiaou-spring boot-demo-backend\src\main\java\com\xiaou\upload\

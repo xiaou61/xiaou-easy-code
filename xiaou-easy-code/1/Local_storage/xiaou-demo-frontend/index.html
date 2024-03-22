@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <style>
+        /* CSS 样式 */
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <input type="file" id="fileInput">
+    <button id="uploadButton">上传图片</button>
+    <img id="uploadedImage" style="display: none;">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    // JavaScript 代码
+    document.getElementById('uploadButton').addEventListener('click', function() {
+        var fileInput = document.getElementById('fileInput');
+        var file = fileInput.files[0];
+        var formData = new FormData();
+        formData.append('image', file);
+        axios.post('http://localhost:8081/api/upload', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        }).then(function(response) {
+            var imageUrl = "http://localhost:8081"+response.data;
+            console.log(imageUrl)
+
+            document.getElementById('uploadedImage').src = imageUrl;
+            document.getElementById('uploadedImage').style.display = 'block';
+        }).catch(function(error) {
+            console.error('Error uploading image: ', error);
+        });
+    });
+</script>
+</body>
+</html>

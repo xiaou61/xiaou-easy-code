@@ -1,0 +1,14 @@
+server:
+  port: 8081
+#spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC&&allowPublicKeyRetrieval=true #url
+    username: root
+    password: 1234
+spring:
+  redis:
+    database: 4
+    host: localhost
+    port: 6379
+

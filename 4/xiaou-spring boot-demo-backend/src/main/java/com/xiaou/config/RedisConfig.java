@@ -1,5 +1,7 @@
 package com.xiaou.config;
 
+import com.xiaou.listener.RedisKeyExpirationListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +10,7 @@ import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.cache.RedisCacheWriter;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
@@ -16,6 +19,8 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @Configuration
 @EnableCaching // 启用缓存功能
 public class RedisConfig {
+    @Autowired
+    private RedisConnectionFactory redisConnectionFactory;
 
     // 定义 RedisTemplate Bean，用于操作 Redis 数据
     @Bean
@@ -46,5 +51,27 @@ public class RedisConfig {
 
         // 返回 RedisCacheManager 实例，用给定的 RedisCacheWriter 和 RedisCacheConfiguration 初始化
         return new RedisCacheManager(redisCacheWriter, redisCacheConfiguration);
+    }
+
+
+
+    /**
+     * 配置Redis消息监听
+     * @return
+     */
+    @Bean
+    public RedisMessageListenerContainer container() {
+        RedisMessageListenerContainer container = new RedisMessageListenerContainer();
+        container.setConnectionFactory(redisConnectionFactory);
+        return container;
+    }
+
+    /**
+     * 监听key过期
+     * @return
+     */
+    @Bean
+    public RedisKeyExpirationListener keyExpirationListener() {
+        return new RedisKeyExpirationListener(this.container());
     }
 }

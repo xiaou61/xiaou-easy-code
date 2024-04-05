@@ -1,0 +1,8 @@
+server:
+  port: 8081
+spring:
+  ai:
+    ollama:
+      chat:
+        options:
+          model: llama2-chinese
